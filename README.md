@@ -1,2 +1,2 @@
 # hatsunotuki.github.io
-今日から始まり。
+今日から始まる
