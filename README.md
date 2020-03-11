@@ -1,2 +1,2 @@
-# hatsunotuki.github.io
+# 初の雪
 今日から始まる
