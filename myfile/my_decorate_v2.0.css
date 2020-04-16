@@ -31,7 +31,7 @@ p.mid8 {
 	
 body{
 	background-attachment:fixed;
-	background-image:url("https://i2.tiimg.com/712728/88e3f7f009a5d58a.jpg");
+	background-image:url("https://i2.tiimg.com/712728/88e3f7f009a5d58a.jpg") !important;
 	background-size:25%;
 	}
 	
