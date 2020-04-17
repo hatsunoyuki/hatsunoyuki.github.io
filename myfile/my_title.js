@@ -14,5 +14,5 @@ document.addEventListener('visibilitychange',function(){
 
 var scrWidth = window.screen.width;  /* 标题icon */
             var headHTML = document.getElementsByTagName('head')[0].innerHTML;
-            headHTML    += '<link rel="shortcut icon" href="https://i2.tiimg.com/712728/4da65a9fdc54126c.png" type="image/x-icon">';
+            headHTML    += '<link rel="shortcut icon" href="https://i2.tiimg.com/712728/0b307add2a7b5e71.png" type="image/x-icon">';
 			document.getElementsByTagName('head')[0].innerHTML = headHTML;
