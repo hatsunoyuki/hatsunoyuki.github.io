@@ -221,9 +221,8 @@ body::-webkit-scrollbar {
 .am-btn-success:hover{
 	background-color:#ffc5c5;
 	border-color:#ffb6b6;
-	}
-
 }
+
 .am-topbar {
     border-width: 0 0 2px;
     border-style: dashed;
