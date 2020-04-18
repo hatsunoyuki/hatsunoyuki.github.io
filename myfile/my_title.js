@@ -17,3 +17,12 @@ var scrWidth = window.screen.width;  /* 标题icon */
             headHTML    += '<link rel="shortcut icon" href="https://i2.tiimg.com/712728/0b307add2a7b5e71.png" type="image/x-icon">';
 			document.getElementsByTagName('head')[0].innerHTML = headHTML;
 
+document.getElementById("btn").onclick = function () {
+    if (this.value === "隐藏") {
+        document.getElementById("shimeji").style.display = "none";
+        this.value = "显示";
+    } else if (this.value === "显示") {
+        document.getElementById("shimeji").style.display = "block";
+        this.value = "隐藏";
+    }
+};
