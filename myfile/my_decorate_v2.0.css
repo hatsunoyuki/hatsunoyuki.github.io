@@ -182,8 +182,8 @@ i{
 #myfuncbox{
 	z-index:999;
 	position:fixed;
-	right:8px;
-	bottom: 5%;
+	right:2px;
+	top: 5%;
 	line-height:150%;
 	cursor:pointer;
 	text-align:center;
