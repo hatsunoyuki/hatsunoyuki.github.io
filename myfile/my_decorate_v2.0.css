@@ -228,4 +228,7 @@ body::-webkit-scrollbar {
     border-width: 0 0 2px;
     border-style: dashed;
     border-color: #ffb6b6;
+    background: transparent;
 }
+
+
