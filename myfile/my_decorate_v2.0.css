@@ -172,16 +172,19 @@ i{
 	max-height:35px;
 	}
 	
-.mybutton { 
-	border-radius:4px;
+.mybutton{
+	background:transparent;
 	border:0;
-	color:#FFFFFF;
-	background-color:#ff8080;
-	cursor: pointer; 
-	font-size: 14px;
-	padding: 3px 6px 4px 6px;
+	padding:0;
+	cursor:pointer;
+	outline:none;
 }
-.mybutton:hover {
-	color:#FFFFFF;
-	background-color:#ffc5c5;
-}
+#myfuncbox{
+	z-index:999;
+	position:fixed;
+	right:8px;
+	bottom: 5%;
+	line-height:150%;
+	cursor:pointer;
+	text-align:center;
+	}
