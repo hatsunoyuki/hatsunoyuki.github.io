@@ -172,3 +172,16 @@ i{
 	max-height:35px;
 	}
 	
+.mybutton { 
+	border-radius:4px;
+	border:0;
+	color:#FFFFFF;
+	background-color:#ff8080;
+	cursor: pointer; 
+	font-size: 14px;
+	padding: 3px 6px 4px 6px;
+}
+.mybutton:hover {
+	color:#FFFFFF;
+	background-color:#ffc5c5;
+}
