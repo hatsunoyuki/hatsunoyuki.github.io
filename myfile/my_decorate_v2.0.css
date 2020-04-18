@@ -182,9 +182,10 @@ i{
 #myfuncbox{
 	z-index:999;
 	position:fixed;
-	right:2px;
-	top: 5%;
+	right:0px;
+	top: 15%;
 	line-height:150%;
 	cursor:pointer;
 	text-align:center;
-	}
+	font-size:18px;
+}
