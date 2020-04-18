@@ -17,12 +17,12 @@ var scrWidth = window.screen.width;  /* 标题icon */
             headHTML    += '<link rel="shortcut icon" href="https://i2.tiimg.com/712728/0b307add2a7b5e71.png" type="image/x-icon">';
 			document.getElementsByTagName('head')[0].innerHTML = headHTML;
 
-document.getElementById("btn").onclick = function () {
-    if (this.value === "隐藏") {
+document.getElementById("btnyuki").onclick = function () {
+    if (this.value === "hideit") {
         document.getElementById("shimeji").style.display = "none";
-        this.value = "显示";
-    } else if (this.value === "显示") {
+        this.value = "showit";
+    } else if (this.value === "showit") {
         document.getElementById("shimeji").style.display = "block";
-        this.value = "隐藏";
+        this.value = "hideit";
     }
 };
