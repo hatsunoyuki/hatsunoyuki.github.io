@@ -231,7 +231,11 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-device-width:960px){
-.replycontent img {
-    max-width: 300px !important;
+	.replycontent img {
+		max-width: 300px !important;
+	}
 }
+
+.replycontent img {
+    max-width: 500px !important;
 }
