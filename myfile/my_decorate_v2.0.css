@@ -86,6 +86,23 @@ a:hover{
 	background-color:#ffc5c5;
 	border-color:#ffb6b6;
 	}
+.btn-success:focus{
+	color:#FFFFFF;
+	background-color:#ffc5c5;
+	border-color:#ffb6b6;
+	}	
+	
+#replybtt:hover {
+    color:#FFFFFF;
+	background-color:#ffc5c5;
+	border-color:#ffb6b6;
+	}
+	
+#replybtt: {
+    color:#FFFFFF;
+	background-color:#ff8080;
+	border-color:#ff8080;
+	}
 	
 hr{
 	background:#ff8080;
