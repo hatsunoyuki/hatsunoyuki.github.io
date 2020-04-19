@@ -307,7 +307,13 @@ body::-webkit-scrollbar {
 	}
 }
 
-.form-control {
-    color: #7c82ae;
-    background-color: #ffffff80;
+#file{
+    display:none;
+	}
+
+.am-tabs-bd {
+    border: 1px dashed #ff8080;
+}
+.am-nav-tabs {
+    border-bottom: 1px dashed #ff8080;
 }
