@@ -271,12 +271,14 @@ body::-webkit-scrollbar {
     background: transparent;
 }
 
-@media (max-width:960px){
+@media only screen and (max-width: 640px){
 	.replycontent img {
-		max-width: 300px !important;
+		max-width: 300px;
 	}
 }
 
-.replycontent img {
-    max-width: 500px;
+@media only screen and (min-width: 641px){
+	.replycontent img {
+		max-width: 500px;
+	}
 }
