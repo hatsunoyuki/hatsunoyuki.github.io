@@ -313,6 +313,7 @@ body::-webkit-scrollbar {
 
 .am-tabs-bd {
     border: 1px dashed #ff8080;
+    border-top: none;
 }
 .am-nav-tabs {
     border-bottom: 1px dashed #ff8080;
