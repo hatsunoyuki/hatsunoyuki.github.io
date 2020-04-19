@@ -230,4 +230,6 @@ body::-webkit-scrollbar {
     background: transparent;
 }
 
-
+.replycontent img {
+    max-width: 300px !important;
+}
