@@ -306,3 +306,8 @@ body::-webkit-scrollbar {
 		max-width: 500px;
 	}
 }
+
+.form-control {
+    color: #7c82ae;
+    background-color: #ffffff80;
+}
