@@ -318,3 +318,12 @@ body::-webkit-scrollbar {
 .am-nav-tabs {
     border-bottom: 1px dashed #ff8080;
 }
+
+.glyphicon {
+    color: white;
+    text-shadow: 0px 0px 4px #dd514c;
+	}
+	
+.glyphicon:hover {
+    text-shadow: 0px 0px 4px #337ab7;
+	}
