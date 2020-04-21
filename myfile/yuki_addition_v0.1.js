@@ -1,0 +1,1 @@
+$("#contentdiv").prepend('<script id="myhk" src="https://home.lmih.cn/player/js/player.js" key="158361722577" m="1"></script><link rel="stylesheet" href="https://hatsunoyuki.github.io/myfile/yuki_add_decorate.css">')
