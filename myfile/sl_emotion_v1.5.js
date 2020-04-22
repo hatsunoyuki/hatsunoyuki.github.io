@@ -19,16 +19,16 @@ $(document).ready(function () {
     });
     $("#snow02").on("click", function() {
       var imglist = [
-        "http://i1.fuimg.com/712728/65bab655787573cf.png",
-        "http://i1.fuimg.com/712728/fe491bac039dc489.png",
-        "http://i1.fuimg.com/712728/063495cb8f04041a.png",
-        "http://i1.fuimg.com/712728/263e93258920e480.png",
-        "http://i1.fuimg.com/712728/ca47402e66770c6e.png",
-        "http://i1.fuimg.com/712728/d026c0d5ea67a935.png",
-        "http://i1.fuimg.com/712728/13419aacc651c63b.png",
-	"http://i1.fuimg.com/712728/5415255332a70011.png",
-        "http://i1.fuimg.com/712728/8430c58f7c02bb7e.png",
-        "http://i1.fuimg.com/712728/403eb02ecf19a45f.png",
+"https://i.loli.net/2020/04/22/WnDXI5CKgzoc8wj.png",
+"https://i.loli.net/2020/04/22/GvSOjRUAizJNVux.png",
+"https://i.loli.net/2020/04/22/FwYM8Z2v7crpS5H.png",
+"https://i.loli.net/2020/04/22/BG3lVhkv7XYI8ET.png",
+"https://i.loli.net/2020/04/22/jv7WeHyNKm2pbw5.png",
+"https://i.loli.net/2020/04/22/8oreYMLPt6S2Wcu.png",
+"https://i.loli.net/2020/04/22/y8JZRKuE2bxXdwD.png",
+"https://i.loli.net/2020/04/22/q3T2ipsuKeZnM9y.png",
+"https://i.loli.net/2020/04/22/rDGgQsduLT7JNnt.png",
+"https://i.loli.net/2020/04/22/Y9Tih1yMewztKbZ.png",
       ];
       $("#snow01").empty();
       for (var b = 0; b < imglist.length; b++) {
