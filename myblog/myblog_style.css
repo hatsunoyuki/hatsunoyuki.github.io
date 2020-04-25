@@ -1,0 +1,219 @@
+body{	
+	margin:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+	background-attachment:fixed;
+	background-image:url("https://i2.tiimg.com/712728/88e3f7f009a5d58a.jpg");
+	background-size:25%;	
+}
+
+.title {
+	margin-bottom: 10px;
+	background-color: #ffebeb;
+	padding: 5px;
+	color:#ff8080;
+	text-align: center;
+	}
+	
+
+a{
+	text-decoration:none;
+	color:#ff8080;
+	}
+	
+a:hover{
+	color:#76b2df;
+	text-decoration:none;
+	}
+	
+	
+hr{
+	border:none;
+	border-top:2px dotted #ff8080;
+	height:2px;
+	}
+	
+i{
+	color:#ff8080;
+	}
+	
+
+.container {
+    padding-right: 40px;
+    padding-left: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	width: 75%;	
+	height: inherit;
+}
+.content {
+	position:absolute; 
+	top:60px; 
+	bottom:0px;
+	margin:0;
+	width: 100%;
+	height:auto;
+    overflow:auto;
+}
+
+
+.main {
+	padding-right: 5px;
+	border: 0;
+	
+}
+.content:main {
+    padding-right: 0px;
+}
+
+
+.mybox{
+	width:100px;
+	height:100px;
+	border:1px solid #ccc;
+	background-color:pink;
+	opacity:1;
+	transition: 2s;
+	z-index:9;
+	}
+.mybox:hover{
+	background-color:lightblue;	
+	opacity:0;
+	}
+
+.scrollbar::-webkit-scrollbar{
+	width : 5px;  /*高宽分别对应横竖滚动条的尺寸*/
+	}
+.scrollbar::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 10px;
+	box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.1);
+	background   : #FFFAF0;
+	}
+.scrollbar::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0);
+	border-radius: 10px;
+	background   : transparent;
+	}
+	
+.side {
+	float: left;
+	width: 25%;
+	background-color:transparent;
+	height: inherit;    
+	padding: 4px;	
+}
+.sideinner{
+	margin:0;
+	padding:15px;
+	height:100%;
+	background:#fff9f1cc;
+	border: 1.5px dashed #ffe4c4;
+	border-radius: 25px;
+}
+.header {
+    padding: 10px;
+	height:60px; 
+	position:absolute; 
+	top:0;
+	width: 100%;
+	background-color:#fff9f1cc;
+	border-bottom: 1.5px dashed #ffe4c4;
+	border-left: 1px dashed #ffe4c4;
+	border-right: 1px dashed #ffe4c4;
+	border-radius: 0 0 25px 25px;
+}
+.footer {
+	width:100%; 
+	height:30px; 
+	border:1.5px dashed #ffe4c4;
+	border-radius:25px;
+	bottom:0; 	
+	background-color:#fff9f1cc;
+	overflow: hidden;
+}
+
+li{
+list-style-image:url(imgfile/dot.png);
+}
+ul{
+	list-style:none;
+	margin:0 0 0 15px;
+	padding:0px;
+}
+.banner{
+	width:35%;
+	}
+	
+
+.title01{
+	font-family:FZMWFont;
+	font-size:3vw; 
+	color:white; 
+	font-weight:bold; 
+	line-height:40px; 
+	/* text-shadow: #ff8080 1.5px 0 0, #ff8080 0 1.5px 0, #ff8080 -1.5px 0 0, #ff8080 0 -1.5px 0;/* 字体阴影 */ 
+	-webkit-text-stroke: 1px #ff8080;/* 字体描边  */
+	}
+	
+.mypara1{
+	text-align:center;
+}
+.mycolor1{
+	color:#CD96CD;
+}
+.mycolor2{
+	color:#ff8080;
+}
+
+#myfuncbox{
+	z-index:999;
+	position:fixed;
+	right:8px;
+	bottom: 5%;
+	line-height:150%;
+	cursor:pointer;
+	text-align:center;
+	}
+.myicon{
+	font-size:25px;
+}
+.myform{
+	width:50%;
+}
+
+
+textarea::-webkit-scrollbar{
+	background:transparent;
+}
+
+
+@font-face {
+    font-family: "布丁体";
+    src: url("fontfile/布丁体.eot"); /* IE9 */
+    src: url("fontfile/布丁体.eot?#iefix")
+    format("embedded-opentype"),  /* IE6-IE8 */
+    url("fontfile/布丁体.woff") format("woff"), /* chrome firefox */
+    url("fontfile/布丁体.ttf") format("truetype"), /* chrome firefox opera Safari Android IOS 4.2+ */
+    url("fontfile/布丁体.svg#布丁体") format("svg");  /* IOS 4.2- */
+    font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: "FZMWFont";
+    src: url("fontfile/FZMWFont.eot"); /* IE9 */
+    src: url("fontfile/FZMWFont.eot?#iefix")
+    format("embedded-opentype"),  /* IE6-IE8 */
+    url("fontfile/FZMWFont.woff") format("woff"), /* chrome firefox */
+    url("fontfile/FZMWFont.ttf") format("truetype"), /* chrome firefox opera Safari Android IOS 4.2+ */
+    url("fontfile/FZMWFont.svg#FZMWFont") format("svg");  /* IOS 4.2- */
+    font-style: normal;
+	font-weight: normal;
+}
+
+
