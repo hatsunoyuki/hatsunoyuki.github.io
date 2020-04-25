@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片失效</title>
+
+<script type="text/javascript"src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+<img src="https://i.loli.net/0.jpg">
+
+
+<script>
+var noimg=document.getElementsByTagName("img");
+for(i=0; i < noimg.length; i++){
+　　noimg[i].onerror=function(){this.src="https://i.loli.net/2020/04/24/ULdvhkg3cHZ8EMy.jpg"}
+}
+</script>
+
+
+</body>
+</html>
