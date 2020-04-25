@@ -91,7 +91,7 @@ i{
 	/*滚动条里面小方块*/
 	border-radius: 10px;
 	box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.1);
-	background   : #FFFAF0;
+	background   : #ffb5b5;
 	}
 .scrollbar::-webkit-scrollbar-track {
 	/*滚动条里面轨道*/
@@ -107,6 +107,8 @@ i{
 	height: inherit;    
 	padding: 4px;	
 }
+
+
 .sideinner{
 	margin:0;
 	padding:15px;
@@ -156,12 +158,33 @@ ul{
 	color:white; 
 	font-weight:bold; 
 	line-height:40px; 
-	/* text-shadow: #ff8080 1.5px 0 0, #ff8080 0 1.5px 0, #ff8080 -1.5px 0 0, #ff8080 0 -1.5px 0;/* 字体阴影 */ 
-	-webkit-text-stroke: 1px #ff8080;/* 字体描边  */
+	text-shadow: red 0px 0px 3px;
 	}
+	
+@media screen and (max-width: 768px) {
+    .title01{
+		font-size:30px; 
+	}
+	.banner {
+        display:none;
+    }
+	.side {
+        width:100%;
+    }
+	.container {
+		width:100%;
+	}
+	#noway{
+		display:none;
+	}
+}
 	
 .mypara1{
 	text-align:center;
+	line-height: 180%;
+	color: #ff8080;
+	font-family:FZMWFont;
+	font-size: 16px;
 }
 .mycolor1{
 	color:#CD96CD;

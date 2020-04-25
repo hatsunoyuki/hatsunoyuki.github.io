@@ -12,14 +12,14 @@ document.addEventListener('visibilitychange',function(){
 
 var scrWidth = window.screen.width;  /* 标题icon */
             var headHTML = document.getElementsByTagName('head')[0].innerHTML;
-            headHTML    += '<link rel="shortcut icon" href="imgfile/chiicon.png" type="image/x-icon">';
+            headHTML    += '<link rel="shortcut icon" href="myblog/imgfile/chiicon.png" type="image/x-icon">';
 			document.getElementsByTagName('head')[0].innerHTML = headHTML;
 
 $(document).ready(function() {/* 鼠标样式 */
 	$('body').hover(
         function() {
             $(this).css({
-                cursor: "url(/imgfile/cursor.ani),auto"
+                cursor: "url(myblog/imgfile/cursor.ani),auto"
                     })
                 },
        )
