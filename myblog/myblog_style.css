@@ -193,13 +193,13 @@ textarea::-webkit-scrollbar{
 
 
 @font-face {
-    font-family: "布丁体";
-    src: url("fontfile/布丁体.eot"); /* IE9 */
-    src: url("fontfile/布丁体.eot?#iefix")
+    font-family: "pudding";
+    src: url("fontfile/pudding.eot"); /* IE9 */
+    src: url("fontfile/pudding.eot?#iefix")
     format("embedded-opentype"),  /* IE6-IE8 */
-    url("fontfile/布丁体.woff") format("woff"), /* chrome firefox */
-    url("fontfile/布丁体.ttf") format("truetype"), /* chrome firefox opera Safari Android IOS 4.2+ */
-    url("fontfile/布丁体.svg#布丁体") format("svg");  /* IOS 4.2- */
+    url("fontfile/pudding.woff") format("woff"), /* chrome firefox */
+    url("fontfile/pudding.ttf") format("truetype"), /* chrome firefox opera Safari Android IOS 4.2+ */
+    url("fontfile/pudding.svg#pudding") format("svg");  /* IOS 4.2- */
     font-style: normal;
 	font-weight: normal;
 }
