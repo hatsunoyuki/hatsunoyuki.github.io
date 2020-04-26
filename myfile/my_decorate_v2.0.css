@@ -148,8 +148,16 @@ i{
 	}
 	
 .alert-danger {
-	background-color: #ffd0d07a;
-	}
+    background-color: #ffd0d07a;
+	font-size: 12px;
+}
+
+.alert-info {
+    color: #398fb9;
+    background-color: #b9e1ff70;
+    border-color: #bce8f1;
+    font-size: 12px;
+}
 	
 .alert-success {
     color: #937b7b;
