@@ -26,3 +26,17 @@ document.getElementById("btnyuki").onclick = function () { /* shimeji隐藏按�
         this.value = "hideit";
     }
 };
+
+// 随机链接
+var randomlink = [
+	"http://ak.mooncell.wiki/",
+	"https://ak.hypergryph.com/",
+	"http://bbs.nga.cn/thread.php?fid=-34587507&rand=471",
+]
+
+function YukiRandomLink() {
+    $("#yuki_randomlink").attr(
+        "href",
+        randomlink[Math.floor(Math.random() * randomlink.length)]
+    );
+}
