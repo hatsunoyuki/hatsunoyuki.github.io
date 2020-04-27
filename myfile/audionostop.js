@@ -1,8 +1,9 @@
-$(document).pjax("#yerefresh", ".reply_list", {
+$(document).pjax("refresh", ".reply_list", {
     fragment: ".reply_list",
     timeout: 9000,
     scrollTo: "#dibu"
 });
+
 
 $(document).on("submit", "form", function(event) {
     $.pjax.submit(event, ".reply_list", {
@@ -17,13 +18,13 @@ $(document).on("click", "center>div a", function(event) {
     $.pjax.reload("#app>center", {
         fragment: "center",
         timeout: 9000,
-        url: "https://nmmnm.co/showmsg/forumid/22/id/404772",
+        url: url,
         async: false
     });
     $.pjax.reload(".reply_list", {
         fragment: ".reply_list",
         timeout: 9000,
-        url: "https://nmmnm.co/showmsg/forumid/22/id/404772",
+        url: url
     });
     event.preventDefault();
 });
