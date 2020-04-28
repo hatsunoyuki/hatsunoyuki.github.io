@@ -17,33 +17,6 @@ var scrWidth = window.screen.width;  /* 标题icon */
             headHTML    += '<link rel="shortcut icon" href="https://i2.tiimg.com/712728/0b307add2a7b5e71.png" type="image/x-icon">';
 			document.getElementsByTagName('head')[0].innerHTML = headHTML;
 
-document.getElementById("btnyuki").onclick = function () { /* shimeji隐藏按钮 */
-    if (this.value === "hideit") {
-        document.getElementById("shimeji").style.display = "none";
-        this.value = "showit";
-    } else if (this.value === "showit") {
-        document.getElementById("shimeji").style.display = "block";
-        this.value = "hideit";
-    }
-};
-
-// 随机链接
-var randomlink = [
-	"http://ak.mooncell.wiki/",
-	"https://ak.hypergryph.com/",
-	"http://bbs.nga.cn/thread.php?fid=-34587507&rand=471",
-]
-
-function YukiRandomLink() {
-    $("#yuki_randomlink").attr(
-        "href",
-        randomlink[Math.floor(Math.random() * randomlink.length)]
-    );
-}
-
-// 刷新页面
-var url = document.URL;
-$("#refresh").attr("href", url);
 
 // 进度条 
   
@@ -563,3 +536,33 @@ $("#refresh").attr("href", url);
         }
       }
   })();
+  
+// 随机链接
+var randomlink = [
+	"http://ak.mooncell.wiki/",
+	"https://ak.hypergryph.com/",
+	"http://bbs.nga.cn/thread.php?fid=-34587507&rand=471",
+]
+
+function YukiRandomLink() {
+    $("#yuki_randomlink").attr(
+        "href",
+        randomlink[Math.floor(Math.random() * randomlink.length)]
+    );
+}
+
+// 刷新页面
+var url = document.URL;
+$("#refresh").attr("href", url);
+
+
+// shimeji隐藏按钮
+document.getElementById("btnyuki").onclick = function () { 
+    if (this.value === "hideit") {
+        document.getElementById("shimeji").style.display = "none";
+        this.value = "showit";
+    } else if (this.value === "showit") {
+        document.getElementById("shimeji").style.display = "block";
+        this.value = "hideit";
+    }
+};
