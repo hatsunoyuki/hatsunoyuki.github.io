@@ -520,22 +520,6 @@ var scrWidth = window.screen.width;  /* 标题icon */
   return NProgress;
 });
 
-// 刷新时显示进度条
-(function(){
-      document.onreadystatechange = function(){
-        NProgress.start();
-        console.log(document.readyState);
-        if(document.readyState == "Uninitialized"){
-          NProgress.set(1);
-        }
-        if(document.readyState == "Interactive"){
-          NProgress.set(0.5);
-        }
-        if(document.readyState == "complete"){
-          NProgress.done();
-        }
-      }
-  })();
   
 // 随机链接
 var randomlink = [
@@ -555,6 +539,22 @@ function YukiRandomLink() {
 var url = document.URL;
 $("#refresh").attr("href", url);
 
+// 刷新时显示进度条
+(function(){
+      document.onreadystatechange = function(){
+        NProgress.start();
+        console.log(document.readyState);
+        if(document.readyState == "Uninitialized"){
+          NProgress.set(1);
+        }
+        if(document.readyState == "Interactive"){
+          NProgress.set(0.5);
+        }
+        if(document.readyState == "complete"){
+          NProgress.done();
+        }
+      }
+  })();
 
 // shimeji隐藏按钮
 document.getElementById("btnyuki").onclick = function () { 
@@ -566,3 +566,4 @@ document.getElementById("btnyuki").onclick = function () {
         this.value = "hideit";
     }
 };
+
