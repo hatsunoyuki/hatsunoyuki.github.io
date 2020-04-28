@@ -40,3 +40,7 @@ function YukiRandomLink() {
         randomlink[Math.floor(Math.random() * randomlink.length)]
     );
 }
+
+// 刷新页面
+var url = document.URL;
+$("#refresh").attr("href", url);
