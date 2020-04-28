@@ -45,23 +45,7 @@ function YukiRandomLink() {
 var url = document.URL;
 $("#refresh").attr("href", url);
 
-// 进度条
-(function(){
-      document.onreadystatechange = function(){
-        NProgress.start();
-        console.log(document.readyState);
-        if(document.readyState == "Uninitialized"){
-          NProgress.set(1);
-        }
-        if(document.readyState == "Interactive"){
-          NProgress.set(0.5);
-        }
-        if(document.readyState == "complete"){
-          NProgress.done();
-        }
-      }
-  })();
-  
+// 进度条 
   
   /* NProgress, (c) 2013, 2014 Rico Sta. Cruz - http://ricostacruz.com/nprogress
  * @license MIT */
@@ -562,3 +546,20 @@ $("#refresh").attr("href", url);
 
   return NProgress;
 });
+
+// 刷新时显示进度条
+(function(){
+      document.onreadystatechange = function(){
+        NProgress.start();
+        console.log(document.readyState);
+        if(document.readyState == "Uninitialized"){
+          NProgress.set(1);
+        }
+        if(document.readyState == "Interactive"){
+          NProgress.set(0.5);
+        }
+        if(document.readyState == "complete"){
+          NProgress.done();
+        }
+      }
+  })();
