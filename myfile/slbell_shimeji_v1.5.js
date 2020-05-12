@@ -1,4 +1,4 @@
-$("body").prepend("<div id=shimeji><div style='z-index:100000;top:0px;left:0px;position: fixed;width:100%;height:100%;-webkit-pointer-events: none;-moz-pointer-events: none;-ms-pointer-events: none;-o-pointer-events: none;pointer-events: none;'><div id='slbell' draggable='true' style='pointer-events:auto;position: absolute;cursor:move ;top:20px;left:10px;width:128px;height:128px;background-image:url(https://i2.tiimg.com/712728/440d3430b2aa16e1.gif);background-size:100%;z-index:99999999'></div></div></div><style>div.col-md-2.col-lg-2.col-xs-2.col-sm-2{z-index:-1 !important;}</style>");
+$("body").prepend("<div id=shimeji><div style='z-index:100000;top:0px;left:0px;position: fixed;width:100%;height:100%;-webkit-pointer-events: none;-moz-pointer-events: none;-ms-pointer-events: none;-o-pointer-events: none;pointer-events: none;'><div id='slbell' draggable='true' style='pointer-events:auto;position: absolute;cursor:move ;top:20px;left:10px;width:128px;height:128px;background-image:url(https://s1.ax1x.com/2020/05/12/YNzQnx.gif);background-size:100%;z-index:99999999'></div></div></div><style>div.col-md-2.col-lg-2.col-xs-2.col-sm-2{z-index:-1 !important;}</style>");
 
 
 var dh = null;
@@ -11,54 +11,54 @@ function changeslbell(a,rnum="0") {
 
     if (rnum == 1) {
       $('#slbell').css({
-        "background-image": "url(https://i2.tiimg.com/712728/d84d483c67d0e53e.gif)"//move
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YNzt9H.gif)"//move
       });
       dhtimer = setTimeout(function() {
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/d84d483c67d0e53e.gif)"//move
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YNzt9H.gif)"//move
         });
       }, 300);
     } else {
       $('#slbell').css({
-        "background-image": "url(https://i2.tiimg.com/712728/d84d483c67d0e53e.gif)"//move
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YNzt9H.gif)"//move
       });
       dhtimer = setTimeout(function() {
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/d84d483c67d0e53e.gif)"//move
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YNzt9H.gif)"//move
         });
       }, 300);
     }
   } else if (a == "2") {
     $('#slbell').css({
-      "background-image": "url(https://i2.tiimg.com/712728/372e9d935dc35b9d.png)"//leftm
+      "background-image": "url(https://s1.ax1x.com/2020/05/12/YNzBHf.png)"//leftm
     });
     dhtimer = setTimeout(function() {
       $('#slbell').css({
-        "background-image": "url(https://i2.tiimg.com/712728/b3fac5beb3906590.png)"//leftr
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YNzq29.png)"//leftr
       });
       dhtimer = setTimeout(function() {
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/ed60e29c4471516c.png)"//leftl
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YNz4bV.png)"//leftl
         });
       }, 300);
     }, 300);
   } else if (a == "3") {
     $('#slbell').css({
-      "background-image": "url(https://i2.tiimg.com/712728/ed60e29c4471516c.png)"//leftl
+      "background-image": "url(https://s1.ax1x.com/2020/05/12/YNz4bV.png)"//leftl
     });
     dhtimer = setTimeout(function() {
       $('#slbell').css({
-        "background-image": "url(https://i2.tiimg.com/712728/b3fac5beb3906590.png)"//leftr
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YNzq29.png)"//leftr
       });
       dhtimer = setTimeout(function() {
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/372e9d935dc35b9d.png)"//leftm
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YNzBHf.png)"//leftm
         });
       }, 300);
     }, 300);
   } else if (a == "4") {
     $('#slbell').css({
-      "background-image": "url(https://i2.tiimg.com/712728/0e058b76b7059a58.png)"//skill12
+      "background-image": "url(https://s1.ax1x.com/2020/05/12/YUS8rq.png)"//skill12
     });
     dhtimer = setTimeout(function() {
       $('#slbell').css({
@@ -66,7 +66,7 @@ function changeslbell(a,rnum="0") {
       });
       dhtimer = setTimeout(function() {
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/81f971441bcea320.png)"//skill13
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSeVf.png)"//skill13
         });
       }, 300);
     }, 300);
@@ -74,15 +74,15 @@ function changeslbell(a,rnum="0") {
 
     dhtimer = setTimeout(function() {
       $('#slbell').css({
-        "background-image": "url(https://i2.tiimg.com/712728/09daa14e1674ec4b.gif)"//idle
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSYZV.gif)"//idle
       });
       dhtimer = setTimeout(function() {
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/09daa14e1674ec4b.gif)"//idle
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSYZV.gif)"//idle
         });
         dhtimer = setTimeout(function() {
           $('#slbell').css({
-            "background-image": "url(https://i2.tiimg.com/712728/09daa14e1674ec4b.gif)"//idle
+            "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSYZV.gif)"//idle
           });
         }, 300);
       }, 600);
@@ -90,11 +90,11 @@ function changeslbell(a,rnum="0") {
   } else if (a == "6") {
     dhtimer = setTimeout(function() {
       $('#slbell').css({
-        "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
       });
       dhtimer = setTimeout(function() {
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
         });
       }, 900);
     }, 600);
@@ -123,7 +123,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
         });
         movetimer = setTimeout("smjmove()", 5000)
       }
@@ -146,7 +146,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -160,7 +160,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -174,7 +174,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/9a98fdbf2a563c18.gif)"//special
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSsqx.gif)"//special
         });
         movetimer = setTimeout("smjmove()", 8000)
       });
@@ -188,7 +188,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/9a98fdbf2a563c18.gif)"//special
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSsqx.gif)"//special
         });
         movetimer = setTimeout("smjmove()", 8000)
       });
@@ -204,7 +204,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -219,7 +219,7 @@ function smjmove() {
         clearTimeout(dhtimer);
         clearInterval(dh);
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
         });
         movetimer = setTimeout("smjmove()", 5000)
       });
@@ -235,7 +235,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#slbell').css({
-            "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+            "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -250,7 +250,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#slbell').css({
-            "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+            "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -270,7 +270,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#slbell').css({
-            "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+            "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -283,7 +283,7 @@ function smjmove() {
           clearTimeout(dhtimer);
           clearInterval(dh);
           $('#slbell').css({
-            "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+            "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
           });
           movetimer = setTimeout("smjmove()", 5000)
         });
@@ -305,15 +305,15 @@ function jiangluo() {
     top: "+=" + yyy
   }, yyy * 20, function() {
     $('#slbell').css({
-      "background-image": "url(https://i2.tiimg.com/712728/f0251fadc8a69d06.gif)"//start0
+      "background-image": "url(https://s1.ax1x.com/2020/05/12/YUShzd.gif)"//start0
     });
     timer = setTimeout(function() {
       $('#slbell').css({
-        "background-image": "url(https://i2.tiimg.com/712728/b2702065c179c5ad.gif)"//interact
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSoLt.gif)"//interact
       });
       timer = setTimeout(function() {
         $('#slbell').css({
-          "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
         });
         movetimer = setTimeout("smjmove()", 5000)
       }, 1000)
@@ -441,7 +441,7 @@ $.fn.extend({
       var rnum = Math.round(Math.random());
       if(rnum==0){
       $this.css({
-        "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
       });
       mDown = false;
       jiangluo();}else{
@@ -456,12 +456,12 @@ $.fn.extend({
       var rnum = Math.round(Math.random());
       if(rnum==0){
       $this.css({
-        "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+        "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
       });
       mDown = false;
       jiangluo();}else{
         $this.css({
-          "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
         });
         mDown = false;
         movetimer = setTimeout("smjmove()", 5000)
@@ -525,11 +525,11 @@ $.fn.extend({
           });
           if (selX > 0) {
             $this.css({
-              "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+              "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
             });
           } else {
             $this.css({
-              "background-image": "url(https://i2.tiimg.com/712728/79c350a4220be463.gif)"//relax
+              "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSaiF.gif)"//relax
             });
           }
         } else {
