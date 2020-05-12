@@ -301,6 +301,11 @@ body::-webkit-scrollbar {
     text-shadow: 0px 0px 4px #337ab7;
 	}
 
+.banner2{
+	display:none;
+}
+
+
 #myhkTips{
     visibility: hidden !important;
 }
