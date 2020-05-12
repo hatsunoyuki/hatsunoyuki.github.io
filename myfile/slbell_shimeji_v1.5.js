@@ -446,7 +446,7 @@ $.fn.extend({
       mDown = false;
       jiangluo();}else{
         $this.css({
-          "background-image": "url(https://i2.tiimg.com/712728/1a97c3f22b20c894.gif)"//start
+          "background-image": "url(https://s1.ax1x.com/2020/05/12/YUSoLt.gif)"//interact
         });
         mDown = false;
         movetimer = setTimeout("smjmove()", 5000)
