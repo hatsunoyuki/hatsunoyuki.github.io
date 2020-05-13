@@ -296,7 +296,7 @@ function smjmove() {
 
 function jiangluo() {
   $('#slbell').css({
-    "background-image": "url(https://i2.tiimg.com/712728/248d3450601bb238.png)"//start01
+    "background-image": "url(https://s1.ax1x.com/2020/05/13/YacIQs.png)"//start01
   });
   var nowY = $('#slbell').position().top;
   var faWidth = $('#slbell').parent().height() - 150;
@@ -630,7 +630,7 @@ $.fn.extend({
             });
           } else {
             $this.css({
-              "background-image": "url(https://i2.tiimg.com/712728/2b66f3743ff862ef.png)"//start04
+              "background-image": "url(https://s1.ax1x.com/2020/05/13/YacXYF.png)"//start04
             });
           }
         } else {
