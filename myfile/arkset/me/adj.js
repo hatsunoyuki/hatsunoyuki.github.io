@@ -16,9 +16,6 @@ $(document).ready(function(){/* 随机立绘 */
 
 
 
-
-
-
 window.onload=function(){ 
 setInterval(function(){  
 var date=new Date();  
