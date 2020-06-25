@@ -67,7 +67,7 @@ body:before {/* 移动端适配 */
 	background:transparent;
 }
 
-a,.text-info,#look_cookie,#duqian,#qiandao,#noimage,.time{
+a,.text-info,#look_cookie,#duqian,#qiandao,#noimage,.time,a:not(.themenu){
 	color:#fff !important;
 	text-shadow: 0 0 4px #000;
 	}
