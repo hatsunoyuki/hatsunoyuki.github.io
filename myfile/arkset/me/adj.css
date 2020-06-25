@@ -67,12 +67,12 @@ body:before {/* 移动端适配 */
 	background:transparent;
 }
 
-.bg-info a,.replytxt a,#doc-topbar-collapse a.pull-right a,.text-info,#look_cookie,#duqian,#qiandao,#noimage,.time{
+a,.text-info,#look_cookie,#duqian,#qiandao,#noimage,.time{
 	color:#fff !important;
 	text-shadow: 0 0 4px #000;
 	}
 	
-.bg-info a:hover,.replytxt a:hover,#doc-topbar-collapse a:hover,.pull-right a:hover,.text-info:hover,#look_cookie:hover,#duqian:hover,#qiandao:hover,#noimage:hover{
+a:hover,.text-info:hover,#look_cookie:hover,#duqian:hover,#qiandao:hover,#noimage:hover{
 	color:#000 !important;
 	text-shadow: 0 0 4px #fff;
 	cursor:pointer;
