@@ -17,9 +17,8 @@ $(document).ready(function(){/* 随机立绘 */
 
 
 function YukiRandomLink() {
-    $("#yuki_randomlink").attr(
-        "href",
-        randomlink[Math.floor(Math.random() * randomlink.length)]
+    $(".linkPRST").attr(
+        "href", "ak.mooncell.wiki/";
     );
 }
 
