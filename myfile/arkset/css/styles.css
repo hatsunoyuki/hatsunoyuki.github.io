@@ -70,7 +70,7 @@ a[href*="www.cnzz.com"] {
 }
 .right.menu.box:hover{
 	
-	transform: perspective(35em) rotateY(-10deg) scale(0.5);
+	transform: perspective(40em) rotateY(-10deg) scale(0.5);
 }
 
 .right.menu.box div {
