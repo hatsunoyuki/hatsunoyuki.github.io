@@ -1,15 +1,16 @@
 document.title='H岛模拟测试demo';
 
- var bodyBgs = [];
-        bodyBgs[0] = "https://s1.ax1x.com/2020/06/24/Nw1zM8.png";
-        bodyBgs[1] = "https://s1.ax1x.com/2020/06/25/NBQrSP.png";
-		bodyBgs[2] = "https://s1.ax1x.com/2020/06/25/NBlSl6.png";
+$(document).ready(function(){
+          var bodyBgs = [];
+        bodyBgs[0] = "https://s1.ax1x.com/2020/06/24/Nw1zM8.md.png";
+        bodyBgs[1] = "https://s1.ax1x.com/2020/06/25/NBQrSP.md.png";
+		bodyBgs[2] = "https://s1.ax1x.com/2020/06/25/NBlSl6.md.png";
 
 
         var randomBgIndex = Math.round( Math.random() * 2 );
-
-    //输出随机的背景图
-        document.write('<style>.themenu{background:url(' + bodyBgs[randomBgIndex] + ') no-repeat}</style>');
+         var bg='url('+bodyBgs[randomBgIndex]+')';
+         $(".themenu").css("background-image",bg);
+});
 
 window.onload=function(){ 
 setInterval(function(){  

@@ -134,8 +134,8 @@ hr{
 }
 @media screen and (min-width: 714px) {
 	.themenu{
-	
-	background-size:60%;
+	background-repeat:no-repeat;
+	background-size:65%;
 	background-position:-50px;
 }
 }
