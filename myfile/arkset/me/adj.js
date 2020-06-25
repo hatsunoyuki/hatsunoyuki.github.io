@@ -16,10 +16,8 @@ $(".topic").before("<br>");
 
 $("#keep_status").append("<div class='titleme'><p>★★★★★★</p></div>");
 
-setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());",1000);
 
-
-						
+				
 var fontCfg = {
     p:'R8hVguNKZlfMuPoP',
         fonts: [
