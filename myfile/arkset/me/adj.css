@@ -1,12 +1,24 @@
 
 body{
-	
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	background: url("https://s1.ax1x.com/2020/06/24/Nw3SsS.png") fixed center 0 no-repeat;
-	background-size: cover;
+	-webkit-background-size:  100% 100%;
+    -o-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+body:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("https://s1.ax1x.com/2020/06/24/Nw3SsS.png") center 0 no-repeat;
+  background-size: cover;
 }
 
 
