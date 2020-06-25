@@ -67,12 +67,12 @@ body:before {/* 移动端适配 */
 	background:transparent;
 }
 
-a,.text-info,#look_cookie,#duqian,#qiandao,#noimage,.time{
+.pull-right a,.text-info,#look_cookie,#duqian,#qiandao,#noimage,.time{
 	color:#fff !important;
 	text-shadow: 0 0 4px #000;
 	}
 	
-a:hover,.text-info:hover,#look_cookie:hover,#duqian:hover,#qiandao:hover,#noimage:hover{
+.pull-right a:hover,.text-info:hover,#look_cookie:hover,#duqian:hover,#qiandao:hover,#noimage:hover{
 	color:#000 !important;
 	text-shadow: 0 0 4px #fff;
 	cursor:pointer;
@@ -142,10 +142,6 @@ hr{
 *:focus { outline: none; } 
 
 .emotion{max-width:40px;max-height:40px;}
-
-.themenu{
-	overflow:hidden;
-}
 
 
 @media screen and (max-width: 713px) {

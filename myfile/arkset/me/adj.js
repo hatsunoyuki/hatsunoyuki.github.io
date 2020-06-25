@@ -23,8 +23,6 @@ function YukiRandomLink() {
 }
 
 
-
-
 window.onload=function(){ 
 setInterval(function(){  
 var date=new Date();  
