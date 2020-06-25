@@ -15,6 +15,10 @@ $(document).ready(function(){/* 随机立绘 */
 });
 
 
+function mal(){
+    alert('您就是氪金母猪嗷');
+}
+
 
 window.onload=function(){ 
 setInterval(function(){  
