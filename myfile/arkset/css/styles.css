@@ -9,13 +9,6 @@
 
 
 
-
-
-.themenu{
-	overflow:hidden;
-	height:420px;
-}
-
 .right.menu.box {
 	float:left;
 	transform: perspective(30em) rotateY(-10deg) scale(0.5);
