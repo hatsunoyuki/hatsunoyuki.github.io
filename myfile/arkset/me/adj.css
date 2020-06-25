@@ -1,4 +1,3 @@
-
 body{
 	top: 0;
 	right: 0;
@@ -143,7 +142,15 @@ hr{
 
 .emotion{max-width:40px;max-height:40px;}
 
-
+.themenu{
+	overflow:hidden;
+	height:420px;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+}
 
 @media screen and (max-width: 713px) {
 	.themenu{
