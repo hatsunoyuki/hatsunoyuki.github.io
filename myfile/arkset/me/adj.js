@@ -1,6 +1,6 @@
 document.title='H岛模拟测试demo';
 
-$(document).ready(function(){
+$(document).ready(function(){/* 随机立绘 */
           var bodyBgs = [];
         bodyBgs[0] = "https://s1.ax1x.com/2020/06/24/Nw1zM8.md.png";
         bodyBgs[1] = "https://s1.ax1x.com/2020/06/25/NBQrSP.md.png";
@@ -13,6 +13,18 @@ $(document).ready(function(){
          var bg='url('+bodyBgs[randomBgIndex]+')';
          $(".themenu").css("background-image",bg);
 });
+
+
+
+function YukiRandomLink() {
+    $("#yuki_randomlink").attr(
+        "href",
+        randomlink[Math.floor(Math.random() * randomlink.length)]
+    );
+}
+
+
+
 
 window.onload=function(){ 
 setInterval(function(){  

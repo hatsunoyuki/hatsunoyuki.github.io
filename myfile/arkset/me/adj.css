@@ -9,7 +9,7 @@ body{
     -o-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
 }
-body:before {
+body:before {/* 移动端适配 */
   content: ' ';
   position: fixed;
   z-index: -1;
@@ -141,7 +141,7 @@ hr{
 
 *:focus { outline: none; } 
 
-
+.emotion{max-width:40px;max-height:40px;}
 
 .themenu{
 	overflow:hidden;

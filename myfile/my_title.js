@@ -530,8 +530,7 @@ var randomlink = [
 
 function YukiRandomLink() {
     $("#yuki_randomlink").attr(
-        "href",
-        randomlink[Math.floor(Math.random() * randomlink.length)]
+        "href", "ak.mooncell.wiki/";
     );
 }
 
