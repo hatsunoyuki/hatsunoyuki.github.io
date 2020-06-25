@@ -1,17 +1,5 @@
 document.title='H岛模拟测试demo';
 
-    let self = this;
-    document.addEventListener('touchstart', (e) => {
-      self.moveY = e.targetTouches[0].pageY;
-    })
-    document.addEventListener('touchmove', (e) => {
-      e.preventDefault();
-      let moveWidth = self.moveY - e.targetTouches[0].pageY;
-      if (moveWidth !== 0) {
-        document.body.scrollTop += moveWidth;
-      }
-    })
- 
 $(document).ready(function(){
           var bodyBgs = [];
         bodyBgs[0] = "https://s1.ax1x.com/2020/06/24/Nw1zM8.md.png";

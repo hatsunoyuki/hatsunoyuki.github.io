@@ -45,27 +45,23 @@ a[href*="www.cnzz.com"] {
 	height:420px;
 }
 
-
-@media screen and (max-width: 713px) {
-    .right.menu.box {
-    margin: -140px 0px 40px -250px;
-	position:absolute;
+.right.menu.box {
 	float:left;
 	transform: perspective(30em) rotateY(-10deg) scale(0.5);
 	transition: all 1s ease;
 	transform-style: preserve-3d;
 	backface-visibility: hidden;
+}
+
+
+@media screen and (max-width: 713px) {
+    .right.menu.box {
+    margin: -140px 0px 40px -250px;
 	}
 }
 @media screen and (min-width: 714px) {
     .right.menu.box {
 	margin:-140px 0px 80px 80px;
-	position:absolute;
-	float:left;
-	transform: perspective(30em) rotateY(-10deg) scale(0.5);
-	transition: all 1s ease;
-	transform-style: preserve-3d;
-	backface-visibility: hidden;
 }
 }
 .right.menu.box:hover{

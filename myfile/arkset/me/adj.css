@@ -1,9 +1,9 @@
-html,body{overflow-x:hidden;-webkit-overflow-scrolling: touch;}
 
 body{
 	background: url("https://s1.ax1x.com/2020/06/24/Nw3SsS.png") no-repeat fixed center;
 	background-size: cover;
 	z-index: 10;
+	
 }
 
 
@@ -127,6 +127,12 @@ hr{
 *:focus { outline: none; } 
 
 
+
+.themenu{
+	overflow:hidden;
+}
+
+
 @media screen and (max-width: 713px) {
 	.themenu{
 	background:none !important;
@@ -139,8 +145,8 @@ hr{
 	background-position:-50px;
 }
 }
-input {outline:none;}
 
+input {outline:none;}
 
 
 
