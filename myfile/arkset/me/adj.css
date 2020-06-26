@@ -46,6 +46,10 @@ body:before {/* 移动端适配 */
 	text-shadow: 0 0 2px #000;
 }
 
+.replytxt{
+	margin:0.9em -1px 0 -1px;
+}
+
 .am-topbar{
 	background-color:transparent;
 	border:0;
@@ -117,8 +121,7 @@ hr{
 .form-control{
 	color:#fff;
 	background-color:#4848487a;
-	box-shadow: 0 0 2px #fff;
-	border-color:#fff;
+	border: 1px solid #fff;
 	border-radius:0;
 }
 

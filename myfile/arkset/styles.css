@@ -1,0 +1,723 @@
+/*!
+ * Author: Mashiro
+ * Site: https://2heng.xin
+ * License: MIT
+ */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:500,700,900|Noto+Serif+SC:500,700,900&display=swap&subset=chinese-simplified');
+
+/* normalize */
+
+
+.mark{
+	background-color:transparent !important;
+	
+}
+.view-box {
+	width: 100%;
+	height: 100%;
+}
+
+
+.mark {
+	width: 100%;
+	height: 560px;
+	overflow: hidden;
+}
+
+.layer {
+	position: relative;
+}
+
+.cover {
+	position: absolute;
+	max-width: none;
+}
+
+.layer {
+	pointer-events: none
+}
+
+.menu.box {
+	pointer-events: initial
+}
+#right-menu-layer {
+	background-repeat:no-repeat;
+	background-size:50% auto;
+	background-position:-10px 0;
+	z-index:-10;
+}
+
+.right.menu.box {
+	float:left;
+	transform: perspective(30em) rotateY(-10deg) scale(0.5);
+	transition: all 1s ease;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+
+@media screen and (max-width: 713px) {
+    .right.menu.box {
+    margin: -140px 0px 40px -250px;
+	}
+}
+@media screen and (min-width: 714px) {
+    .right.menu.box {
+	margin:-140px 0px 80px 80px;
+}
+}
+
+
+.right.menu.box div {
+	transition: all 0.5s ease;
+}
+
+.right.menu.box .containerx {
+
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+
+}
+
+.right.menu.box .containerx .pos-1 {
+	height: 80px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+.right.menu.box .containerx .pos-1 .top {
+	height: 35%;
+	width: auto;
+	margin: 0 0 0 80px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.right.menu.box .containerx .pos-1 .top .time {
+	color: #fff;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 18px;
+	white-space: nowrap;
+	margin: 0 10px
+}
+
+.right.menu.box .containerx .pos-1 .top .battery {
+	margin-left: 10px;
+	height: 20px;
+	width: 34px;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: 0px -34px;
+	background-size: auto 4500%;
+}
+
+.right.menu.box .containerx .pos-1 .top .line-left {
+	width: 60px;
+	height: 3px;
+	margin-top: 8px;
+	background-color: #fff;
+}
+
+.right.menu.box .containerx .pos-1 .top .line-right {
+	width: 500px;
+	height: 3px;
+	margin-top: 8px;
+	background-color: #fff;
+}
+
+.right.menu.box .containerx .pos-1 .bottom {
+	height: 65%;
+}
+
+.right.menu.box .containerx .pos-1 .bottom .bg {
+	background-color: rgba(0, 0, 0, .2);
+	margin-top: 5px;
+	margin-left: 95px;
+	height: 40px;
+	width: 780px;
+}
+
+.right.menu.box .containerx .pos-1 .bottom .status {
+	position: absolute;
+	margin: -45px 0 0 80px;
+	height: 50px;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.right.menu.box .containerx .pos-1 .bottom .status .item {
+	height: 100%;
+	margin: 0 20px 0 0;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+.right.menu.box .containerx .pos-1 .bottom .status .item.money .icon {
+	width: 80px;
+	height: 50px;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -1225px -355px;
+	background-size: auto 6600%;
+}
+
+.right.menu.box .containerx .pos-1 .bottom .status .item.jasper .icon {
+	width: 50px;
+	height: 50px;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -446px -1103px;
+	background-size: auto 5300%;
+}
+
+.right.menu.box .containerx .pos-1 .bottom .status .item.stone .icon {
+	width: 50px;
+	height: 50px;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -1040px -464px;
+	background-size: auto 5200%;
+}
+
+.right.menu.box .containerx .pos-1 .bottom .status .item .amount {
+	color: #fff;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 33px;
+	white-space: nowrap;
+	margin: 0 10px
+}
+
+.right.menu.box .containerx .pos-1 .bottom .status .item .more {
+	width: 36px;
+	height: 36px;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -732px -595px;
+	background-size: auto 5800%;
+}
+
+.right.menu.box .containerx .pos-2 {
+	height: 200px;
+}
+
+.right.menu.box .containerx .pos-2 .intellect {
+	background-color: #fff;no-repeat fixed bottom right;
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 800px;
+	margin: 8px 0 0 80px;
+	box-shadow:2px 2px 8px #00000047;
+}
+
+.right.menu.box .containerx .pos-2 .intellect::after {
+	content: "";
+	background-color: #ff5e19;
+	opacity: .9;
+	height: 6px;
+	width: 310px;
+	margin: -3px 0 0 230px;
+	position: absolute;
+}
+
+.right.menu.box .containerx .pos-2 .intellect .icon {
+	margin-top: 15.5px;
+	margin-left: 360px;
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -588px -751px;
+	background-size: auto 1600%;
+	filter: invert(20%);
+	opacity: .5
+}
+
+.right.menu.box .containerx .pos-2 .intellect .content {
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: flex-start
+}
+
+.right.menu.box .containerx .pos-2 .intellect .content .figure {
+	width: 195px;
+	height: 130px;
+	margin: 20.5px 0 0 10px;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: 0px -531px;
+	background-size: auto 1257%;
+}
+
+.right.menu.box .containerx .pos-2 .intellect .content .figure .value {
+	color: #333333;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 70px;
+	font-weight: 700;
+	text-align: right;
+	margin: -10px 20px;
+	text-shadow: #8b8b8b 5px 5px 0px;
+}
+
+.right.menu.box .containerx .pos-2 .intellect .content .figure .total {
+	color: #fff;
+	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 25px;
+	text-align: right;
+	margin: 10px 20px;
+}
+
+.right.menu.box .containerx .pos-2 .intellect .content .battle {
+	height: 100%;
+	width: 100px;
+	height: 130px;
+	margin: 10px 0 0 15px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.right.menu.box .containerx .pos-2 .intellect .content .battle .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #323232;
+	font-size: 60px;
+	font-weight: 900;
+	white-space: nowrap;
+}
+
+.right.menu.box .containerx .pos-2 .intellect .content .battle .current {
+	font-family: 'Noto Sans SC', sans-serif;
+	color: #fff;
+	background-color: #3c3c3c;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 500;
+	white-space: nowrap;
+	padding: 3px;
+	margin: 2.5px 0;
+}
+
+.right.menu.box .containerx .pos-2 .intellect .content .battle .level {
+	font-family: 'Noto Sans SC', serif;
+	color: #3c3c3c;
+	font-size: 20px;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.right.menu.box .containerx .pos-3 {
+	height: 130px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.right.menu.box .containerx .pos-3 .team {
+	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -450px -985px;
+	background-size: auto 1700%;
+	
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 260px;
+	margin: 8px 0 0 40px;
+	cursor:pointer;box-shadow:2px 2px 8px #00000047;
+}
+
+.right.menu.box .containerx .pos-3 .team:hover {
+	filter: brightness(0.9);
+}
+
+.right.menu.box .containerx .pos-3 .team .icon {
+	width: 80px;
+	height: 80px;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: 354px -330px;
+	background-size: auto 1500%;
+	position: absolute;
+	margin: 15px 0 0 166px;
+	filter: invert(20%);
+	opacity: .5
+}
+
+.right.menu.box .containerx .pos-3 .team .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #323232;
+	font-size: 40px;
+	font-weight: 900;
+	white-space: nowrap;
+	margin: 15px;
+}
+
+.right.menu.box .containerx .pos-3 .member {
+	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -450px -985px;
+	background-size: auto 1700%;
+	
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 260px;
+	margin: 8px 0 0 16px;
+	cursor:pointer;
+	box-shadow:2px 2px 8px #00000047;
+}
+
+.right.menu.box .containerx .pos-3 .member:hover {
+	filter: brightness(0.9);
+}
+
+.right.menu.box .containerx .pos-3 .member .icon {
+	width: 80px;
+	height: 80px;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: 296px -477px;
+	background-size: auto 1500%;
+	position: absolute;
+	margin: 13px 0 0 166px;
+	filter: invert(20%);
+	opacity: .5
+}
+
+.right.menu.box .containerx .pos-3 .member .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #323232;
+	font-size: 40px;
+	font-weight: 900;
+	white-space: nowrap;
+	margin: 15px;
+}
+
+.right.menu.box .containerx .pos-3 .member .desc {
+	font-family: 'Noto Sans SC', sans-serif;
+	color: #989898;
+	font-size: 20px;
+	font-weight: 500;
+	white-space: nowrap;
+	margin: -20px 15px;
+}
+
+.right.menu.box .containerx .pos-3 .blank {
+	background-color: #424242;
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 200px;
+	margin: 8px 0 0 16px
+}
+
+.right.menu.box .containerx .pos-4 {
+	height: 130px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+
+}
+
+.right.menu.box .containerx .pos-4 .shop {
+	background-color: #05a7dc;
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 210px;
+	margin: 8px 0 0 120px;
+	border-right: 1px solid transparent;
+	border-image: -webkit-linear-gradient(#05a7dc, #454545, #05a7dc) 1;
+	border-image: -moz-linear-gradient(#05a7dc, #454545, #05a7dc) 1;
+	border-image: linear-gradient(#05a7dc, #454545, #05a7dc) 1;
+	cursor:pointer;box-shadow:2px 2px 8px #00000047;
+}
+
+.right.menu.box .containerx .pos-4 .shop:hover {
+	filter: brightness(0.9);
+}	
+
+
+.right.menu.box .containerx .pos-4 .shop .icon {
+	width: 93px;
+	height: 80px;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: 284px -360px;
+	background-size: auto 2000%;
+	position: absolute;
+	margin: 13px 0 0 106px;
+	opacity: .5;
+}
+
+.right.menu.box .containerx .pos-4 .shop .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 900;
+	white-space: nowrap;
+	margin: 40px 0 0 30px;
+}
+
+.right.menu.box .containerx .pos-4 .gamble {
+	background-color: #05a7dc;
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 340px;
+	margin: 8px 0;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .top {
+	background-color: #454545;
+	width: 330px;
+	height: 30px;
+	margin: 5px;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .top .icon {
+	width: 20px;
+	height: 20px;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -84px -138px;
+	background-size: auto 2000%;
+	position: absolute;
+	margin: 5px 0 0 5px;
+	opacity: .5
+}
+
+.right.menu.box .containerx .pos-4 .gamble .top .text {
+	font-family: 'Noto Sans SC', sans-serif;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	white-space: nowrap;
+	margin: 2px 0 0 30px;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom {
+	width: 330px;
+	height: 60px;
+	margin: 0 0 5px 5px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .left {
+	width: 50%;
+	height: 100%;
+	border-right: 1px solid transparent;
+	border-image: -webkit-linear-gradient(#05a7dc, #454545, #05a7dc) 1;
+	border-image: -moz-linear-gradient(#05a7dc, #454545, #05a7dc) 1;
+	border-image: linear-gradient(#05a7dc, #454545, #05a7dc) 1;
+	cursor:pointer;
+	box-shadow: 1px 1px 4px #00000047;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .left:hover {
+	background-color:#05a7dc;
+	filter: brightness(0.9);
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .left .icon {
+	width: 50px;
+	height: 50px;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: 276px -172px;
+	background-size: auto 1600%;
+	position: absolute;
+	margin: 5px 0 0 5px;
+	opacity: .5;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .left .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 900;
+	white-space: nowrap;
+	margin: 10px 0 0 20px;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .right {
+	width: 50%;
+	height: 100%;
+	cursor: pointer;
+	box-shadow: 1px 1px 4px #00000047;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .right:hover {
+	background-color:#05a7dc;
+	filter: brightness(0.9);
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .right .icon {
+	width: 50px;
+	height: 50px;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: 188px -228px;
+	background-size: auto 1650%;
+	position: absolute;
+	margin: 5px 0 0 5px;
+	opacity: .5;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .right .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 900;
+	white-space: nowrap;
+	margin: 10px 0 0 20px;
+}
+
+.right.menu.box .containerx .pos-5 {
+	height: 130px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.right.menu.box .containerx .pos-5 .task {
+	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -480px -985px;
+	background-size: auto 1700%;
+
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 240px;
+	margin: 8px 0 0 80px;
+	cursor:pointer;
+	box-shadow:2px 2px 8px #00000047;
+}
+
+.right.menu.box .containerx .pos-5 .task:hover {
+	filter: brightness(0.9);
+}
+
+
+.right.menu.box .containerx .pos-5 .task::before {
+	content: "";
+	background-color: #ff5e19;
+	opacity: .9;
+	height: 6px;
+	width: 180px;
+	margin: -3px 0 0 30px;
+	position: absolute;
+}
+
+.right.menu.box .containerx .pos-5 .task .icon {
+	width: 72px;
+	height: 80px;
+	background: url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -1px -90px;
+	background-size: auto 1800%;
+	position: absolute;
+	margin: 13px 0 0 136px;
+	opacity: .5;
+	filter: invert(30%);
+}
+
+.right.menu.box .containerx .pos-5 .task .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #323232;
+	font-size: 40px;
+	font-weight: 900;
+	white-space: nowrap;
+	margin: 15px;
+}
+
+.right.menu.box .containerx .pos-5 .infrastructure {
+	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -480px -985px;
+	background-size: auto 1700%;
+	margin: 42px 0 0 22px;
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 240px;
+	margin: 8px 0 0 16px;
+	cursor:pointer;box-shadow:2px 2px 8px #00000047;
+}
+
+.right.menu.box .containerx .pos-5 .infrastructure:hover {
+	filter: brightness(0.9);
+}
+
+
+.right.menu.box .containerx .pos-5 .infrastructure .icon {
+	width: 80px;
+	height: 80px;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -69px -61px;
+	background-size: auto 1700%;
+	position: absolute;
+	margin: 13px 0 0 136px;
+	opacity: .5;
+	filter: invert(30%);
+}
+
+.right.menu.box .containerx .pos-5 .infrastructure .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #323232;
+	font-size: 40px;
+	font-weight: 900;
+	white-space: nowrap;
+	margin: 15px;
+}
+
+.right.menu.box .containerx .pos-5 .infrastructure .beta {
+	width: 40px;
+	height: 9px;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: -20px -34px;
+	background-size: 1700% auto;
+	position: absolute;
+	margin: -16px 0 0 15px;
+}
+
+.right.menu.box .containerx .pos-5 .warehouse {
+	background-color: #424242;
+	opacity: .9;
+	height: calc(100% - 20px);
+	width: 90px;
+	margin: 8px 0;
+	cursor:pointer;
+	box-shadow:2px 2px 8px #00000047;
+}
+.right.menu.box .containerx .pos-5 .warehouse:hover{
+	filter: contrast(1.2);
+}
+.right.menu.box .containerx .pos-5 .warehouse .icon {
+	width: 50px;
+	height: 50px;
+	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
+	background-position: 86px -472px;
+	background-size: auto 1700%;
+	position: absolute;
+	margin: 42px 0 0 22px;
+	opacity: .5;
+}
+
+.right.menu.box .containerx .pos-5 .warehouse .text {
+	font-family: 'Noto Serif SC', serif;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 900;
+	white-space: nowrap;
+	margin: 15px;
+}
+
