@@ -24,7 +24,7 @@ function team(){
 }
   
 function tips(){   
-    window.open ('tips.html', 'newwindow', 'height=600px, width=400px, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no')    
+    window.open ('.../me/tips.html', 'newwindow', 'height=600px, width=400px, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no')    
 }
 
 
