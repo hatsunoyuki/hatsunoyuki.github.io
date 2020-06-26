@@ -485,6 +485,11 @@
 	border-image: -moz-linear-gradient(#05a7dc, #454545, #05a7dc) 1;
 	border-image: linear-gradient(#05a7dc, #454545, #05a7dc) 1;
 	cursor:pointer;
+	box-shadow: 1px 1px 4px #00000047;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .left:hover {
+	filter: brightness(0.9);
 }
 
 .right.menu.box .containerx .pos-4 .gamble .bottom .left .icon {
@@ -511,6 +516,11 @@
 	width: 50%;
 	height: 100%;
 	cursor: pointer;
+	box-shadow: 1px 1px 4px #00000047;
+}
+
+.right.menu.box .containerx .pos-4 .gamble .bottom .right:hover {
+	filter: brightness(0.9);
 }
 
 .right.menu.box .containerx .pos-4 .gamble .bottom .right .icon {
@@ -643,6 +653,10 @@
 	margin: 8px 0;
 	cursor:pointer;
 	box-shadow:2px 2px 8px #00000047;
+}
+
+.right.menu.box .containerx .pos-5 .warehouse:hover{
+	filter: contrast(1.2);
 }
 
 .right.menu.box .containerx .pos-5 .warehouse:hover{
