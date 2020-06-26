@@ -175,7 +175,8 @@
 }
 
 .right.menu.box .containerx .pos-2 .intellect {
-	background-color: #fdfdfb;
+	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/26/NrcemT.png") no-repeat fixed bottom right;
 	opacity: .9;
 	height: calc(100% - 20px);
 	width: 800px;
@@ -291,6 +292,7 @@
 
 .right.menu.box .containerx .pos-3 .team {
 	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/26/NrcemT.png") no-repeat fixed bottom right;
 	opacity: .9;
 	height: calc(100% - 20px);
 	width: 280px;
@@ -299,7 +301,7 @@
 }
 
 .right.menu.box .containerx .pos-3 .team:hover {
-	background-color: #ebeceb;
+	filter: brightness(0.9);
 }
 
 .right.menu.box .containerx .pos-3 .team .icon {
@@ -325,6 +327,7 @@
 
 .right.menu.box .containerx .pos-3 .member {
 	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/26/NrcemT.png") no-repeat fixed bottom right;
 	opacity: .9;
 	height: calc(100% - 20px);
 	width: 280px;
@@ -333,7 +336,7 @@
 }
 
 .right.menu.box .containerx .pos-3 .member:hover {
-	background-color: #ebeceb;
+	filter: brightness(0.9);
 }
 
 .right.menu.box .containerx .pos-3 .member .icon {
@@ -536,6 +539,7 @@
 
 .right.menu.box .containerx .pos-5 .task {
 	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/26/NrcemT.png") no-repeat fixed bottom right;
 	opacity: .9;
 	height: calc(100% - 20px);
 	width: 240px;
@@ -544,7 +548,7 @@
 }
 
 .right.menu.box .containerx .pos-5 .task:hover {
-	background-color: #ebeceb;
+	filter: brightness(0.9);
 }
 
 
@@ -581,6 +585,7 @@
 
 .right.menu.box .containerx .pos-5 .infrastructure {
 	background-color: #fff;
+	background:url("https://s1.ax1x.com/2020/06/26/NrcemT.png") no-repeat fixed bottom right;
 	opacity: .9;
 	height: calc(100% - 20px);
 	width: 240px;
@@ -589,7 +594,7 @@
 }
 
 .right.menu.box .containerx .pos-5 .infrastructure:hover {
-	background-color: #ebeceb;
+	filter: brightness(0.9);
 }
 
 
