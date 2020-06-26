@@ -108,7 +108,6 @@ var Arknights = {
 			$('.right.menu.box').css('margin-right', -80 * _w);
 			$('.left.menu.box').css('transform', 'perspective(30em) rotateY(10deg) scale(0.9) translateY(calc((-80vh + 460px * ' + _w + ') * 0.5))');
 			$('.right.menu.box').css('transform', 'perspective(30em) rotateY(-10deg) scale(0.9) translateY(calc((-30vh + 460px * ' + _w + ') * 0.5))');
-			$('.themenu').css('transform', 'perspective(30em) rotateY(-10deg) scale(0.9) translateY(calc((-30vh + 460px * ' + _w + ') * 0.5))');
 		} else {
 			$('.char.perspective.box').css('width', window.innerHeight / 0.8);
 			$('#level-box-adapter, #left-mune-adapter, #right-mune-adapter, #right-mune-popup-adapter').css('transform', 'scale(' + _h + ')');
