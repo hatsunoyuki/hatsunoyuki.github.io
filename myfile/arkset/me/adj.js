@@ -15,8 +15,12 @@ $(document).ready(function(){/* 随机立绘 */
 });
 
 
-function mal(){
+function shop(){
     alert('您就是氪金母猪嗷');
+}
+
+function team(){
+    alert('👴还没想好放啥');
 }
 
 
