@@ -46,7 +46,7 @@
 
 .right.menu.box {
 	float:left;
-	transform: perspective(30em) rotateY(-10deg) scale(0.5);
+	transform: perspective(30em) rotateY(-10deg) scale(0.45);
 	transition: all 1s ease;
 	transform-style: preserve-3d;
 	backface-visibility: hidden;
