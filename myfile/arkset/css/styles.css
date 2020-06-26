@@ -557,16 +557,17 @@
 	justify-content: flex-start;
 }
 
-.right.menu.box .containerx .pos-3 .task {
+.right.menu.box .containerx .pos-5 .task {
 	background-color: #fff;
 	background:url("https://s1.ax1x.com/2020/06/24/Nw1vxf.png");
-	background-position: -450px -985px;
+	background-position: -480px -985px;
 	background-size: auto 1700%;
-	
+	margin: 42px 0 0 22px;
+
 	opacity: .9;
 	height: calc(100% - 20px);
-	width: 280px;
-	margin: 8px 0 0 40px;
+	width: 240px;
+	margin: 8px 0 0 80px;
 	cursor:pointer;
 	box-shadow:2px 2px 8px #00000047;
 }
