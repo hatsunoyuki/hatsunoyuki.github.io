@@ -36,4 +36,5 @@ $(".topic").before("<br>");
 $("#keep_status").append("<div class='titleme'><p>★★★★★★</p></div>");
 
 
-
+var url = document.URL;
+$("#refresh").attr("href", url);
