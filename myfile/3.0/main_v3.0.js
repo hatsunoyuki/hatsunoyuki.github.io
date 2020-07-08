@@ -1,4 +1,4 @@
-$("#contentdiv").prepend('<script src="https://hatsunoyuki.fun/myfile/sl_emotion_v1.5.js"></script><script id="myhk" src="https://home.lmih.cn/player/js/player.js" key="158362123779" m="1"></script>')
+$("#contentdiv").prepend('<script src="https://hatsunoyuki.fun/myfile/sl_emotion_v1.5.js"></script><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="158361722577" m="1"></script>')
 
 
     function browserRedirect() {  
