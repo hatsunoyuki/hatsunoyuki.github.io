@@ -1,4 +1,4 @@
-document.title='H岛模拟测试demo';
+document.title='连接中断';
 
 var url = document.URL;
 $("#refresh").attr("href", url);
