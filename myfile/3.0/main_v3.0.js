@@ -14,7 +14,7 @@
       
     // alert("手机浏览！");  
       
-    document.write('<script type="text/javascript" charset="utf-8" src="https://hatsunoyuki.github.io/myfile/main_v2.6beta.js"><\/script>');  
+    document.write('<script type="text/javascript" charset="utf-8" src="https://hatsunoyuki.github.io/myfile/3.0/main_v2.6beta.js"><\/script>');  
     } else {  
       
     // alert("PC浏览！");  

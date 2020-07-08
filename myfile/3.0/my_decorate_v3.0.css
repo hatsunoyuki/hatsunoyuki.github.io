@@ -1,0 +1,344 @@
+/* ..
+                                                              . ':
+                         ND  .                              7   $  =\
+                       /O7     $                         +7,,/..   ~\
+                       (   ?\   I7.   .;::'''^^'''-=\; D+I,:/:: ..Z=|
+                       $ :8..\,,:I++\N.     (         :~?=,8::  :..DN
+                       ~:N....\,,:+++8     (              '  :::::.,/
+                        8..    7?+N         \                   $:,D/
+                        D...:::~\                                 +D|
+                          ?.,::$.                              ~N/:  .
+                            ND :Y- :                  ? :I7/O::       \
+                          /. $   'N:.\ Z-=$=:7.I~~~? /$/ :N         7  \
+                         /   ?.   =8 :\,  D,8$$ON.:/ /?+     .      :~ O\
+                         /  =. \    8  D?\   =/$?N.  D/     ::      I,:~+O
+                         =  .   .,:/$N=N+ D + :/+??,I7?DD+. =Z        N:=\
+                       /$ :7.,N =78=OMD~  \ O ) :IMD==D=ZD??N         I $\
+                        D?  8I?~ZMNOOOOO$:  ) 7:  :OZZZO8  +/   :     I:,N\
+                      ?      $+  OZZZZZ+          OZZ.OO8  ?? :     ?8:  |
+                       I=    8   OZ$.ZZ=          7OZ.ZZ8  /~+  /D   7 7  |
+                      . \. :+=O  OOZZZZ            8ZZZO  D?/.       +:,N~\
+                      /  NI +I7DN   ~        .           =+N=:       /   :\
+                     :  :   :Z?:.            /\        .I8D$+     :D?    +|
+                     /    O:  \?~.                   ~:=+I OZD    z?~     7|
+                    7-----I?:=::  =D=:,~,===---=====/,:, OZ$.+??=-?=--===~~M 
+
+*/
+
+p.mid8 {
+	line-height:110%;
+	}
+	
+body{
+	background-attachment:fixed;
+	background-image:url("https://s1.ax1x.com/2020/07/08/UVqHfK.jpg") !important;
+	background-size:25%;
+	}
+	
+.title {
+	margin-bottom: 10px;
+	background-color: #ffebeb;
+	padding: 5px;
+	color:#ff8080;
+	text-align: center;
+	}
+	
+.authorinfo{
+	color:#ff8080;
+	}
+	
+a{
+	color:#ff8080;
+	}
+	
+a:hover{
+	color:#76b2df;
+	}
+	
+.text-success{
+	color:#76b2e3;
+	}
+
+#look_cookie{
+	color:#ff8080;
+	}
+	
+#duqian{
+	color:#ff8080;
+	}
+
+#qiandao{
+	color:#ff8080;
+	}
+	
+.bg-info{
+	background-color:#ffebeb;
+	}
+
+#replybtt {
+    color:#FFFFFF;
+	background-color:#ff8080;
+	border-color:#ff8080;
+	}
+
+#replybtt:focus, #replybtt:hover, #replybtt:active {
+    color:#FFFFFF;
+	background-color:#ffc5c5;
+	border-color:#ffb6b6;
+	}
+
+.am-btn-success{
+    color:#FFFFFF;
+	background-color:#ff8080;
+	border-color:#ff8080;
+	}
+	
+.am-btn-success.am-active, .am-btn-success:focus, .am-btn-success:hover, .am-btn-success:active, .am-dropdown.am-active .am-btn-success.am-dropdown-toggle {
+    color:#FFFFFF;
+	background-color:#ffc5c5;
+	border-color:#ffb6b6;
+	}
+
+.btn-success{
+	color:#FFFFFF;
+	background-color:#ff8080;
+	border-color:#ff8080;
+	}
+
+.btn-success:focus, .btn-success:hover, .btn-success:active, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover{
+	color:#FFFFFF;
+	background-color:#ffc5c5;
+	border-color:#ffb6b6;
+	}
+	
+hr{
+	background:#ff8080;
+	}
+	
+i{
+	color:#ff8080;
+	}
+	
+.text-danger{
+	color: #76b2df;
+	}
+	
+.text-info{
+	color:#ff8080;
+	}
+	
+.text-info:hover{
+	color:#76b2df;
+	}
+	
+.view_topic_main.title_box{
+	background-color:#ffebeb
+	}
+	
+	
+.title01{
+	font-size:20px; 
+	color:#ff8080; 
+	font-weight:bold; 
+	line-height:110%;
+	}
+	
+.alert-danger {
+    background-color: #ffd0d07a;
+	font-size: 12px;
+}
+
+.alert-info {
+    color: #398fb9;
+    background-color: #b9e1ff70;
+    border-color: #bdd3e3;
+    font-size: 12px;
+}
+	
+.alert-success {
+    color: #937b7b;
+    background-color: #ffd0d07a;
+    border-color: #ebccd1;
+}
+
+.emotion{max-width:40px;max-height:40px;}
+
+
+
+.mybutton{
+	background:transparent;
+	border:0;
+	padding:0;
+	cursor:pointer;
+	outline:none;
+}
+#myfuncbox{
+	z-index:999;
+	position:fixed;
+	right:0px;
+	bottom: 5%;
+	line-height:120%;
+	cursor:pointer;
+	text-align:center;
+	font-size:18px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(255, 155, 155, 0.26);
+    background: #fffefa;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+    background: #ffb6b6;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    height: auto;
+}
+
+.am-topbar-collapse.am-collapse {
+    background-image: url(https://s1.ax1x.com/2020/05/14/YDSmz8.jpg) !important;
+    background-size: 25%;
+    background-attachment: fixed;
+}
+
+
+.am-btn-success {
+    border-radius: 4px;
+    color: #fff;
+    background-color: #ff8080;
+    border-color: #ff8080;
+}
+
+.am-btn-success:hover{
+	background-color:#ffc5c5;
+	border-color:#ffb6b6;
+}
+
+.am-topbar {
+    border-width: 0 0 2px;
+    border-style: dashed;
+    border-color: #ffb6b6;
+    background: transparent;
+}
+
+@media only screen and (max-width: 640px){
+	.replycontent img {
+		max-width: 300px;
+	}
+}
+
+@media only screen and (min-width: 641px){
+	.replycontent img {
+		max-width: 500px;
+	}
+}
+
+#file{
+    display:none;
+	}
+
+.am-tabs-bd {
+    border: 1px dashed #ff8080;
+    border-top: none;
+}
+.am-nav-tabs {
+    border-bottom: 1px dashed #ff8080;
+}
+
+.glyphicon {
+    color: white;
+    text-shadow: 0px 0px 4px #dd514c;
+	}
+	
+.glyphicon:hover {
+    text-shadow: 0px 0px 4px #337ab7;
+	}
+
+.banner2{
+	display:none;
+}
+
+
+#myhkTips{
+    visibility: hidden !important;
+}
+
+@media only screen and (min-width: 641px){
+	/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #ff8080;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #ff8080, 0 0 5px #ff8080;
+  opacity: 1.0;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: #ff8080;
+  border-left-color: #ff8080;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+          animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+}
+
