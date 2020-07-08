@@ -1,5 +1,9 @@
 document.title='H岛模拟测试demo';
 
+var url = document.URL;
+$("#refresh").attr("href", url);
+
+
 $(document).ready(function(){/* 随机立绘 */
           var bodyBgs = [];
         bodyBgs[0] = "https://s1.ax1x.com/2020/06/24/Nw1zM8.md.png";
@@ -36,5 +40,3 @@ $(".topic").before("<br>");
 $("#keep_status").append("<div class='titleme'><p>★★★★★★</p></div>");
 
 
-var url = document.URL;
-$("#refresh").attr("href", url);
