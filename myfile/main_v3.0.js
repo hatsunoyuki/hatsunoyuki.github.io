@@ -18,7 +18,7 @@
     } else {  
       
     // alert("PC浏览！");  
-    document.write('<script type="text/javascript" charset="utf-8" src="test01.js"><\/script>');  
+    document.write('<script type="text/javascript" charset="utf-8" src="https://hatsunoyuki.fun/myfile/arkset/arkui.js"><\/script>');  
     }  
     }  
     browserRedirect();  
