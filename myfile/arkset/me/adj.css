@@ -81,6 +81,10 @@ a:hover,.text-info:hover,#look_cookie:hover,#duqian:hover,#qiandao:hover,#noimag
 	cursor:pointer;
 }
 
+a:focus {
+    outline: none;
+}
+
 .authorinfo{
 	color:#000;
 	text-shadow: 0 0 2px #fff;

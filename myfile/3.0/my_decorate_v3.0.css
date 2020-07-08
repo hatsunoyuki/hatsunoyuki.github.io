@@ -60,6 +60,10 @@ a:hover{
 	color:#76b2df;
 	}
 	
+a:focus {
+    outline: none;
+}
+	
 .text-success{
 	color:#76b2e3;
 	}
