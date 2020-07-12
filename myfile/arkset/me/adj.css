@@ -26,6 +26,10 @@ body:before {/* 移动端适配 */
 	padding:5px 20px 10px 20px;
 }
 
+.replybody {
+    color: #300000;
+}
+
 .title{
 	background-color:transparent;
 	color:transparent;
