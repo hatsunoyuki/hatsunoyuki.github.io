@@ -1,4 +1,4 @@
-document.title='连接中断';
+document.title='#2';
 
 var url = document.URL;
 $("#refresh").attr("href", url);
