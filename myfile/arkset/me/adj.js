@@ -1,5 +1,9 @@
 document.title='#2';
 
+document.addEventListener("visibilitychange", function(){
+    document.title = document.hidden ? "连接中断" : "#2";
+});
+
 var url = document.URL;
 $("#refresh").attr("href", url);
 
