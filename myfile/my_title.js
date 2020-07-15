@@ -535,9 +535,6 @@ function YukiRandomLink() {
     );
 }
 
-// 刷新页面
-var url = document.URL;
-$("#refresh").attr("href", url);
 
 // 刷新时显示进度条
 (function(){
