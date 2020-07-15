@@ -18,7 +18,6 @@ $(document).ready(function(){/* 随机立绘 */
          $(".themenu").css("background-image",bg);
 });
 
-
 window.onload=function(){ 
 setInterval(function(){  
 var date=new Date();  
@@ -28,8 +27,12 @@ var da=date.getDate(); //获取当前日
 var h=date.getHours(); //获取小时  
 var m=date.getMinutes(); //获取分钟  
 var d=document.getElementById('time');  
-d.innerHTML=''+year+'/'+mon+'/'+da+' '+h+':'+m; },1000) }
+d.innerHTML=''+year+'/'+t(mon)+'/'+t(da)+' '+t(h)+':'+t(m); },1000) }
 
+function t(s){//日期两位数
+    return s<10?"0"+s:s;
+    }
+	
 
 function shop(){
     alert('您就是氪金母猪嗷');
