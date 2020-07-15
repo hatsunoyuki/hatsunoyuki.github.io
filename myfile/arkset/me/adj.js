@@ -4,10 +4,6 @@ document.addEventListener("visibilitychange", function(){
     document.title = document.hidden ? "连接中断" : "#2";
 });
 
-var url = document.URL;
-$("#refresh").attr("href", url);
-
-
 $(document).ready(function(){/* 随机立绘 */
           var bodyBgs = [];
         bodyBgs[0] = "https://s1.ax1x.com/2020/06/24/Nw1zM8.md.png";
