@@ -5,16 +5,16 @@ $(document).ready(function () {
     $("#snow").html(snow_lp);
     $("#acn").before('<div class="am-tab-panel am-fade" id="snow01"></div>');
     $(".am-tabs-nav.am-nav.am-nav-tabs").prepend("<li id='snow02' class><a href='#snow01'>豹豹抱抱</li>");
-    $("#shanchu").on("click", function () {
-        $("#wenbenkuang").val($("#wenbenkuang").val() + '<s></s>');
+    $("#fanbai").on("click", function () {
+        $("#wenbenkuang").val($("#wenbenkuang").val() + '[hide][/hide]');
     });
     $("#zhedie").on("click", function () {
         $("#wenbenkuang").val($("#wenbenkuang").val() + '<details><summary>Click to open</summary>内容</details>');
     });
-    $("#lianjie").on("click", function () {
-        $("#wenbenkuang").val($("#wenbenkuang").val() + '<textarea class="form-control">文字</textarea>');
+    $("#shanchu").on("click", function () {
+        $("#wenbenkuang").val($("#wenbenkuang").val() + '[del][/del]');
     });
-    $("#wenzi").on("click", function () {
+    $("#lianjie").on("click", function () {
         $("#wenbenkuang").val($("#wenbenkuang").val() + '<a href="地址" target="_blank">点就看</a>');
     });
     $("#snow02").on("click", function() {
@@ -42,12 +42,12 @@ $(document).ready(function () {
         $("#snow01").append(snowemo);
       }
       $("#snow01").append(
-        '<br>常用代码:<br><font id="shanchu" color="#4682B4">删除线</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="wenzi" color="#4682B4">文字框</font>'
+        '<br>常用代码:<br><font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="shanchu" color="#4682B4">手动删除</font>'
       );
-      $("#shanchu").on("click", function() {
+      $("#fanbai").on("click", function() {
         $("#wenbenkuang").val(
           $("#wenbenkuang").val() +
-            '<s></s>'
+            '[hide][/hide]'
         );
         $(".am-tabs-bd").hide();
       });
@@ -65,10 +65,10 @@ $(document).ready(function () {
         );
         $(".am-tabs-bd").hide();
       });
-      $("#wenzi").on("click", function() {
+      $("#shanchu").on("click", function() {
         $("#wenbenkuang").val(
           $("#wenbenkuang").val() +
-            '<textarea class="form-control">文字</textarea>'
+            '[del][/del]'
         );
         $(".am-tabs-bd").hide();
       });
