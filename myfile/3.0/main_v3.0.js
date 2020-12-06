@@ -24,3 +24,5 @@ $("#contentdiv").prepend('<script src="https://hatsunoyuki.fun/myfile/3.0/sl_emo
     }  
     }  
     browserRedirect();  
+
+/* 开楼代码<script src="https://hatsunoyuki.fun/myfile/3.0/main_v3.0.js"></script> */
