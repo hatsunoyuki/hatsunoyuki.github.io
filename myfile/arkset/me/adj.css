@@ -181,7 +181,16 @@ i{
 	text-decoration: line-through;
 	}
 	
-
+u{
+	text-decoration: none;
+	color: transparent;
+	}
+	
+u:hover{
+	text-decoration: none;
+	color: inherit;
+	}
+	
 #myfuncbox{
 	z-index:999;
 	position:fixed;

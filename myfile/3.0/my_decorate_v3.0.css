@@ -129,6 +129,16 @@ i{
 	text-decoration: line-through;
 	}
 	
+u{
+	text-decoration: none;
+	color: transparent;
+	}
+
+u:hover{
+	text-decoration: none;
+	color: inherit;
+	}
+	
 .text-danger{
 	color: #76b2df;
 	}
