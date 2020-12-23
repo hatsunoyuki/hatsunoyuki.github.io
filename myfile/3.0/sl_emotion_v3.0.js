@@ -12,7 +12,7 @@ $(document).ready(function () {
         $("#wenbenkuang").val($("#wenbenkuang").val() + '<details><summary>Click to open</summary>内容</details>');
     });
     $("#shanchu").on("click", function () {
-        $("#wenbenkuang").val($("#wenbenkuang").val() + '[del][/del]');
+        $("#wenbenkuang").val($("#wenbenkuang").val() + '<i></i>');
     });
     $("#lianjie").on("click", function () {
         $("#wenbenkuang").val($("#wenbenkuang").val() + '<a href="地址" target="_blank">点就看</a>');
@@ -42,7 +42,7 @@ $(document).ready(function () {
         $("#snow01").append(snowemo);
       }
       $("#snow01").append(
-        '<br>常用代码:<br><font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="shanchu" color="#4682B4">手动删除</font>'
+        '<br>常用代码:<br><font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="shanchu" color="#4682B4">删除线·伪</font>'
       );
       $("#fanbai").on("click", function() {
         $("#wenbenkuang").val(
@@ -68,7 +68,7 @@ $(document).ready(function () {
       $("#shanchu").on("click", function() {
         $("#wenbenkuang").val(
           $("#wenbenkuang").val() +
-            '[del][/del]'
+            '<i></i>'
         );
         $(".am-tabs-bd").hide();
       });

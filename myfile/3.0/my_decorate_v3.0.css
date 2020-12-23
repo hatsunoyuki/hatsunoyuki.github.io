@@ -125,7 +125,9 @@ hr{
 	}
 	
 i{
-	color:#ff8080;
+	color:grey;
+	font-style:normal; 
+	text-decoration: line-through;
 	}
 	
 .text-danger{
