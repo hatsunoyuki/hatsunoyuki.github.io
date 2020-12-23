@@ -184,13 +184,15 @@ i{
 .replybody u{
 	text-decoration: none;
 	color: transparent;
-	font-size: 1px;
+	font-size: 10px;
+	line-height: 50%;
 	}
 
 .replybody u:hover{
 	text-decoration: none;
 	color: inherit;
-	font-size:inherit;
+	font-size: inherit;
+	line-height: inherit;
 	}
 		
 #myfuncbox{
