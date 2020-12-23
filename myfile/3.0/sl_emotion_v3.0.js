@@ -54,7 +54,7 @@ $(document).ready(function () {
       $("#zhedie").on("click", function() {
         $("#wenbenkuang").val(
           $("#wenbenkuang").val() +
-            '<u></u>'
+            '▸<u></u>'
         );
         $(".am-tabs-bd").hide();
       });

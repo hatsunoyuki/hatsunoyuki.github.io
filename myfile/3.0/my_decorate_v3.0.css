@@ -142,6 +142,16 @@ i{
 	font-size: inherit;
 	line-height: inherit;
 	}
+	
+.replybody u img{
+	max-width:100px;
+	opacity:0;
+	}
+	
+.replybody u img:hover{
+	max-width:inherit;
+	opacity:1;
+	}
 		
 .text-danger{
 	color: #76b2df;
