@@ -181,16 +181,18 @@ i{
 	text-decoration: line-through;
 	}
 	
-u{
+.replybody u{
 	text-decoration: none;
 	color: transparent;
+	font-size: 1px;
 	}
-	
-u:hover{
+
+.replybody u:hover{
 	text-decoration: none;
 	color: inherit;
+	font-size:inherit;
 	}
-	
+		
 #myfuncbox{
 	z-index:999;
 	position:fixed;
