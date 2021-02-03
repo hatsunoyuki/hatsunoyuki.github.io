@@ -131,6 +131,7 @@ hr{
 	background-color:#4848487a;
 	border: 1px solid #fff;
 	border-radius:0;
+	cursor:default;
 }
 
 .am-nav-tabs > li.am-active > a, .am-nav-tabs > li.am-active > a:focus, .am-nav-tabs > li.am-active > a:hover {/* 表情包、板块首页底色 */
