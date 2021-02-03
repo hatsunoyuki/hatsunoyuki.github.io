@@ -1729,7 +1729,7 @@ window.__require = function e(t, n, o) {
         }, t.prototype.createLizi = function (e, t) {
           for (var n = 0; n < 10; n++) {
             var o = r.default.Spawn("star", cc.find("Canvas/upEffectParent"));
-            o.scale = .1 * t, o.position = s.default.convetOtherNodeSpaceAR(e, cc.find("Canvas/upEffectParent")), 1 == t && (o.color = (new cc.Color).fromHEX("ffc049"));
+            o.scale = .1 * t, o.position = s.default.convetOtherNodeSpaceAR(e, cc.find("Canvas/upEffectParent")), 1 == t && (o.color = (new cc.Color).fromHEX("ADADAD"));
             var c = new Array;
             c.push(-360, 360), o.runAction(cc.sequence(cc.spawn(cc.jumpBy(.5, s.default.RandomInteger(-100, 100), s.default.RandomInteger(-200, -100), s.default.RandomInteger(0, 50), 1), cc.rotateTo(.5, s.default.RandomIndexFromArr(c)), cc.fadeOut(.5)), cc.delayTime(.1)))
           }
@@ -3467,7 +3467,7 @@ window.__require = function e(t, n, o) {
           && wuDi) { // 无敌模式
             a.default.GameUpdateCtrl = !1, a.default.playerTouch = !1;
             for (var n = 0; n < cc.find("Canvas/fruitNode").children.length; n++) cc.find("Canvas/fruitNode").children[n].removeComponent(cc.PhysicsCircleCollider), cc.find("Canvas/fruitNode").children[n].removeComponent(cc.RigidBody);
-            this.node.color = cc.Color.RED, cc.tween(this.node).to(.3, {
+            this.node.color = cc.Color.BLUE, cc.tween(this.node).to(.3, {
               opacity: 0
             }).to(.3, {
               opacity: 255
