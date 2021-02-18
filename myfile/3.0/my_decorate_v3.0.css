@@ -124,7 +124,8 @@ hr{
 	background:#ff8080;
 	}
 	
-i{
+	
+.reply_list i{
 	font-style:normal; 
 	text-decoration: line-through;
 	}
