@@ -1,7 +1,11 @@
-.view_topic_main,.h.word .view_topic_main {
-    background-attachment:fixed;
+.h {
+	background-attachment:fixed;
 	background-image:url(https://s1.ax1x.com/2020/05/14/YDSmz8.jpg) !important;
 	background-size:25%;
+}
+
+.view_topic_main,.h.word .view_topic_main {
+    background:transparent;
 }
 
 .view_topic_main .title_box,.h.word .view_topic_main .title_box {
@@ -19,8 +23,9 @@
 }
 
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab,.view_topic_main .reply_main_box .btn_group .main,.view_topic_main .reply_main_box .upload_box .upload_btn {
-	background: #ffcccc;
+	background: #ffcccc73;
 	border: 1px solid #ffabab;
+	border-style: dashed;
 }
 
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab.active,.view_topic_main .reply_main_box .btn_group .main.active,.view_topic_main .reply_main_box .upload_box .upload_btn.active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
