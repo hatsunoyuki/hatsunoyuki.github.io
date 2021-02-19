@@ -1,6 +1,6 @@
 $("#contentdiv").prepend('<script src="https://hatsunoyuki.fun/myfile/3.0/sl_emotion_v3.0.js"></script><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="158361722577" m="1"></script>')
 
-$(".po_topic_box > div.content_html_box").prepend('<script async src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><style>.view_topic_main {background: #ffebed;}.view_topic_main .title_box {background: #ffcece;color: #fff;text-shadow: 0px 0px 5px #ff0000;    border-radius: 10px;}.h {background: #fff;}.view_topic_main .title_box .right_btn_group .collect_btn {color: #fff;}.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab,.view_topic_main .reply_main_box .btn_group .main,.view_topic_main .reply_main_box .upload_box .upload_btn {background: #ffcccc;border: 1px solid #ffabab;}</style>')
+$(".po_topic_box > div.content_html_box").prepend('<script async src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><link rel="stylesheet" href="https://hatsunoyuki.fun/myfile/3.0/my_decorate_py.css">')
 
 
     function browserRedirect() {  
