@@ -1,4 +1,4 @@
-$("#contentdiv").prepend('<script src="https://hatsunoyuki.fun/myfile/3.0/sl_emotion_v3.0.js"></script><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="158361722577" m="1"></script>')
+$("#contentdiv").prepend('<script src="https://hatsunoyuki.fun/myfile/3.0/sl_emotion_v3.0.js"></script><script src="https://myhkw.cn/player/js/player.js" id="myhk" key="158361722577" m="1"></script><style>.h.word .view_topic_main {    margin-top: 10px;    background: #ffebed;}.h.word .view_topic_main .title_box {    background: #ffcece;    color: #fff;    text-shadow: 0px 0px 5px #ff0000;    border-radius: 10px;}.h.word {    background: #ffffff;}.view_topic_main .title_box .right_btn_group .collect_btn {    color: #ffffff;}</style>')
 
 
     function browserRedirect() {  
