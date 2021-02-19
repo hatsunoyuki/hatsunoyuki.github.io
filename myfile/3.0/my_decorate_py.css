@@ -1,5 +1,7 @@
 .view_topic_main,.h.word .view_topic_main {
-    background: #ffebed;
+    background-attachment:fixed;
+	background-image:url(https://s1.ax1x.com/2020/05/14/YDSmz8.jpg) !important;
+	background-size:25%;
 }
 
 .view_topic_main .title_box,.h.word .view_topic_main .title_box {
@@ -21,7 +23,7 @@
 	border: 1px solid #ffabab;
 }
 
-.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover{
+.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:active,.view_topic_main .reply_main_box .btn_group .main:active,.view_topic_main .reply_main_box .upload_box .upload_btn:active{
 	background-color:#ffb8b8;
 }
 
