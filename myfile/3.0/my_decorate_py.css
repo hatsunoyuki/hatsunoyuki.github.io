@@ -1,4 +1,4 @@
-.view_topic_main {
+.view_topic_main,.h.word .view_topic_main {
     background: #ffebed;
 }
 
@@ -20,3 +20,23 @@
 	background: #ffcccc;
 	border: 1px solid #ffabab;
 }
+
+.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover{
+	background-color:#ffb8b8;
+}
+
+@media only screen and (max-width: 640px){
+	.content_main_box img {
+		max-width: 300px;
+	}
+}
+
+@media only screen and (min-width: 641px){
+	.content_main_box img {
+		max-width: 500px;
+	}
+}
+
+.emotion{
+	max-width:40px;max-height:40px;
+	}
