@@ -23,8 +23,8 @@
 	border: 1px solid #ffabab;
 }
 
-.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:active,.view_topic_main .reply_main_box .btn_group .main:active,.view_topic_main .reply_main_box .upload_box .upload_btn:active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
-	background-color:#ffb8b8;
+.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab.active,.view_topic_main .reply_main_box .btn_group .main.active,.view_topic_main .reply_main_box .upload_box .upload_btn.active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
+	background-color:#ffb8b8 !important;
 }
 
 @media only screen and (max-width: 640px){
@@ -44,11 +44,11 @@
 	}
 	
 a{
-	color:#ff8080;
+	color:#ff8080 !important;
 	}
 	
 a:hover{
-	color:#76b2df;
+	color:#76b2df !important;
 	}
 	
 a:focus {
