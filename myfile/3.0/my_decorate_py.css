@@ -23,22 +23,34 @@
 	border: 1px solid #ffabab;
 }
 
-.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:active,.view_topic_main .reply_main_box .btn_group .main:active,.view_topic_main .reply_main_box .upload_box .upload_btn:active{
+.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:active,.view_topic_main .reply_main_box .btn_group .main:active,.view_topic_main .reply_main_box .upload_box .upload_btn:active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
 	background-color:#ffb8b8;
 }
 
 @media only screen and (max-width: 640px){
-	.content_main_box img {
+	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
 		max-width: 300px;
 	}
 }
 
 @media only screen and (min-width: 641px){
-	.content_main_box img {
+	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
 		max-width: 500px;
 	}
 }
 
-.emotion{
+.view_topic_main .content_main_box .po_topic_box .content_html_box img.emotion, .view_topic_main .content_main_box .reply_box .content_html_box img.emotion{
 	max-width:40px;max-height:40px;
 	}
+	
+a{
+	color:#ff8080;
+	}
+	
+a:hover{
+	color:#76b2df;
+	}
+	
+a:focus {
+    outline: none;
+}
