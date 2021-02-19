@@ -5,7 +5,7 @@
 }
 
 .view_topic_main,.h.word .view_topic_main {
-    background:transparent;
+    background:#ffffff7a;
 }
 
 .view_topic_main .title_box,.h.word .view_topic_main .title_box {
@@ -30,6 +30,20 @@
 
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab.active,.view_topic_main .reply_main_box .btn_group .main.active,.view_topic_main .reply_main_box .upload_box .upload_btn.active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
 	background-color:#ffb8b8 !important;
+}
+
+.view_topic_main .content_main_box .po_topic_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .po_topic_box .title_line_box .left a.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left a.reward,.view_topic_main .content_main_box .po_topic_box .change_title_color_btn, .view_topic_main .content_main_box .reply_box .change_title_color_btn {
+    color: #ff7582b5;
+}
+
+.navbar-light {
+    background: #fff6!important;
+    border-bottom: 1px solid #ff8080;
+}
+
+label.skinbtn,.nav_button a.nav-link {
+    background: #ff8080;
+    border: 1px solid #ffabab;
 }
 
 @media only screen and (max-width: 640px){
