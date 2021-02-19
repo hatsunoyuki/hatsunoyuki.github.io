@@ -52,7 +52,7 @@ a:hover{
 	}
 	
 a:focus {
-    outline: none;
+    outline: none !important;
 }
 
 .view_topic_main .content_main_box .po_topic_box .footer, .view_topic_main .content_main_box .reply_box .footer{
@@ -61,3 +61,10 @@ a:focus {
 .view_topic_main .content_main_box .po_topic_box, .view_topic_main .content_main_box .reply_box {
     border-bottom: 1px solid #ff8080 !important;
 }
+
+.titleme{
+	font-size:20px; 
+	color:#ff8080; 
+	font-weight:bold; 
+	line-height:110%;
+	}
