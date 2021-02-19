@@ -37,13 +37,17 @@
 }
 
 .navbar-light {
-    background: #fff6!important;
+    background: #ffffffd6!important;
     border-bottom: 1px solid #ff8080;
 }
 
 label.skinbtn,.nav_button a.nav-link {
     background: #ff8080;
     border: 1px solid #ffabab;
+}
+
+label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_button a.nav-link.active {
+    background: #ffb8b8 !important;
 }
 
 @media only screen and (max-width: 640px){
