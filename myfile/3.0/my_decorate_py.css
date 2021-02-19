@@ -54,3 +54,10 @@ a:hover{
 a:focus {
     outline: none;
 }
+
+.view_topic_main .content_main_box .po_topic_box .footer, .view_topic_main .content_main_box .reply_box .footer{
+	color: #ff8080 !important;
+}
+.view_topic_main .content_main_box .po_topic_box, .view_topic_main .content_main_box .reply_box {
+    border-bottom: 1px solid #ff8080 !important;
+}
