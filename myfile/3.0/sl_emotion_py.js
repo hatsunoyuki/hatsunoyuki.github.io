@@ -33,12 +33,12 @@ $(document).ready(function () {
         $("#snow01").append(snowemo);
       }
       $("#snow01").append(
-        '常用代码:<font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="shanchu" color="#4682B4">删除线</font>'
+        '常用代码:<font id="shanchu" color="#4682B4">删除线</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="fanbai" color="#4682B4">反白</font>'
       );
-      $("#fanbai").on("click", function() {
+      $("#shanchu").on("click", function() {
         $("textarea:last()").val(
           $("textarea:last()").val() +
-            '[hide][/hide]'
+            '<s></s>'
         );
         $(".am-tabs-bd").hide();
       });
@@ -56,10 +56,10 @@ $(document).ready(function () {
         );
         $(".am-tabs-bd").hide();
       });
-      $("#shanchu").on("click", function() {
+      $("#fanbai").on("click", function() {
         $("textarea:last()").val(
           $("textarea:last()").val() +
-            '<s></s>'
+            '[hide][/hide]'
         );
         
       });
