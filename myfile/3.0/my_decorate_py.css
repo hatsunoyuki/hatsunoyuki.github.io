@@ -22,6 +22,10 @@
     color: #ffffff;
 }
 
+.view_topic_main .foot_btn_group .hbtn {
+	display: none !important;
+}	
+	
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab,.view_topic_main .reply_main_box .btn_group .main,.view_topic_main .reply_main_box .upload_box .upload_btn {
 	background: #ffcccc73;
 	border: 1px solid #ffabab;
