@@ -85,6 +85,26 @@ a:focus {
     outline: none !important;
 }
 
+.hd-menu-pc .scroll-btn a .icon {
+    color: #ff8080;
+}
+
+.hd-menu-pc .scroll-btn a span.box {
+    color: #ff8080;
+}
+
+.hd-menu-pc .s-btn:hover {
+    background-color: #ff8080;
+}
+
+.hd-menu-mobile .s-btn {
+    background-color: #ff8080;
+}
+
+.hd-menu-mobile a span.box {
+    color: #ff8080;
+}
+
 .view_topic_main .content_main_box .po_topic_box .footer, .view_topic_main .content_main_box .reply_box .footer{
 	color: #ff8080 !important;
 }
