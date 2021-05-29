@@ -45,8 +45,7 @@ i{
     padding-left: 40px;
 	margin-right: auto;
 	margin-left: auto;
-	float: left;
-	width: 75%;	
+	width: 100%;	
 	height: inherit;
 }
 .content {
@@ -100,23 +99,7 @@ i{
 	background   : transparent;
 	}
 	
-.side {
-	float: left;
-	width: 25%;
-	background-color:transparent;
-	height: inherit;    
-	padding: 4px;	
-}
 
-
-.sideinner{
-	margin:0;
-	padding:15px;
-	height:100%;
-	background:#fff9f1cc;
-	border: 1.5px dashed #ffe4c4;
-	border-radius: 25px;
-}
 .header {
     padding: 10px;
 	height:60px; 
