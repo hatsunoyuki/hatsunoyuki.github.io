@@ -124,11 +124,17 @@ a:focus {
     border-color: #ff8080!important;
 }
 	
-summary::marker {
-	font-size:0px; 
+summary.sumtop::marker {
+	font-size:0px !important; 
+	color:transparent !important;
 	}
 	
-summary{
+-webkit-summary.sumtop::marker {
+	font-size:0px !important; 
+	color:transparent !important;
+	}
+	
+summary.sumtop{
 	cursor:default;
 }
 	
