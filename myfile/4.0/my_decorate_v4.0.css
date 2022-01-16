@@ -118,6 +118,11 @@ a:focus {
 	font-weight:bold; 
 	line-height:110%;
 	}
+
+.navbar-toggler {
+    background: #ff8080!important;
+    border-color: #ff8080!important;
+}
 	
 summary::marker {
 	font-size:0px; 

@@ -198,6 +198,8 @@ hr{
 
 .emotion{max-width:40px;max-height:40px;}
 
+#shimeji{display:none;}
+
 .refont{font-size:16px;line-height:30px;}
 
 .mybutton{
@@ -207,11 +209,6 @@ hr{
 	cursor:pointer;
 	outline:none;
 }
-
-#shimeji {
-	display:none;
-}
-
 #myfuncbox{
 	z-index:999;
 	position:fixed;
@@ -222,11 +219,6 @@ hr{
 	text-align:center;
 	font-size:18px;
 }
-
-summary::marker {
-	font-size:0px; 
-	}
-	
 
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgba(255, 155, 155, 0.26);
@@ -268,10 +260,6 @@ body::-webkit-scrollbar {
     background: transparent;
 }
 
-.navbar-toggler {
-    background: #ff8080!important;
-    border-color: #ff8080!important;
-}
 
 @media only screen and (max-width: 640px){
 	.replycontent img {
@@ -385,5 +373,5 @@ body::-webkit-scrollbar {
   100% { transform: rotate(360deg); }
 }
 
-
+}
 
