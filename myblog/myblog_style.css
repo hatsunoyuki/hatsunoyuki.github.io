@@ -99,6 +99,9 @@ i{
 	background   : transparent;
 	}
 	
+summary::marker {
+	display: none; 
+	}
 
 .header {
     padding: 10px;

@@ -260,6 +260,11 @@ body::-webkit-scrollbar {
     background: transparent;
 }
 
+.navbar-toggler {
+    background: #ff8080!important;
+    border-color: #ff8080!important;
+}
+
 @media only screen and (max-width: 640px){
 	.replycontent img {
 		max-width: 300px;
