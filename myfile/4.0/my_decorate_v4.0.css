@@ -142,10 +142,12 @@ a:focus {
     border-color: #ff8080!important;
 }
 	
-summary.sumtop::marker {
-	font-size:0px;
-	-webkit-appearance: none;
-	color:transparent;
+summary.sumtop {
+	list-style: none;
+	}
+	
+summary.sumtop::-webkit-details-marker {
+    display: none;
 	}
 	
 summary:focus{
