@@ -143,9 +143,9 @@ a:focus {
 }
 	
 summary.sumtop::marker {
-	font-size:0px !important;
-	-webkit-text-size-adjust:0% !important;
-	color:transparent !important;
+	font-size:0px;
+	-webkit-appearance: none;
+	color:transparent;
 	}
 	
 summary:focus{
