@@ -15,9 +15,6 @@
     border-radius: 10px;
 }
 
-.h {
-    background: #ffffff;
-}
 .view_topic_main .title_box .right_btn_group .collect_btn {
     color: #ffffff;
 }
@@ -159,3 +156,6 @@ summary.sumtop{
 	cursor:default;
 }
 	
+#fbai{
+	color:#eefaee;
+}
