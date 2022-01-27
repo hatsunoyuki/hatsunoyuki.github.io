@@ -163,9 +163,13 @@ summary.sumtop{
 .avatar_box {
     display: none;
 }	/* 隐藏头像 */
+
+.text-success {
+    display: none;
+}	/* 隐藏删除的楼层 */
 	
 #fbai{
-	color:#fffefc;
+	color:transparent;
 }
 
 /* O66ghXNxg */
