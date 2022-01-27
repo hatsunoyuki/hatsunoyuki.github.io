@@ -77,14 +77,19 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 }
 
 .view_topic_main .content_main_box .po_topic_box .content_html_box img.emotion, .view_topic_main .content_main_box .reply_box .content_html_box img.emotion{
-	max-width:40px;max-height:40px;
+	max-width:40px;
+	max-height:40px;
 	}
 	
-a{
-	color:#ff8080 !important;
+.content_main_box a, .reply_box a, a.mr-1{
+	color:#ff8080;
 	}
 	
-a:hover{
+a.mr-1.disabled {
+    color: #333;
+}
+
+.content_main_box a:hover{
 	color:#76b2df !important;
 	}
 	
@@ -92,24 +97,12 @@ a:focus {
     outline: none !important;
 }
 
-.hd-menu-pc .scroll-btn a .icon {
+.hd-menu-pc .scroll-btn a .icon, .hd-menu-pc .scroll-btn a span.box, .hd-menu-mobile a span.box {
     color: #ff8080;
 }
 
-.hd-menu-pc .scroll-btn a span.box {
-    color: #ff8080;
-}
-
-.hd-menu-pc .s-btn:hover {
+.hd-menu-pc .s-btn:hover,.hd-menu-mobile .s-btn {
     background-color: #ff8080;
-}
-
-.hd-menu-mobile .s-btn {
-    background-color: #ff8080;
-}
-
-.hd-menu-mobile a span.box {
-    color: #ff8080;
 }
 
 .view_topic_main .content_main_box .po_topic_box .footer, .view_topic_main .content_main_box .reply_box .footer{
