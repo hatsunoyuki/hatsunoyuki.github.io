@@ -6,7 +6,7 @@ $(document).ready(function () {
     $(".emotion_tab:last()").after('<div id="snow01"></div>');
     $(".emotion_tab:last()").after("<li id='snow02' class='emotion_tab'>豹豹抱抱</li>");
     $("#fanbai").on("click", function () {
-        $("textarea:last()").val($("textarea:last()").val() + '<p id="fbai"></p>');
+        $("textarea:last()").val($("textarea:last()").val() + '<font id="fbai"></font>');
     });
     $("#zhedie").on("click", function () {
         $("textarea:last()").val($("textarea:last()").val() + '<details><summary>Click to open</summary>内容</details>');
@@ -59,7 +59,7 @@ $(document).ready(function () {
       $("#fanbai").on("click", function() {
         $("textarea:last()").val(
           $("textarea:last()").val() +
-            '<p id="fbai"></p>'
+            '<font id="fbai"></font>'
         );
         
       });
