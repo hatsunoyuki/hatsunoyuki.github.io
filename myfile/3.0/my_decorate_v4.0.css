@@ -19,6 +19,10 @@
     color: #ffffff;
 }
 
+.h {
+    background: #ffffff;
+}
+
 @media only screen and (max-width: 640px){
 	.view_topic_main .foot_btn_group .hbtn {
 	position: absolute;
@@ -155,6 +159,10 @@ summary:focus{
 summary.sumtop{
 	cursor:default;
 }
+	
+.avatar_box {
+    display: none;
+}	/* 隐藏头像 */
 	
 #fbai{
 	color:#eefaee;

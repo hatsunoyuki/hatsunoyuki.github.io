@@ -59,7 +59,7 @@ $(document).ready(function () {
       $("#fanbai").on("click", function() {
         $("textarea:last()").val(
           $("textarea:last()").val() +
-            '[hide][/hide]'
+            '<p id="fbai"></p>'
         );
         
       });
