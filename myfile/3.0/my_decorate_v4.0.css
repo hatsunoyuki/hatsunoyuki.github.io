@@ -79,11 +79,12 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 .view_topic_main .content_main_box .po_topic_box .content_html_box img.emotion, .view_topic_main .content_main_box .reply_box .content_html_box img.emotion{
 	max-width:40px;
 	max-height:40px;
-	}
+	mix-blend-mode: multiply;
+}
 	
 .content_main_box a, .reply_box a, a.mr-1{
 	color:#ff8080;
-	}
+}
 	
 a.mr-1.disabled {
     color: #333;
@@ -157,10 +158,6 @@ summary.sumtop{
     display: none;
 }	/* 隐藏头像 */
 
-.text-success {
-    display: none;
-}	/* 隐藏删除的楼层 */
-	
 #fbai{
 	color:transparent;
 }
