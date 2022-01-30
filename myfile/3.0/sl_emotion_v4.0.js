@@ -1,7 +1,9 @@
+$(".text-success").parents("div.reply_box").css("display","none");/* 隐藏已删除的楼层 */
+
 var snow_lp = "";
 
 $(document).ready(function () {
-	
+		
 	$("div.title").before("<div align='center' id='snow'></div>");
     $("#snow").html(snow_lp);
     $(".emotion_tab:last()").after('<div id="snow01"></div>');

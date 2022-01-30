@@ -158,6 +158,10 @@ summary.sumtop{
     display: none;
 }	/* 隐藏头像 */
 
+.text-success {
+    display: none;
+}	/* 隐藏删除的楼层 */
+	
 #fbai{
 	color:transparent;
 }
