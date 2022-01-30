@@ -1,4 +1,6 @@
-$(".text-success").parents("div.reply_box").css("display","none");/* 隐藏已删除的楼层 */
+window.onload=function(){
+	$(".text-success").parents("div.reply_box").css("display","none");/* 隐藏已删除的楼层 */
+}
 
 var snow_lp = "";
 
