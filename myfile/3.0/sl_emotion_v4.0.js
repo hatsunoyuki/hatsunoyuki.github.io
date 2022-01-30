@@ -68,7 +68,6 @@ $(document).ready(function () {
         );
         $(".am-tabs-bd").hide();
       });        
-      });
       $("#wenben").on("click", function() {
         $("textarea:last()").val(
           $("textarea:last()").val() +
