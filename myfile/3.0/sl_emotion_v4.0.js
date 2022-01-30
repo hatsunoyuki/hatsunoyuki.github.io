@@ -29,7 +29,7 @@ $(document).ready(function () {
 	
     $("#snow02").on("click", function() {
       if($("#snow01").is(":hidden")){
-       $("#snow01").show();
+      $("#snow01").show();
       $("#snow01").empty();/* 只出现一次 */
 
       $("#snow01").append(
