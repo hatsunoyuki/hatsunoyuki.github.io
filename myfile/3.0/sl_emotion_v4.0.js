@@ -59,7 +59,6 @@ $(document).ready(function () {
       
 });
 
-$(".foot_btn_group >.left").prepend('<input type="button" class="nickname" value="嘘……">');
 
 var replaceArry = [
 		[/芙芙/gi, '可莉'],
@@ -78,7 +77,7 @@ var replaceArry = [
         [/薇薇/gi, '温温'],
 	];
 
-$(".nickname").click(
+$(".title").click(
 		function swapname() {
 		var numTerms = replaceArry.length;
 		var txtWalker = document.createTreeWalker(
