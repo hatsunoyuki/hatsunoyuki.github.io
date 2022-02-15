@@ -1,1 +1,0 @@
-$(".po_topic_box > div.content_html_box").prepend('<script src="https://hatsunoyuki.fun/myfile/3.0/test/ywj.js"></script><link rel="stylesheet" href="https://hatsunoyuki.fun/myfile/3.0/test/2022.css"><div id="box2022"></div>');
