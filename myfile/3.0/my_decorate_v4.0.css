@@ -2,6 +2,10 @@ small font {
     cursor: pointer;
 }
 
+.content_html_box a:hover{
+	text-decoration: none;
+}
+
 .h {
 	background-attachment:fixed;
 	background-image:url(https://s1.ax1x.com/2020/05/14/YDSmz8.jpg) !important;
@@ -96,7 +100,7 @@ a.mr-1.disabled {
 
 .content_main_box a:hover{
 	color:#76b2df !important;
-	}
+}
 	
 a:focus {
     outline: none !important;
