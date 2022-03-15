@@ -1,12 +1,21 @@
 body{	
 	margin:0;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#6a9d8e;
     font-size: 16px;
-    line-height: 1.42857143;
-    color: #333;
-	background-attachment:fixed;
-	background-image:url("https://s1.ax1x.com/2020/05/14/YBzQ4x.jpg");
-	background-size:17.5%;	
+    line-height: 1.6;
+}
+
+body:after{
+	content: "";
+	background:url("../myblog/imgfile/banner_bg.png") repeat-y 0px;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -9;
 }
 
 .title {
@@ -20,25 +29,20 @@ body{
 
 a{
 	text-decoration:none;
-	color:#ff8080;
+	color:#6a9d8e;
 	}
 	
 a:hover{
-	color:#76b2df;
+	color:#c9bc9c;
 	text-decoration:none;
 	}
 	
 	
 hr{
 	border:none;
-	border-top:2px dotted #ff8080;
+	border-top:2px dotted #c1e1dc;
 	height:2px;
 	}
-	
-i{
-	color:#ff8080;
-	}
-	
 
 .container {
     padding-right: 40px;
@@ -61,13 +65,34 @@ i{
 
 .main {
 	padding-right: 5px;
-	border: 0;
-	
+	border: 0;	
+	overflow-y: hidden;
 }
 .content:main {
     padding-right: 0px;
 }
 
+.left_box{
+	background:url("../myblog/imgfile/kl_q.png") no-repeat 0px;
+	background-size: 75%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 250px;
+    pointer-events: none;
+}
+
+.right_box{
+	background:url("../myblog/imgfile/abd_q.png") no-repeat 0px;
+	background-size: 75%;
+    position: fixed;
+    bottom: 0;
+    right: -50px;
+    width: 200px;
+    height: 250px;
+    pointer-events: none;
+}
 
 .mybox{
 	width:100px;
@@ -90,7 +115,7 @@ i{
 	/*滚动条里面小方块*/
 	border-radius: 10px;
 	box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.1);
-	background   : #ffb5b5;
+	background   : #c9bc9c;
 	}
 .scrollbar::-webkit-scrollbar-track {
 	/*滚动条里面轨道*/
@@ -101,57 +126,52 @@ i{
 	
 
 .header {
-    padding: 10px;
+    padding: 0px;
 	height:60px; 
 	position:absolute; 
 	top:0;
 	width: 100%;
-	background-color:#fff9f1cc;
-	border-bottom: 1.5px dashed #ffe4c4;
-	border-left: 1px dashed #ffe4c4;
-	border-right: 1px dashed #ffe4c4;
-	border-radius: 0 0 25px 25px;
+	background:url("../myblog/imgfile/banner_bg.png") repeat-y 0px;
+	border-bottom: double #c9bc9c;
 }
+
 .footer {
+	background:url("../myblog/imgfile/banner_bg.png") repeat-y 0px;
+	position:fixed;
 	width:100%; 
 	height:30px; 
-	border:1.5px dashed #ffe4c4;
-	border-radius:25px;
+	border-top:double #c9bc9c;
 	bottom:0; 	
-	background-color:#fff9f1cc;
 	overflow: hidden;
 }
 
-li{
-list-style-image:url(imgfile/dot.png);
+.banner {
+	width:100%;
+	height:100%;
+	background:url(../myblog/imgfile/font.png) no-repeat center;
+	background-size:auto 75%;
+	z-index:999;
 }
-ul{
-	list-style:none;
-	margin:0 0 0 15px;
-	padding:0px;
-}
-.banner{
-	width:35%;
-	}
-	
 
-.title01{
-	font-size:2.5vw; 
-	color:white; 
-	line-height:40px; 
-	text-shadow: red 0px 0px 3px;
-	}
+.starline {
+	width:100%;
+	height:25px;
+	background:url(../myblog/imgfile/banner_mon.png) no-repeat center;
+	background-size:auto 75%;
+	z-index:999;
+}
+
+.bannermon{
+	width:75%;
+}
 	
 @media screen and (max-width: 768px) {
-    .title01{
-		font-size:30px; 
-	}
-	.banner {
-        display:none;
-    }
 	body{
 		background-size:25%;	
 	}
+	.bannermon{
+		width:150%;
+	}	
 	.side {
         width:100%;
     }
@@ -163,18 +183,11 @@ ul{
 	}
 }
 	
-.mypara1{
+.botpara{
 	text-align:center;
 	line-height: 180%;
-	color: #ff8080;
-	font-family:pudding;
+	color: #c9bc9c;
 	font-size: 16px;
-}
-.mycolor1{
-	color:#CD96CD;
-}
-.mycolor2{
-	color:#ff8080;
 }
 
 #myfuncbox{
@@ -185,12 +198,6 @@ ul{
 	line-height:150%;
 	cursor:pointer;
 	text-align:center;
-	}
-.myicon{
-	font-size:25px;
-}
-.myform{
-	width:50%;
 }
 
 
@@ -198,29 +205,11 @@ textarea::-webkit-scrollbar{
 	background:transparent;
 }
 
-
-@font-face {
-    font-family: "pudding";
-    src: url("fontfile/pudding.eot"); /* IE9 */
-    src: url("fontfile/pudding.eot?#iefix")
-    format("embedded-opentype"),  /* IE6-IE8 */
-    url("fontfile/pudding.woff") format("woff"), /* chrome firefox */
-    url("fontfile/pudding.ttf") format("truetype"), /* chrome firefox opera Safari Android IOS 4.2+ */
-    url("fontfile/pudding.svg#pudding") format("svg");  /* IOS 4.2- */
-    font-style: normal;
-	font-weight: normal;
+.randomstar{
+	z-index:-1;
 }
 
-@font-face {
-    font-family: "FZMWFont";
-    src: url("fontfile/FZMWFont.eot"); /* IE9 */
-    src: url("fontfile/FZMWFont.eot?#iefix")
-    format("embedded-opentype"),  /* IE6-IE8 */
-    url("fontfile/FZMWFont.woff") format("woff"), /* chrome firefox */
-    url("fontfile/FZMWFont.ttf") format("truetype"), /* chrome firefox opera Safari Android IOS 4.2+ */
-    url("fontfile/FZMWFont.svg#FZMWFont") format("svg");  /* IOS 4.2- */
-    font-style: normal;
-	font-weight: normal;
+.guidetitle{
+	color:#6a9d8e;
+	font-weight:bold;
 }
-
-
