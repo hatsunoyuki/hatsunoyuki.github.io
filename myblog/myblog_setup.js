@@ -1,25 +1,20 @@
 document.addEventListener('visibilitychange',function(){
     if( document.visibilityState == 'hidden' ){
         normal_title = document.title;
-        document.title = '猫猫增殖中(～￣▽￣)～ ';
+        document.title = 'NekosPlayingAround(～￣▽￣)～ ';
     }else{
-        document.title = '奇怪的猫猫增加了!Σ(っ°Д°;)っ';
+        document.title = 'MoreNekosComing!Σ(っ°Д°;)っ';
         setTimeout(function(){
             document.title = normal_title;
         }, 1500)
     }
 });
 
-var scrWidth = window.screen.width;  /* 标题icon */
-var headHTML = document.getElementsByTagName('head')[0].innerHTML;
-            headHTML    += '<link rel="shortcut icon" href="myblog/imgfile/chiicon.png" type="image/x-icon">';
-
-
 $(document).ready(function() {/* 鼠标样式 */
-	$('body').hover(
+	$('*').hover(
         function() {
             $(this).css({
-                cursor: "url(myblog/imgfile/cursor.ani),auto"
+                cursor: "url(myblog/imgfile/cursor_ak.png),auto"
                     })
                 },
        )
@@ -37,7 +32,7 @@ function init(){// 函数：初始化函数
 			y = getNum(1500); 
 			w = getNum(15)+10;
 		// 追加到div容器中。
-		$("<img/>",{"class":"randomstar","id":"img"+i,"src":"file:///C:/Users/26890/Documents/GitHub/hatsunoyuki.github.io/hatsunoyuki.github.io/myblog/imgfile/star.png"}).appendTo(".main").css({"top":y,"left":x,"position":"absolute","width":w,"height":w});
+		$("<img/>",{"class":"randomstar","id":"img"+i,"src":"https://hatsunoyuki.fun/myblog/imgfile/star.png"}).appendTo(".main").css({"top":y,"left":x,"position":"absolute","width":w,"height":w});
 	}
 };
 // 函数：主动创建符合要求的整数，并返回。
@@ -52,3 +47,27 @@ function getNum(limit){
 	return parseInt(num);
 };
 
+// Time
+$(document).ready(function(){ 
+	setInterval(function(){  
+	var date=new Date();  
+	var year=date.getFullYear(); //获取当前年份  
+	var mon=date.getMonth()+1; //获取当前月份  
+	var da=date.getDate(); //获取当前日  
+	var h=date.getHours(); //获取小时  
+	var m=date.getMinutes(); //获取分钟 
+	var day = date.getDay(); //当前系统时间中的星期值
+	var weeks = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+	var week = weeks[day]; 
+	var d=document.getElementById('timeText');
+	var ymd=document.getElementById('dateText');
+	d.innerHTML=''+t(h)+':'+t(m); 
+	ymd.innerHTML=''+year+'.'+t(mon)+'.'+t(da)+' '+t(week); 
+	})
+});
+
+function t(s){//日期两位数
+    return s<10?"0"+s:s;
+};
+
+	
