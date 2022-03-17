@@ -4,6 +4,7 @@ body{
 	color:#6a9d8e;
     font-size: 16px;
     line-height: 1.6;
+	zoom:1;
 }
 
 body:after{
@@ -242,7 +243,6 @@ hr{
 	position: absolute;
 	width:100%;
 	font-family:"Microsoft Yahei Light";
-    line-height: 220%;
     color: #e9f3f0;
     font-size: 2px;
 	text-shadow: 0 0 20px rgb(0 0 0 / 35%);
@@ -253,7 +253,7 @@ hr{
     animation: delayedFadeIn 2s;
     margin: 0;
     color: #fff;
-	font-family:"Microsoft Yahei Light";
+	font-family:"Microsoft Yahei Light" !important;
     font-size: 36px;
     font-weight: inherit;
     text-shadow: 0 0 10px rgb(121 160 150);
@@ -262,14 +262,14 @@ hr{
 
 #copyright{
 	position: absolute;
-	padding-left:10px;
+	padding:4px 10px;
 	margin:0;
 }
 
 #dateText{
 	position: absolute;
 	right:0;
-	padding-right:10px;
+	padding:4px 10px;
 	margin:0;
 }
 
