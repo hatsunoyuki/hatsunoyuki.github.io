@@ -14,7 +14,7 @@ body:after{
 	left: 0;
 	bottom: 0;
 	right: 0;
-	position: absolute;
+	position:fixed;
 	z-index: -9;
 }
 
@@ -52,8 +52,9 @@ hr{
 	width: 100%;	
 	height: inherit;
 }
+
 .content {
-	position:absolute; 
+	position:fixed; 
 	top:60px; 
 	bottom:0px;
 	margin:0;
@@ -97,7 +98,7 @@ hr{
 .header {
     padding: 0px;
 	height:60px; 
-	position:absolute; 
+	position:fixed; 
 	top:0;
 	width: 100%;
 	background:url("../myblog/imgfile/banner_bg.png") repeat-y 0px;
@@ -238,6 +239,8 @@ hr{
 }
 	
 .botpara{
+	position: absolute;
+	width:100%;
 	font-family:"Microsoft Yahei Light";
     line-height: 220%;
     color: #e9f3f0;
@@ -258,13 +261,16 @@ hr{
 }
 
 #copyright{
-	float:left;
+	position: absolute;
 	padding-left:10px;
+	margin:0;
 }
 
 #dateText{
-	float:right;
+	position: absolute;
+	right:0;
 	padding-right:10px;
+	margin:0;
 }
 
 #intro{

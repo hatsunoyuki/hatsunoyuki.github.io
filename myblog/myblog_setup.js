@@ -62,7 +62,7 @@ $(document).ready(function(){
 	var d=document.getElementById('timeText');
 	var ymd=document.getElementById('dateText');
 	d.innerHTML=''+t(h)+':'+t(m); 
-	ymd.innerHTML=''+year+'.'+t(mon)+'.'+t(da)+' '+t(week); 
+	ymd.innerHTML=''+t(week)+' '+year+'.'+t(mon)+'.'+t(da); 
 	})
 });
 
