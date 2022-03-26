@@ -95,7 +95,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	mix-blend-mode: multiply;
 }
 	
-.content_main_box a, .reply_box a, a.mr-1{
+.content_main_box a, .reply_box a, a.mr-1, .snowindex a{
 	color:#ff8080;
 }
 	
@@ -152,11 +152,11 @@ a:focus {
 	
 summary.sumtop {
 	list-style: none;
-	}
+}
 	
 summary.sumtop::-webkit-details-marker {
     display: none;
-	}
+}
 	
 summary:focus{
 	outline:none;
@@ -178,6 +178,26 @@ summary.sumtop{
 #fbai{
 	color:transparent;
 }
+
+.snowindex{
+	margin: 10px;
+}
+
+.snowindex p{
+	line-height:80%;
+}
+
+summary.snowindex{
+	font-weight: bold;
+	color: #ff8080;
+}
+
+summary.snowindex::-webkit-details-marker {
+    display: none;
+}
+
+
+
 
 /* O66ghXNxg */
 
