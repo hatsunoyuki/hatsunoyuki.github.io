@@ -12,6 +12,11 @@ small font {
 	background-size:25%;
 }
 
+.text-center img {
+    opacity: 0;
+	pointer-events: none;
+}
+
 .view_topic_main,.h.word .view_topic_main {
     background:#ffffff7a;
 }
