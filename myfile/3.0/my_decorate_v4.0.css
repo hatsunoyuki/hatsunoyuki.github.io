@@ -179,17 +179,17 @@ summary.sumtop{
 	color:transparent;
 }
 
-.snowindex{
-	margin: 10px;
+.snowindex {
+    margin: 10px;
 }
 
 .snowindex p{
-	line-height:80%;
+	line-height:125%;
 }
 
 .snowindex summary{
 	font-weight: bold;
-	color: #ff8080;
+	color: #ffcece;
 }
 
 .snowindex summary::-webkit-details-marker {
