@@ -10,7 +10,7 @@ document.addEventListener('visibilitychange',function(){
     }
 });
 
-$(document).ready(function() {/* 鼠标样式 */
+$(document).ready(function() {//鼠标样式
 	$('*').hover(
         function() {
             $(this).css({
@@ -18,7 +18,7 @@ $(document).ready(function() {/* 鼠标样式 */
                     })
                 },
        )
-    })
+    });
 
 $(function(){
 	init();// 页面加载时开始在div上随机排布星星
@@ -70,4 +70,13 @@ function t(s){//日期两位数
     return s<10?"0"+s:s;
 };
 
-	
+function setTheme(themeName) {//主题色
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+(function () {
+    if (localStorage.getItem('theme') === 'theme-default') {
+        setTheme('theme-default');
+    }
+})();
