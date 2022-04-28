@@ -1,4 +1,4 @@
-.theme-default {
+:root {
 	--accent-color: transparent;
 	--font-color: #6a9d8e;
 	--hover-color: #c9bc9c;
@@ -314,6 +314,7 @@ a:focus{
 
 #btnintro{
 	background-color:transparent;
+	color: var(--font-color);
 	position:fixed;
 	right:10px;
 	top:3px;
