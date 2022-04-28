@@ -1,3 +1,20 @@
+:root {
+	--font-color: transparent;
+	--theme-color: #ff8080;/* 主题色粉色 */
+	--hover-color: #76b2df;/* 淡蓝色 */
+	--light-color: #ffcece;/* 极淡粉色 */
+	--medium-color: #ffabab;/* 淡粉色 */
+	--button-color: #ffcccc73;/* 透明粉色 */
+	--white-color: #fff;
+	--background: url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
+	
+	--light-theme-background:url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
+	--light-theme-font:#ff8080;
+	--dark-theme-background:url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
+	--dark-theme-font:#000;
+}
+
+
 small font {
     cursor: pointer;
 }
@@ -8,7 +25,7 @@ small font {
 
 .h {
 	background-attachment:fixed;
-	background-image:url(https://s1.ax1x.com/2020/05/14/YDSmz8.jpg) !important;
+	background-image:var(--background) !important;
 	background-size:25%;
 }
 
@@ -22,18 +39,18 @@ small font {
 }
 
 .view_topic_main .title_box,.h.word .view_topic_main .title_box {
-    background: #ffcece;
-    color: #fff;
+    background: var(--light-color);
+    color: var(--white-color);
     text-shadow: 0px 0px 5px #ff0000;
     border-radius: 10px;
 }
 
 .view_topic_main .title_box .right_btn_group .collect_btn {
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .h {
-    background: #ffffff;
+    background: var(--white-color);
 }
 
 @media only screen and (max-width: 640px){
@@ -50,8 +67,8 @@ small font {
 
 	
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab,.view_topic_main .reply_main_box .btn_group .main,.view_topic_main .reply_main_box .upload_box .upload_btn {
-	background: #ffcccc73;
-	border: 1px solid #ffabab;
+	background: var(--button-color);
+	border: 1px solid var(--medium-color);
 	border-style: dashed;
 }
 
@@ -65,12 +82,12 @@ small font {
 
 .navbar-light {
     background: #ffffffd6!important;
-    border-bottom: 1px solid #ff8080;
+    border-bottom: 1px solid var(--theme-color);
 }
 
 label.skinbtn,.nav_button a.nav-link {
-    background: #ff8080;
-    border: 1px solid #ffabab;
+    background: var(--theme-color);
+    border: 1px solid var(--medium-color);
 }
 
 label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_button a.nav-link.active {
@@ -96,7 +113,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 }
 	
 .content_main_box a, .reply_box a, a.mr-1, .snowindex a{
-	color:#ff8080;
+	color:var(--theme-color);
 }
 	
 a.mr-1.disabled {
@@ -104,7 +121,7 @@ a.mr-1.disabled {
 }
 
 .content_main_box a:hover{
-	color:#76b2df !important;
+	color:var(--hover-color) !important;
 }
 	
 a:focus {
@@ -112,25 +129,25 @@ a:focus {
 }
 
 .hd-menu-pc .scroll-btn a .icon, .hd-menu-pc .scroll-btn a span.box, .hd-menu-mobile a span.box {
-    color: #ff8080;
+    color: var(--theme-color);
 }
 
 .hd-menu-pc .s-btn:hover,.hd-menu-mobile .s-btn {
-    background-color: #ff8080;
+    background-color: var(--theme-color);
 }
 
 .view_topic_main .content_main_box .po_topic_box .footer, .view_topic_main .content_main_box .reply_box .footer{
-	color: #ff8080 !important;
+	color: var(--theme-color) !important;
 }
 .view_topic_main .content_main_box .po_topic_box, .view_topic_main .content_main_box .reply_box {
-    border-bottom: 1px solid #ff8080 !important;
+    border-bottom: 1px solid var(--theme-color) !important;
 }
 
 
 @media only screen and (max-width: 640px){
 .titleme{
 	font-size:6vw; 
-	color:#ff8080; 
+	color:var(--theme-color); 
 	font-weight:bold; 
 	line-height:110%;
 	}
@@ -139,15 +156,15 @@ a:focus {
 @media only screen and (min-width: 641px){
 .titleme{
 	font-size:40px; 
-	color:#ff8080; 
+	color:var(--theme-color); 
 	font-weight:bold; 
 	line-height:110%;
 	}
 }
 
 .navbar-toggler {
-    background: #ff8080!important;
-    border-color: #ff8080!important;
+    background: var(--theme-color)!important;
+    border-color: var(--theme-color)!important;
 }
 	
 summary.sumtop {
