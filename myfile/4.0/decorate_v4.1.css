@@ -1,5 +1,4 @@
 :root {
-	--font-color: transparent;
 	--theme-color: #ff8080;/* 主题色粉色 */
 	--hover-color: #76b2df;/* 淡蓝色 */
 	--light-color: #ffcece;/* 极淡粉色 */
@@ -8,10 +7,19 @@
 	--white-color: #fff;
 	--background: url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
 	
-	--light-theme-background:url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
-	--light-theme-font:#ff8080;
-	--dark-theme-background:url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
-	--dark-theme-font:#000;
+	--neko-theme-background:url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
+	--neko-theme-font:#ff8080;
+	--neko-theme-hover: #76b2df;
+	--neko-theme-light: #ffcece;
+	--neko-theme-medium: #ffabab;
+	--neko-theme-button: #ffcccc73;
+	
+	--tea-theme-background:url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
+	--tea-theme-font:#6a9d8e;
+	--tea-theme-hover: #c9bc9c;
+	--tea-theme-light: transparent;
+	--tea-theme-medium: #ffabab;
+	--tea-theme-button: #c9bc9c73;
 }
 
 

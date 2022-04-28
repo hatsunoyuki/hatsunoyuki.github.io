@@ -5,8 +5,14 @@ var btns = document.getElementsByClassName("theme-button");
                 var styles = getComputedStyle(ele);
                 var backvalue = styles.getPropertyValue("--"+ele.id+"-background");
                 var fontvalue= styles.getPropertyValue("--"+ele.id+"-font");
+                var hovervalue= styles.getPropertyValue("--"+ele.id+"-hover");
+                var lightvalue= styles.getPropertyValue("--"+ele.id+"-light");
+                var buttonvalue= styles.getPropertyValue("--"+ele.id+"-button");
                 document.documentElement.style.setProperty("--background",backvalue);
 				document.documentElement.style.setProperty("--theme-color",fontvalue);
+				document.documentElement.style.setProperty("--hover-color",hovervalue);
+				document.documentElement.style.setProperty("--light-color",lightvalue);
+				document.documentElement.style.setProperty("--button-color",buttonvalue);
             })
         }
 
