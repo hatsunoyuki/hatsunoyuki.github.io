@@ -85,7 +85,7 @@ small font {
 }
 
 .view_topic_main .content_main_box .po_topic_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .po_topic_box .title_line_box .left a.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left a.reward,.view_topic_main .content_main_box .po_topic_box .change_title_color_btn, .view_topic_main .content_main_box .reply_box .change_title_color_btn {
-    color: #ff7582b5;
+    color: var(--theme-color);
 }
 
 .navbar-light {
@@ -99,7 +99,7 @@ label.skinbtn,.nav_button a.nav-link {
 }
 
 label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_button a.nav-link.active {
-    background: #ffb8b8 !important;
+    background: var(--medium-color) !important;
 }
 
 @media only screen and (max-width: 640px){
