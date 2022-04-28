@@ -1,0 +1,189 @@
+small font {
+    cursor: pointer;
+}
+
+.content_html_box a:hover{
+	text-decoration: none;
+}
+
+.h {
+	background-attachment:fixed;
+	background-image:url(https://s1.ax1x.com/2020/05/14/YDSmz8.jpg) !important;
+	background-size:25%;
+}
+
+.text-center img {
+    opacity: 0;
+	pointer-events: none;
+}
+
+.view_topic_main,.h.word .view_topic_main {
+    background:#ffffff7a;
+}
+
+.view_topic_main .title_box,.h.word .view_topic_main .title_box {
+    background: #ffcece;
+    color: #fff;
+    text-shadow: 0px 0px 5px #ff0000;
+    border-radius: 10px;
+}
+
+.view_topic_main .title_box .right_btn_group .collect_btn {
+    color: #ffffff;
+}
+
+.h {
+    background: #ffffff;
+}
+
+@media only screen and (max-width: 640px){
+	.view_topic_main .foot_btn_group .hbtn {
+	position: absolute;
+    margin: 20px;
+    left: 0px;
+	}
+}
+
+.admin_bottom_div .hbtn {
+    display: none !important;
+}
+
+	
+.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab,.view_topic_main .reply_main_box .btn_group .main,.view_topic_main .reply_main_box .upload_box .upload_btn {
+	background: #ffcccc73;
+	border: 1px solid #ffabab;
+	border-style: dashed;
+}
+
+.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab.active,.view_topic_main .reply_main_box .btn_group .main.active,.view_topic_main .reply_main_box .upload_box .upload_btn.active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
+	background-color:#ffb8b8 !important;
+}
+
+.view_topic_main .content_main_box .po_topic_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .po_topic_box .title_line_box .left a.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left a.reward,.view_topic_main .content_main_box .po_topic_box .change_title_color_btn, .view_topic_main .content_main_box .reply_box .change_title_color_btn {
+    color: #ff7582b5;
+}
+
+.navbar-light {
+    background: #ffffffd6!important;
+    border-bottom: 1px solid #ff8080;
+}
+
+label.skinbtn,.nav_button a.nav-link {
+    background: #ff8080;
+    border: 1px solid #ffabab;
+}
+
+label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_button a.nav-link.active {
+    background: #ffb8b8 !important;
+}
+
+@media only screen and (max-width: 640px){
+	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
+		max-width: 300px;
+	}
+}
+
+@media only screen and (min-width: 641px){
+	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
+		max-width: 500px;
+	}
+}
+
+.view_topic_main .content_main_box .po_topic_box .content_html_box img.emotion, .view_topic_main .content_main_box .reply_box .content_html_box img.emotion{
+	max-width:40px;
+	max-height:40px;
+	mix-blend-mode: multiply;
+}
+	
+.content_main_box a, .reply_box a, a.mr-1, .snowindex a{
+	color:#ff8080;
+}
+	
+a.mr-1.disabled {
+    color: #333;
+}
+
+.content_main_box a:hover{
+	color:#76b2df !important;
+}
+	
+a:focus {
+    outline: none !important;
+}
+
+.hd-menu-pc .scroll-btn a .icon, .hd-menu-pc .scroll-btn a span.box, .hd-menu-mobile a span.box {
+    color: #ff8080;
+}
+
+.hd-menu-pc .s-btn:hover,.hd-menu-mobile .s-btn {
+    background-color: #ff8080;
+}
+
+.view_topic_main .content_main_box .po_topic_box .footer, .view_topic_main .content_main_box .reply_box .footer{
+	color: #ff8080 !important;
+}
+.view_topic_main .content_main_box .po_topic_box, .view_topic_main .content_main_box .reply_box {
+    border-bottom: 1px solid #ff8080 !important;
+}
+
+
+@media only screen and (max-width: 640px){
+.titleme{
+	font-size:6vw; 
+	color:#ff8080; 
+	font-weight:bold; 
+	line-height:110%;
+	}
+}
+	
+@media only screen and (min-width: 641px){
+.titleme{
+	font-size:40px; 
+	color:#ff8080; 
+	font-weight:bold; 
+	line-height:110%;
+	}
+}
+
+.navbar-toggler {
+    background: #ff8080!important;
+    border-color: #ff8080!important;
+}
+	
+summary.sumtop {
+	list-style: none;
+}
+	
+summary.sumtop::-webkit-details-marker {
+    display: none;
+}
+	
+summary:focus{
+	outline:none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0); 
+}/* 取消safari蓝框 */
+	
+summary.sumtop{
+	cursor:default;
+}
+	
+.avatar_box {
+    display: none;
+}	/* 隐藏头像 */
+
+.text-success {
+    display: none;
+}	/* 隐藏删除的楼层 */
+	
+#fbai{
+	color:transparent;
+}
+
+.snowindex p{
+	line-height:125%;
+}
+
+
+/* O66ghXNxg */
+
+/* ryh7foaE2 */
