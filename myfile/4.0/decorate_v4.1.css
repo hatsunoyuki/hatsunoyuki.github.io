@@ -47,10 +47,7 @@ small font {
 }
 
 .view_topic_main .title_box,.h.word .view_topic_main .title_box {
-    background: var(--light-color);
-    color: var(--white-color);
-    text-shadow: 0px 0px 5px #ff0000;
-    border-radius: 10px;
+    display:none;
 }
 
 .view_topic_main .title_box .right_btn_group .collect_btn {
