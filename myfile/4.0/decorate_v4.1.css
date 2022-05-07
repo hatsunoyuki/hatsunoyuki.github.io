@@ -4,6 +4,7 @@
 	--light-color: #ffcece;/* 极淡粉色 */
 	--medium-color: #ffabab;/* 淡粉色 */
 	--button-color: #ffcccc73;/* 透明粉色 */
+	--trans-color: #ffffff7a;
 	--white-color: #fff;
 	--background: url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
 	
@@ -13,13 +14,15 @@
 	--neko-theme-light: #ffcece;
 	--neko-theme-medium: #ffabab;
 	--neko-theme-button: #ffcccc73;
+	--neko-theme-trans: #ffffff7a;
 	
 	--tea-theme-background:url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
 	--tea-theme-font:#6a9d8e;
 	--tea-theme-hover: #c9bc9c;
 	--tea-theme-light: transparent;
-	--tea-theme-medium: #ffabab;
+	--tea-theme-medium: #999c8c;
 	--tea-theme-button: #c9bc9c73;
+	--tea-theme-trans: #ffffff17;
 }
 
 
@@ -43,7 +46,7 @@ small font {
 }
 
 .view_topic_main,.h.word .view_topic_main {
-    background:#ffffff7a;
+    background:var(--trans-color);
 }
 
 .view_topic_main .title_box,.h.word .view_topic_main .title_box {
@@ -78,7 +81,7 @@ small font {
 }
 
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab.active,.view_topic_main .reply_main_box .btn_group .main.active,.view_topic_main .reply_main_box .upload_box .upload_btn.active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
-	background-color:#ffb8b8 !important;
+	background-color:var(--theme-color); !important;
 }
 
 .view_topic_main .content_main_box .po_topic_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .po_topic_box .title_line_box .left a.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left a.reward,.view_topic_main .content_main_box .po_topic_box .change_title_color_btn, .view_topic_main .content_main_box .reply_box .change_title_color_btn {

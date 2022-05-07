@@ -8,11 +8,13 @@ var btns = document.getElementsByClassName("theme-button");
                 var hovervalue= styles.getPropertyValue("--"+ele.id+"-hover");
                 var lightvalue= styles.getPropertyValue("--"+ele.id+"-light");
                 var buttonvalue= styles.getPropertyValue("--"+ele.id+"-button");
+                var transvalue= styles.getPropertyValue("--"+ele.id+"-trans");
                 document.documentElement.style.setProperty("--background",backvalue);
 				document.documentElement.style.setProperty("--theme-color",fontvalue);
 				document.documentElement.style.setProperty("--hover-color",hovervalue);
 				document.documentElement.style.setProperty("--light-color",lightvalue);
 				document.documentElement.style.setProperty("--button-color",buttonvalue);
+				document.documentElement.style.setProperty("--trans-color",transvalue);
             })
         }
 
