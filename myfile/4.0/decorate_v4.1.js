@@ -1,3 +1,5 @@
+setInterval(showTime, 1000);
+
 var btns = document.getElementsByClassName("theme-button");
         for(var i=0;i<btns.length;i++){
             btns[i].addEventListener("click",function(e){
@@ -36,8 +38,8 @@ $(document).ready(function(){
 	var week = weeks[day]; 
 	var dateall=document.getElementById('timeText');
 	var ymd=document.getElementById('dateText');
-	dateall.innerHTML="''+t(hour)+':'+t(minute)"; 
-	ymd.innerHTML="''+t(week)+' '+t(year)+'.'+t(mon)+'.'+t(da)"; 
+	dateall.innerHTML=''+t(hour)+':'+t(minute); 
+	ymd.innerHTML=''+t(week)+' '+t(year)+'.'+t(mon)+'.'+t(da); 
 	})
 });
 
@@ -104,7 +106,7 @@ $(document).ready(function () {
 
 
 var replaceArry = [
-        [/testxx/gi, 'testyy'],
+        [/小花花/gi, '大花花'],
 	];
 
 $(".title").click(
