@@ -365,12 +365,26 @@ summary.sumtop{
 	opacity:0.5;
 }
 
+.theme-button{
+	position:absolute;
+	background:transparent;
+	border:0;
+	right:40px;
+	font-size:30px;
+	color:var(--theme-color);
+}
+
+.theme-button:hover,.theme-button:active,.theme-button:focus{
+	outline:none !important;
+	color:var(--hover-color);
+}
+
 #neko-theme{
-	
+	top:200px;
 }
 
 #tea-theme{
-	
+	top:250px;
 }
 
 /* O66ghXNxg */
