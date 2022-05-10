@@ -68,7 +68,7 @@ small font {
     display: none !important;
 }
 
-#replyTopicBox input,.link input,.form-control{
+#replyTopicBox input,.link input,textarea{
 	background-color:var(--trans-color);
 }
 	
@@ -129,7 +129,8 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 .view_topic_main .content_main_box .po_topic_box .content_html_box img.emotion, .view_topic_main .content_main_box .reply_box .content_html_box img.emotion{
 	max-width:40px;
 	max-height:40px;
-	/* mix-blend-mode: multiply; */
+	mix-blend-mode: multiply;
+    filter: saturate(1.2);
 }
 	
 .content_main_box a, .reply_box a, a.mr-1, .snowindex a{
@@ -369,7 +370,6 @@ summary.sumtop{
 	position:absolute;
 	background:transparent;
 	border:0;
-	right:40px;
 	font-size:30px;
 	color:var(--theme-color);
 }
@@ -380,11 +380,11 @@ summary.sumtop{
 }
 
 #neko-theme{
-	top:200px;
+	top:100px;
 }
 
 #tea-theme{
-	top:250px;
+	top:0;
 }
 
 /* O66ghXNxg */
