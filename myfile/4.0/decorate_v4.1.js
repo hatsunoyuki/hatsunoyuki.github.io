@@ -21,11 +21,29 @@ var btns = document.getElementsByClassName("theme-button");
 				document.documentElement.style.setProperty("--border-color",bordervalue);
             })
         }
+		
+// Time
+$(document).ready(function(){ 
+	setInterval(function(){  
+	var date=new Date();  
+	var year=date.getFullYear(); //获取当前年份  
+	var mon=date.getMonth()+1; //获取当前月份  
+	var da=date.getDate(); //获取当前日  
+	var h=date.getHours(); //获取小时  
+	var m=date.getMinutes(); //获取分钟 
+	var day = date.getDay(); //当前系统时间中的星期值
+	var weeks = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+	var week = weeks[day]; 
+	var d=document.getElementById('timeText');
+	var ymd=document.getElementById('dateText');
+	d.innerHTML=''+t(h)+':'+t(m); 
+	ymd.innerHTML=''+t(week)+' '+year+'.'+t(mon)+'.'+t(da); 
+	})
+});
 
-
-$(".po_topic_box > div.topbar").prepend('<span id="engine"><div id="timeContainer" style=""><p id="timeText"></p></div><form action="http://www.baidu.com/baidu" target="_blank"><div id="searchBar"><input type="text" id="inputSearch" name="word" size="30" placeholder="Take an order" onfocus="this.placeholder=&quot;&quot;" onblur="this.placeholder=&quot;Take an order&quot;" autocomplete="off"><input class="searchBarBtn" id="btnSearch" type="submit" value="✓"></div></form></span>');
-
-
+function t(s){//日期两位数
+    return s<10?"0"+s:s;
+};
 	
 var snowinner=document.createElement("small");
 	snowinner.innerHTML='<font id="shanchu" color="#4682B4">删除</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="wenben" color="#4682B4">文本框</font>';    

@@ -3,6 +3,10 @@ $(".po_topic_box > div.content_html_box").prepend('<script async src="https://cd
 
 /* 开楼代码<script src="https://hatsunoyuki.fun/myfile/4.0/main_v4.1.js"></script> */
 
-/* 开楼代码<script src="https://hatsunoyuki.fun/myfile/3.0/main_v3.5.0.js"></script> */
+/* 测试楼开楼代码<script src="https://hatsunoyuki.fun/myfile/3.0/main_v3.5.0.js"></script> */
 
 	
+
+
+//$(".po_topic_box > div.content_html_box").prepend('<span id="engine"><div id="timeContainer" style="	top: 115px;    padding: 10px;    text-align: center;    cursor: pointer;    transition: .25s;"><p id="timeText"></p></div><form action="http://www.baidu.com/baidu" target="_blank"><div id="searchBar"><input type="text" id="inputSearch" name="word" size="30" placeholder="Take an order" onfocus="this.placeholder=&quot;&quot;" onblur="this.placeholder=&quot;Take an order&quot;" autocomplete="off"><input class="searchBarBtn" id="btnSearch" type="submit" value="✓"></div></form></span>');
+

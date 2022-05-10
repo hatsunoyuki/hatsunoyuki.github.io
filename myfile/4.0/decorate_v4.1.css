@@ -1,13 +1,13 @@
 :root {
-	--theme-color: #ff8080;/* 主题色粉色 */
-	--hover-color: #76b2df;/* 淡蓝色 */
-	--light-color: #ffcece;/* 极淡粉色 */
-	--medium-color: #ffabab;/* 淡粉色 */
-	--button-color: #ffcccc73;/* 透明粉色 */
-	--trans-color: #ffffff7a;
+	--theme-color: #6a9d8e;
+	--hover-color: #c9bc9c;
+	--light-color: transparent;
+	--medium-color: #999c8c;
+	--button-color: #c9bc9c73;
+	--trans-color: #ffffff59;
 	--white-color: #fff;
-	--border-color: transparent;
-	--background: url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
+	--border-color: #c9bc9c;
+	--background: url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
 	
 	--neko-theme-background:url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
 	--neko-theme-font:#ff8080;
@@ -124,7 +124,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 .view_topic_main .content_main_box .po_topic_box .content_html_box img.emotion, .view_topic_main .content_main_box .reply_box .content_html_box img.emotion{
 	max-width:40px;
 	max-height:40px;
-	mix-blend-mode: multiply;
+	/* mix-blend-mode: multiply; */
 }
 	
 .content_main_box a, .reply_box a, a.mr-1, .snowindex a{
