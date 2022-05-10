@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$(".text-success").parents("div.reply_box").css("display","none");/* 隐藏已删除的楼层 */	
     $(".emotion_tab:last()").after('<div id="snow01" style="display:none"></div>');
     $(".emotion_tab:last()").after("<li id='snow02' class='emotion_tab'>豹豹抱抱</li>");
-	
+	$(".main").parents(".btn_group").css("display","none");
     $("#snow02").on("click", function() {
 		
       if($("#snow01").is(":hidden")){
