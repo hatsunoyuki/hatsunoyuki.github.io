@@ -1,3 +1,5 @@
+setInterval(showTime, 1000);
+
 var btns = document.getElementsByClassName("theme-button");
         for(var i=0;i<btns.length;i++){
             btns[i].addEventListener("click",function(e){
@@ -22,8 +24,29 @@ var btns = document.getElementsByClassName("theme-button");
             })
         }
 		
+// Time
+$(document).ready(function(){ 
+	setInterval(function(){  
+	var date=new Date();  
+	var year=date.getFullYear(); //获取当前年份  
+	var mon=date.getMonth()+1; //获取当前月份  
+	var da=date.getDate(); //获取当前日  
+	var hour=date.getHours(); //获取小时  
+	var minute=date.getMinutes(); //获取分钟 
+	var day = date.getDay(); //当前系统时间中的星期值
+	var weeks = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+	var week = weeks[day]; 
+	var dateall=document.getElementById('timeText');
+	var ymd=document.getElementById('dateText');
+	dateall.innerHTML=''+t(hour)+':'+t(minute); 
+	ymd.innerHTML=''+t(week)+' '+t(year)+'.'+t(mon)+'.'+t(da); 
+	})
+});
 
-
+function t(s){//日期两位数
+    return s<10?"0"+s:s;
+};
+	
 var snowinner=document.createElement("small");
 	snowinner.innerHTML='<font id="shanchu" color="#4682B4">删除</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="wenben" color="#4682B4">文本框</font>';    
 	
@@ -81,33 +104,9 @@ $(document).ready(function () {
     });
 });
 
-// Time
-setInterval(showTime, 1000);
-
-$(document).ready(function(){ 
-	setInterval(function(){  
-	var date=new Date();  
-	var year=date.getFullYear(); //获取当前年份  
-	var mon=date.getMonth()+1; //获取当前月份  
-	var da=date.getDate(); //获取当前日  
-	var hour=date.getHours(); //获取小时  
-	var minute=date.getMinutes(); //获取分钟 
-	var day = date.getDay(); //当前系统时间中的星期值
-	var weeks = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
-	var week = weeks[day]; 
-	var dateall=document.getElementById('timeText');
-	var ymd=document.getElementById('dateText');
-	dateall.innerHTML=''+t(hour)+':'+t(minute); 
-	ymd.innerHTML=''+t(week)+' '+t(year)+'.'+t(mon)+'.'+t(da); 
-	})
-});
-
-function t(s){//日期两位数
-    return s<10?"0"+s:s;
-};
 
 var replaceArry = [
-        [/小花花/gi, '大花花 '],
+        [/testxx/gi, 'testyy'],
 	];
 
 $(".title").click(
