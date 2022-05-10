@@ -360,13 +360,13 @@ summary.sumtop{
 	opacity:0.5;
 }
 
-.tea-theme{
+#tea-theme{
 	position:absolute;
 	top:100px;
 	right:75px;
 }
 
-.neko-theme{
+#neko-theme{
 	position:absolute;
 	top:100px;
 	right:100px;
