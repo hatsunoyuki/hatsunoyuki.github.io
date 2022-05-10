@@ -1,4 +1,6 @@
-setInterval(showTime, 1000);
+window.onload = function () {
+            setInterval(showTime, 1000);
+        }
 
 var btns = document.getElementsByClassName("theme-button");
         for(var i=0;i<btns.length;i++){
@@ -106,7 +108,7 @@ $(document).ready(function () {
 
 
 var replaceArry = [
-        [/小花花/gi, '大花花'],
+        [/小花花/gi, '大花花 '],
 	];
 
 $(".title").click(
