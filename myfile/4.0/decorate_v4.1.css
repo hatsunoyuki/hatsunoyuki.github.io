@@ -216,6 +216,157 @@ summary.sumtop{
 }
 
 
+/* 搜索栏 */
+
+#inputSearch {
+    outline: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    color: var(--hover-color);
+    background-color: transparent;
+    font-size: 14px;
+    text-align: center;
+}
+
+#inputSearch::placeholder {
+	color: #c9bc9c5e;
+}
+
+#searchBar {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(50vw + 40px);
+    max-width: 500px;
+    height: 43px;
+    border-radius: 30px;
+    color: rgba(255,255,255,.8);
+    background-color: rgba(255,255,255,.25);
+    box-shadow: rgb(176 209 200 / 55%) 0 0 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: color .25s,background-color .25s,box-shadow .25s,left .25s,opacity .25s,top .25s,width .25s;
+}
+
+#searchBar:hover {
+	background-color: rgba(255,255,255,.5);
+	width: calc(50vw + 50px);
+	max-width: 520px;
+	transition: .25s;
+}
+
+.searchBarBtn {
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+	border-color: transparent;
+    transition: .25s;
+}
+
+
+#btnSearch {
+    right: 5px;
+    color: var(--hover-color);
+	background-color:#eef5f3;
+}
+
+#btnSearch:hover {
+    color: #fff;
+	background-color:#c9bc9c5e;
+}
+
+#timeContainer {
+    position: absolute;
+    top: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: .25s;
+}
+	
+.botpara{
+	position: absolute;
+	width:100%;
+	font-family:"Microsoft Yahei Light";
+    color: #e9f3f0;
+    font-size: 12px;
+	text-shadow: 0 0 20px rgb(0 0 0 / 35%);
+}
+	
+#timeText {
+    animation: delayedFadeIn 2s;
+    margin: 0;
+    color: #fff;
+	font-family:"Microsoft Yahei Light" !important;
+    font-size: 36px;
+    font-weight: inherit;
+    text-shadow: 0 0 10px rgb(121 160 150);
+    transition: .25s;
+	user-select:none;
+}
+
+#timeText:hover {
+	transform: scale(1.2,1.2);
+}
+
+#copyright{
+	position: absolute;
+	padding:4px 10px;
+	margin:0;
+}
+
+#dateText{
+	position: absolute;
+	right:0;
+	padding:4px 10px;
+	margin:0;
+}
+
+#intro{
+	display:none;
+	position:fixed;
+	width:100%;
+	left: 50%;
+    transform: translateX(-50%);
+	transition: .25s;
+	opacity: 0;
+}
+
+#engine{
+	display:block;
+	opacity: 1;
+	transition: .25s;
+}
+
+#btnintro{
+	background-color:transparent;
+	color: var(--font-color);
+	position:fixed;
+	right:10px;
+	top:3px;
+	width:36px;
+	font-size:30px;
+	border-color: transparent;
+    transition: .25s;
+}
+
+#btnintro:hover{
+	opacity:0.5;
+}
+
+
 /* O66ghXNxg */
 
 /* ryh7foaE2 */
