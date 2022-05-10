@@ -7,6 +7,7 @@
 	--trans-color: #ffffff59;
 	--white-color: #fff;
 	--border-color: #c9bc9c;
+	--btnback-color:#6a9d8e8c;
 	--background: url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
 	
 	--neko-theme-background:url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
@@ -17,6 +18,7 @@
 	--neko-theme-button: #ffcccc73;
 	--neko-theme-trans: #ffffff7a;
 	--neko-theme-border: transparent;
+	--neko-theme-btnback: #ffb8b8;
 	
 	--tea-theme-background:url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
 	--tea-theme-font: #6a9d8e;
@@ -26,6 +28,7 @@
 	--tea-theme-button: #c9bc9c73;
 	--tea-theme-trans: #ffffff59;
 	--tea-theme-border: #c9bc9c;
+	--tea-theme-btnback: #6a9d8e8c;
 }
 
 
@@ -80,7 +83,7 @@ small font {
 }
 
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab.active,.view_topic_main .reply_main_box .btn_group .main.active,.view_topic_main .reply_main_box .upload_box .upload_btn.active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
-	background-color:var(--theme-color); !important;
+	background-color:var(--btnback-color); !important;
 }
 
 .view_topic_main .content_main_box .po_topic_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .po_topic_box .title_line_box .left a.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left .hbtn.reward, .view_topic_main .content_main_box .reply_box .title_line_box .left a.reward,.view_topic_main .content_main_box .po_topic_box .change_title_color_btn, .view_topic_main .content_main_box .reply_box .change_title_color_btn {
@@ -384,7 +387,7 @@ summary.sumtop{
 }
 
 #tea-theme{
-	top:0;
+	top:135px;
 }
 
 /* O66ghXNxg */

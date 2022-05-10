@@ -11,6 +11,7 @@ var btns = document.getElementsByClassName("theme-button");
                 var transvalue= styles.getPropertyValue("--"+ele.id+"-trans");
                 var mediumvalue= styles.getPropertyValue("--"+ele.id+"-medium");
                 var bordervalue= styles.getPropertyValue("--"+ele.id+"-border");
+                var btnbackvalue= styles.getPropertyValue("--"+ele.id+"-btnback");
                 document.documentElement.style.setProperty("--background",backvalue);
 				document.documentElement.style.setProperty("--theme-color",fontvalue);
 				document.documentElement.style.setProperty("--hover-color",hovervalue);
@@ -19,6 +20,7 @@ var btns = document.getElementsByClassName("theme-button");
 				document.documentElement.style.setProperty("--trans-color",transvalue);
 				document.documentElement.style.setProperty("--medium-color",mediumvalue);
 				document.documentElement.style.setProperty("--border-color",bordervalue);
+				document.documentElement.style.setProperty("--btnback-color",btnbackvalue);
             })
         }
 		
