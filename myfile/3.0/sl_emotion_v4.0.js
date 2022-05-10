@@ -103,3 +103,6 @@ $(".title").click(
 			document.addEventListener("scroll", swapname, true);
 		}, 3000);
 	});
+	
+    $("#floor_2504").css("display","none");
+    $("#floor_3104").css("display","none");
