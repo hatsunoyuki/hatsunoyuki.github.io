@@ -36,8 +36,8 @@ $(document).ready(function(){
 	var week = weeks[day]; 
 	var dateall=document.getElementById('timeText');
 	var ymd=document.getElementById('dateText');
-	dateall.innerHTML=''+t(hour)+':'+t(minute); 
-	ymd.innerHTML=''+t(week)+' '+t(year)+'.'+t(mon)+'.'+t(da); 
+	dateall.innerHTML="''+t(hour)+':'+t(minute)"; 
+	ymd.innerHTML="''+t(week)+' '+t(year)+'.'+t(mon)+'.'+t(da)"; 
 	})
 });
 

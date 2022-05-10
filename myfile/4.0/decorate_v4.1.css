@@ -283,7 +283,6 @@ summary.sumtop{
 }
 
 #timeContainer {
-    position: absolute;
     top: 115px;
     padding: 10px;
     text-align: center;
@@ -361,6 +360,11 @@ summary.sumtop{
 	opacity:0.5;
 }
 
+.theme-button{
+	position:absolute;
+	top:100px;
+	right:50px;
+}
 
 /* O66ghXNxg */
 
