@@ -360,10 +360,16 @@ summary.sumtop{
 	opacity:0.5;
 }
 
-.theme-button{
+.tea-theme{
 	position:absolute;
 	top:100px;
-	right:50px;
+	right:75px;
+}
+
+.neko-theme{
+	position:absolute;
+	top:100px;
+	right:100px;
 }
 
 /* O66ghXNxg */
