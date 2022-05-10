@@ -6,6 +6,7 @@
 	--button-color: #ffcccc73;/* 透明粉色 */
 	--trans-color: #ffffff7a;
 	--white-color: #fff;
+	--border-color: transparent;
 	--background: url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
 	
 	--neko-theme-background:url("https://s1.ax1x.com/2020/05/14/YDSmz8.jpg");
@@ -15,14 +16,16 @@
 	--neko-theme-medium: #ffabab;
 	--neko-theme-button: #ffcccc73;
 	--neko-theme-trans: #ffffff7a;
+	--neko-theme-border: transparent;
 	
 	--tea-theme-background:url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
-	--tea-theme-font:#6a9d8e;
+	--tea-theme-font: #6a9d8e;
 	--tea-theme-hover: #c9bc9c;
 	--tea-theme-light: transparent;
 	--tea-theme-medium: #999c8c;
 	--tea-theme-button: #c9bc9c73;
-	--tea-theme-trans: #ffffff17;
+	--tea-theme-trans: #ffffff59;
+	--tea-theme-border: #c9bc9c;
 }
 
 
@@ -59,14 +62,6 @@ small font {
 
 .h {
     background: var(--white-color);
-}
-
-@media only screen and (max-width: 640px){
-	.view_topic_main .foot_btn_group .hbtn {
-	position: absolute;
-    margin: 20px;
-    left: 0px;
-	}
 }
 
 .admin_bottom_div .hbtn {
@@ -106,12 +101,24 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
 		max-width: 300px;
 	}
+	
+	.view_topic_main .foot_btn_group .hbtn {
+	position: absolute;
+    margin: 20px;
+    left: 0px;
+	}
 }
 
 @media only screen and (min-width: 641px){
 	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
 		max-width: 500px;
 	}
+	
+	.view_topic_main,.h.word .view_topic_main {
+	border-style: solid double;
+    border-color: var(--border-color);
+    border-width: 0 3px;
+}
 }
 
 .view_topic_main .content_main_box .po_topic_box .content_html_box img.emotion, .view_topic_main .content_main_box .reply_box .content_html_box img.emotion{

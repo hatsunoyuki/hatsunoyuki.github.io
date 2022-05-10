@@ -9,12 +9,16 @@ var btns = document.getElementsByClassName("theme-button");
                 var lightvalue= styles.getPropertyValue("--"+ele.id+"-light");
                 var buttonvalue= styles.getPropertyValue("--"+ele.id+"-button");
                 var transvalue= styles.getPropertyValue("--"+ele.id+"-trans");
+                var mediumvalue= styles.getPropertyValue("--"+ele.id+"-medium");
+                var bordervalue= styles.getPropertyValue("--"+ele.id+"-border");
                 document.documentElement.style.setProperty("--background",backvalue);
 				document.documentElement.style.setProperty("--theme-color",fontvalue);
 				document.documentElement.style.setProperty("--hover-color",hovervalue);
 				document.documentElement.style.setProperty("--light-color",lightvalue);
 				document.documentElement.style.setProperty("--button-color",buttonvalue);
 				document.documentElement.style.setProperty("--trans-color",transvalue);
+				document.documentElement.style.setProperty("--medium-color",mediumvalue);
+				document.documentElement.style.setProperty("--border-color",bordervalue);
             })
         }
 
