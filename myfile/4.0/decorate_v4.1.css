@@ -68,7 +68,7 @@ small font {
     display: none !important;
 }
 
-#replyTopicBox input,.link input{
+#replyTopicBox input,.link input,.form-control{
 	background-color:var(--trans-color);
 }
 	
@@ -365,6 +365,13 @@ summary.sumtop{
 	opacity:0.5;
 }
 
+#neko-theme{
+	
+}
+
+#tea-theme{
+	
+}
 
 /* O66ghXNxg */
 
