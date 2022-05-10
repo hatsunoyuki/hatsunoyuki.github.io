@@ -25,7 +25,8 @@ var btns = document.getElementsByClassName("theme-button");
         }
 		
 // Time
-$(document).ready(function(){   
+$(document).ready(function(){ 
+	setInterval(function(){  
 	var date=new Date();  
 	var year=date.getFullYear(); //获取当前年份  
 	var mon=date.getMonth()+1; //获取当前月份  
@@ -39,6 +40,7 @@ $(document).ready(function(){
 	var ymd=document.getElementById('dateText');
 	dateall.innerHTML=''+t(hour)+':'+t(minute); 
 	ymd.innerHTML=''+t(week)+' '+t(year)+'.'+t(mon)+'.'+t(da); 
+	})
 });
 
 function t(s){//日期两位数
