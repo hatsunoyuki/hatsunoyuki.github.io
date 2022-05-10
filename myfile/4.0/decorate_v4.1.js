@@ -80,11 +80,12 @@ $(document).ready(function () {
     });
 });
 
-
 var replaceArry = [
-        [/testxx/gi, 'testyy'],
+		[/芙芙/gi, '可莉'],
+        [/茜茜/gi, '贝贝'],
+		[/微微/gi, '温温'],
 	];
-
+	
 $(".title").click(
 		function swapname() {
 		var numTerms = replaceArry.length;

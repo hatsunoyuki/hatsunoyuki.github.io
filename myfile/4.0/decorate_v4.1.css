@@ -68,11 +68,15 @@ small font {
     display: none !important;
 }
 
+#replyTopicBox input,.link input{
+	background-color:var(--trans-color);
+}
 	
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab,.view_topic_main .reply_main_box .btn_group .main,.view_topic_main .reply_main_box .upload_box .upload_btn {
 	background: var(--button-color);
 	border: 1px solid var(--medium-color);
 	border-style: dashed;
+	transition: 0.25s;
 }
 
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:hover,.view_topic_main .reply_main_box .btn_group .main:hover,.view_topic_main .reply_main_box .upload_box .upload_btn:hover,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab.active,.view_topic_main .reply_main_box .btn_group .main.active,.view_topic_main .reply_main_box .upload_box .upload_btn.active,.view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab:focus,.view_topic_main .reply_main_box .btn_group .main:focus,.view_topic_main .reply_main_box .upload_box .upload_btn:focus{
@@ -91,6 +95,7 @@ small font {
 label.skinbtn,.nav_button a.nav-link {
     background: var(--theme-color);
     border: 1px solid var(--medium-color);
+	transition: 0.25s;
 }
 
 label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_button a.nav-link.active {
