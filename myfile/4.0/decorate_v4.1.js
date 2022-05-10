@@ -29,15 +29,15 @@ $(document).ready(function(){
 	var year=date.getFullYear(); //获取当前年份  
 	var mon=date.getMonth()+1; //获取当前月份  
 	var da=date.getDate(); //获取当前日  
-	var h=date.getHours(); //获取小时  
-	var m=date.getMinutes(); //获取分钟 
+	var hour=date.getHours(); //获取小时  
+	var minute=date.getMinutes(); //获取分钟 
 	var day = date.getDay(); //当前系统时间中的星期值
 	var weeks = ["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
 	var week = weeks[day]; 
-	var d=document.getElementById('timeText');
+	var dateall=document.getElementById('timeText');
 	var ymd=document.getElementById('dateText');
-	d.innerHTML=''+t(h)+':'+t(m); 
-	ymd.innerHTML=''+t(week)+' '+year+'.'+t(mon)+'.'+t(da); 
+	dateall.innerHTML=''+t(hour)+':'+t(minute); 
+	ymd.innerHTML=''+t(week)+' '+t(year)+'.'+t(mon)+'.'+t(da); 
 	})
 });
 
