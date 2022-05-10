@@ -22,6 +22,10 @@ var btns = document.getElementsByClassName("theme-button");
             })
         }
 
+
+$(".po_topic_box > div.topbar").prepend('<span id="engine"><div id="timeContainer" style=""><p id="timeText"></p></div><form action="http://www.baidu.com/baidu" target="_blank"><div id="searchBar"><input type="text" id="inputSearch" name="word" size="30" placeholder="Take an order" onfocus="this.placeholder=&quot;&quot;" onblur="this.placeholder=&quot;Take an order&quot;" autocomplete="off"><input class="searchBarBtn" id="btnSearch" type="submit" value="✓"></div></form></span>');
+
+
 	
 var snowinner=document.createElement("small");
 	snowinner.innerHTML='<font id="shanchu" color="#4682B4">删除</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="wenben" color="#4682B4">文本框</font>';    
