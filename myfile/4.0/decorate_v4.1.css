@@ -112,6 +112,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	}
 	.theme-button{
 		left: 0px;
+		padding:0px;
 	}
 	.titleme{
 		font-size:6vw; 
