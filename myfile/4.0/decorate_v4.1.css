@@ -107,7 +107,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	border: 1px solid var(--medium-color) !important;
 }
 
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 640px){/* 手机 */
 	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
 		max-width: 300px;
 	}
@@ -118,7 +118,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 		left: 0px;
 	}
 	.theme-button{
-		left: 2px;
+		left: 0px;
 	}
 	.titleme{
 		font-size:6vw; 
@@ -128,7 +128,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	}
 }
 
-@media only screen and (min-width: 641px){
+@media only screen and (min-width: 641px){/* 电脑 */
 	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
 		max-width: 500px;
 	}
@@ -136,7 +136,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	.view_topic_main,.h.word .view_topic_main {
 		border-style: solid double;
 		border-color: var(--border-color);
-		border-width: 0 3.6px 3.6px 3.6px;
+		border-width: 0 3.6px 1.6px 3.6px;
 		border-bottom-right-radius: 25px;
 		border-bottom-left-radius: 25px;
 	}
