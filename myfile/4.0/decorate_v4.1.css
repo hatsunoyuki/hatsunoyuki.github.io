@@ -26,7 +26,7 @@
 	--tea-theme-light: transparent;
 	--tea-theme-medium: #999c8c;
 	--tea-theme-button: #c9bc9c73;
-	--tea-theme-trans: #ffffff59;
+	--tea-theme-trans: #ffffff9e;
 	--tea-theme-border: #c9bc9c;
 	--tea-theme-btnback: #6a9d8e8c;
 }
@@ -97,12 +97,13 @@ small font {
 
 label.skinbtn,.nav_button a.nav-link {
     background: var(--theme-color);
-    border: 1px solid var(--medium-color);
+    border: 1px solid var(--theme-color);
 	transition: 0.25s;
 }
 
 label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_button a.nav-link.active {
-    background: var(--medium-color) !important;
+    background: var(--btnback-color) !important;
+	border: var(--medium-color) !important;
 }
 
 @media only screen and (max-width: 640px){
@@ -111,9 +112,18 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	}
 	
 	.view_topic_main .foot_btn_group .hbtn {
-	position: absolute;
-    margin: 20px;
-    left: 0px;
+		position: absolute;
+		margin: 20px;
+		left: 0px;
+	}
+	.theme-button{
+		left: 2px;
+	}
+	.titleme{
+		font-size:6vw; 
+		color:var(--theme-color); 
+		font-weight:bold; 
+		line-height:110%;
 	}
 }
 
@@ -123,10 +133,16 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	}
 	
 	.view_topic_main,.h.word .view_topic_main {
-	border-style: solid double;
-    border-color: var(--border-color);
-    border-width: 0 3px;
-}
+		border-style: solid double;
+		border-color: var(--border-color);
+		border-width: 0 3px;
+	}
+	.titleme{
+		font-size:40px; 
+		color:var(--theme-color); 
+		font-weight:bold; 
+		line-height:110%;
+	}
 }
 
 .view_topic_main .content_main_box .po_topic_box .content_html_box img.emotion, .view_topic_main .content_main_box .reply_box .content_html_box img.emotion{
@@ -165,25 +181,6 @@ a:focus {
 }
 .view_topic_main .content_main_box .po_topic_box, .view_topic_main .content_main_box .reply_box {
     border-bottom: 1px solid var(--theme-color) !important;
-}
-
-
-@media only screen and (max-width: 640px){
-.titleme{
-	font-size:6vw; 
-	color:var(--theme-color); 
-	font-weight:bold; 
-	line-height:110%;
-	}
-}
-	
-@media only screen and (min-width: 641px){
-.titleme{
-	font-size:40px; 
-	color:var(--theme-color); 
-	font-weight:bold; 
-	line-height:110%;
-	}
 }
 
 .navbar-toggler {
