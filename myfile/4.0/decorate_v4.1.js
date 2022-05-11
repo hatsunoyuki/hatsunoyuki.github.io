@@ -24,6 +24,34 @@ var btns = document.getElementsByClassName("theme-button");
             })
         }
 		
+$(function(){
+	init();// 页面加载时开始在div上随机排布星星
+});
+
+function init(){// 函数：初始化函数
+	for(var i=1;i<=25;i++){// 页面图片的总数
+		// 通过getNum函数获取图片xy轴的坐标。
+		var windowidth = document.body.clientWidth;
+		var windowheight = document.body.clientHeight;
+			x = getNum(windowidth)-20; 
+			y = getNum(windowheight)-20; 
+			w = getNum(15)+10;
+		// 追加到div容器中。
+		$("<img/>",{"class":"randomstar","id":"img"+i,"src":"https://pic.imgdb.cn/item/623318cb5baa1a80ab34b97a.png"}).appendTo(".po_topic_box").css({"top":y,"left":x,"position":"absolute","width":w,"height":w,"z-index":"1"});
+	}
+};
+// 函数：主动创建符合要求的整数，并返回。
+function getNum(limit){
+	var num;
+	while(true){
+		num=Math.random()*9000;
+		if(num<=limit&&num>0){
+			break;
+		}
+	}
+	return parseInt(num);
+};
+		
 	
 var snowinner=document.createElement("small");
 	snowinner.innerHTML='<font id="shanchu" color="#4682B4">删除</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="wenben" color="#4682B4">文本框</font>';    

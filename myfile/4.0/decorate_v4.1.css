@@ -4,7 +4,7 @@
 	--light-color: transparent;
 	--medium-color: #999c8c;
 	--button-color: #c9bc9c73;
-	--trans-color: #ffffff59;
+	--trans-color: #ffffff9e;
 	--white-color: #fff;
 	--border-color: #c9bc9c;
 	--btnback-color:#6a9d8e8c;
@@ -53,6 +53,7 @@ small font {
 
 .view_topic_main,.h.word .view_topic_main {
     background:var(--trans-color);
+	z-index:99;
 }
 
 .view_topic_main .title_box,.h.word .view_topic_main .title_box {
@@ -103,7 +104,7 @@ label.skinbtn,.nav_button a.nav-link {
 
 label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_button a.nav-link.active {
     background: var(--btnback-color) !important;
-	border: var(--medium-color) !important;
+	border: 1px solid var(--medium-color) !important;
 }
 
 @media only screen and (max-width: 640px){
@@ -135,7 +136,9 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
 	.view_topic_main,.h.word .view_topic_main {
 		border-style: solid double;
 		border-color: var(--border-color);
-		border-width: 0 3px;
+		border-width: 0 3.6px 3.6px 3.6px;
+		border-bottom-right-radius: 25px;
+		border-bottom-left-radius: 25px;
 	}
 	.titleme{
 		font-size:40px; 
