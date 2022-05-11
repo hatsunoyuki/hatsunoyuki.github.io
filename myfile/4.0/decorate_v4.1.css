@@ -31,11 +31,6 @@
 	--tea-theme-btnback: #6a9d8e8c;
 }
 
-
-small font {
-    cursor: pointer;
-}
-
 .content_html_box a:hover{
 	text-decoration: none;
 }
@@ -56,8 +51,9 @@ small font {
 	z-index:99;
 }
 
-.view_topic_main .title_box,.h.word .view_topic_main .title_box {
-    display:none;
+.view_topic_main .title_box,.h.word .view_topic_main .title_box,
+.upload_box,.small.text-muted.mt-1,.admin_bottom_div .hbtn {
+    display: none !important;;
 }
 
 .view_topic_main .title_box .right_btn_group .collect_btn {
@@ -66,10 +62,6 @@ small font {
 
 .h {
     background: var(--white-color);
-}
-
-.admin_bottom_div .hbtn {
-    display: none !important;
 }
 
 #replyTopicBox input,.link input,textarea{
@@ -106,6 +98,7 @@ label.skinbtn:hover,label.skinbtn.active,.nav_button a.nav-link:hover,.nav_butto
     background: var(--btnback-color) !important;
 	border: 1px solid var(--medium-color) !important;
 }
+
 
 @media only screen and (max-width: 640px){/* 手机 */
 	.view_topic_main .content_main_box .po_topic_box .content_html_box img, .view_topic_main .content_main_box .reply_box .content_html_box img {
@@ -208,13 +201,9 @@ summary.sumtop{
 	cursor:default;
 }
 	
-.avatar_box {
+.avatar_box,.text-success {
     display: none;
-}	/* 隐藏头像 */
-
-.text-success {
-    display: none;
-}	/* 隐藏删除的楼层 */
+}	/* 隐藏头像 */	/* 隐藏删除的楼层 */
 	
 #fbai{
 	color:transparent;
@@ -225,9 +214,7 @@ summary.sumtop{
 }
 
 
-/* 搜索栏 */
-
-#inputSearch {
+#inputSearch {/* 搜索栏 */
     outline: 0;
     border: none;
     width: 100%;
@@ -279,7 +266,6 @@ summary.sumtop{
     transition: .25s;
 }
 
-
 #btnSearch {
     right: 5px;
     color: var(--hover-color);
@@ -290,49 +276,9 @@ summary.sumtop{
     color: #fff;
 	background-color:#c9bc9c5e;
 }
-
-#timeContainer {
-    top: 115px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: .25s;
-}
 	
-.botpara{
-	position: absolute;
-	width:100%;
-	font-family:"Microsoft Yahei Light";
-    color: #e9f3f0;
-    font-size: 12px;
-	text-shadow: 0 0 20px rgb(0 0 0 / 35%);
-}
-	
-#timeText {
-    animation: delayedFadeIn 2s;
-    margin: 0;
-    color: #fff;
-	font-family:"Microsoft Yahei Light" !important;
-    font-size: 36px;
-    font-weight: inherit;
-    text-shadow: 0 0 10px rgb(121 160 150);
-    transition: .25s;
-	user-select:none;
-}
-
-#timeText:hover {
-	transform: scale(1.2,1.2);
-}
-
 #copyright{
 	position: absolute;
-	padding:4px 10px;
-	margin:0;
-}
-
-#dateText{
-	position: absolute;
-	right:0;
 	padding:4px 10px;
 	margin:0;
 }
@@ -388,6 +334,10 @@ summary.sumtop{
 
 #tea-theme{
 	top:135px;
+}
+
+small font {
+    cursor: pointer;
 }
 
 /* O66ghXNxg */
