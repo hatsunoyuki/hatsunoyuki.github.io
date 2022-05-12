@@ -52,6 +52,21 @@ function getNum(limit){
 	return parseInt(num);
 };
 		
+window.onload=function(){ 
+setInterval(function(){  
+var date=new Date();  
+var year=date.getFullYear(); //获取当前年份  
+var mon=date.getMonth()+1; //获取当前月份  
+var da=date.getDate(); //获取当前日  
+var h=date.getHours(); //获取小时  
+var m=date.getMinutes(); //获取分钟  
+var s=date.getSeconds();
+var d=document.getElementById('stime');  
+d.innerHTML=''+year+'-'+t(mon)+'-'+t(da)+' '+t(h)+':'+t(m)+':'+t(s); },1000) }
+
+function t(s){//日期两位数
+    return s<10?"0"+s:s;
+    }
 	
 var snowinner=document.createElement("small");
 	snowinner.innerHTML='<font id="shanchu" color="#4682B4">删除</font>&nbsp;&nbsp;<font id="zhedie" color="#4682B4">折叠</font>&nbsp;&nbsp;<font id="lianjie" color="#4682B4">点就看</font>&nbsp;&nbsp;<font id="fanbai" color="#4682B4">反白</font>&nbsp;&nbsp;<font id="wenben" color="#4682B4">文本框</font>';    
