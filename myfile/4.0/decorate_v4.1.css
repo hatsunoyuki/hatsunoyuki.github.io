@@ -7,6 +7,7 @@
 	--trans-color: #ffffff9e;
 	--white-color: #fff;
 	--border-color: #c9bc9c;
+	--border-style: solid;
 	--btnback-color:#6a9d8e8c;
 	--background: url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
 	
@@ -18,6 +19,7 @@
 	--neko-theme-button: #ffcccc73;
 	--neko-theme-trans: #ffffff7a;
 	--neko-theme-border: transparent;
+	--neko-theme-borderstyle: dashed;
 	--neko-theme-btnback: #ffb8b8;
 	
 	--tea-theme-background:url("https://pic.imgdb.cn/item/623317865baa1a80ab3214d9.png");
@@ -28,6 +30,7 @@
 	--tea-theme-button: #c9bc9c73;
 	--tea-theme-trans: #ffffff9e;
 	--tea-theme-border: #c9bc9c;
+	--tea-theme-borderstyle: solid;
 	--tea-theme-btnback: #6a9d8e8c;
 }
 
@@ -71,7 +74,7 @@
 .view_topic_main .reply_main_box .emotion_box .emotion_tabs .emotion_tab,.view_topic_main .reply_main_box .btn_group .main,.view_topic_main .reply_main_box .upload_box .upload_btn {
 	background: var(--button-color);
 	border: 1px solid var(--medium-color);
-	border-style: dashed;
+	border-style: var(--border-style);
 	transition: 0.25s;
 }
 
