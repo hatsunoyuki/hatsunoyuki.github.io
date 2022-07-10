@@ -7,7 +7,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-
     <title>ADDONS</title>
 
     <style>
@@ -19,10 +18,13 @@
 
 <body>
     <div class="container">
-        <button class="btn btn-sm" id="btndjk">点就看</button>
-        <button class="btn btn-sm" id="btnzd">折叠</button>
-        <button class="btn btn-sm" id="btnwbk">文本框</button>
+        <button class="btn btn-default btn-sm" id="btndjk">点就看</button>
+        <button class="btn btn-default btn-sm" id="btnsc">删除</button>
+        <button class="btn btn-default btn-sm" id="btnzd">折叠</button>
+        <button class="btn btn-default btn-sm" id="btnwbk">文本框</button>
+
         <script>
+
             var clipboard = new ClipboardJS('#btndjk', {
                 text: function () {
                     return '<a href="地址" target="_blank">点就看</a>';
@@ -31,6 +33,11 @@
             var clipboard = new ClipboardJS('#btnzd', {
                 text: function () {
                     return '<details><summary>折叠</summary>内容</details>';
+                },
+            });
+            var clipboard = new ClipboardJS('#btnsc', {
+                text: function () {
+                    return '<s></s>';
                 },
             });
             var clipboard = new ClipboardJS('#btnwbk', {
