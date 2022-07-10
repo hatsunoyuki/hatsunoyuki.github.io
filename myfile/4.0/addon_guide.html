@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>个人用网页大全</title>
+
+</head>
+
+<body>
+
+    <ul id="myTab" class="nav nav-tabs" role="navigation">
+        <li class="active">
+            <a href="#home" data-toggle="tab">
+                💊💊💊
+            </a>
+        </li>
+        <li><a href="#study" data-toggle="tab">
+                ✍✍✍
+            </a>
+        </li>
+        <li>
+            <a href="#fun" data-toggle="tab">
+                🎮🕹️🎮
+            </a>
+        </li>
+    </ul>
+    <div style="position:fixed; right:20px; top:14px;">
+        <a href="..\..\index.html">
+            <span class="glyphicon glyphicon-leaf"></span>
+        </a>
+    </div>
+    <div class="container">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active text-center" id="home">
+                <br>
+                <strong>【常用网址】</strong>
+                <br>
+                <a href="https://www.sanlitunbbs.com/t/323379" target="_blank">①</a>&nbsp;<a
+                    href="https://www.sanlitunbbs.com/t/592661" target="_blank">②</a>&nbsp;<a
+                    href="https://www.sanlitunbbs.com/t/910211" target="_blank">③</a>&nbsp;<a
+                    href="https://www.sanlitunbbs.com/t/1201635" target="_blank">④</a>&nbsp;<a
+                    href="https://www.sanlitunbbs.com/t/1272208" target="_blank">⑤</a>｜<a
+                    href="https://www.sanlitunbbs.com/b/777" target="_blank">鸭岛</a>&nbsp;<a
+                    href="https://www.sanlitunbbs.com/b/4" target="_blank">兔区</a>&nbsp;<a
+                    href="https://www.sanlitunbbs.com/b/914" target="_blank">糊99</a>&nbsp;<a href="https://cpttmm.com/"
+                    target="_blank">XHG</a><br><a href="https://www.superbed.cn/" target="_blank">聚合图床</a>｜<a
+                    href="http://www.txttool.com/wenben_delvbcrlf.asp" target="_blank">过滤换行</a>｜<a
+                    href="http://134.122.129.17/" target="_blank">TWT</a>&nbsp;<a
+                    href="https://bbs.jjwxc.net/board.php?board=3&page=1" target="_blank">XQ</a>&nbsp;<a
+                    href="https://zhenbuchuo.top/419?page=1" target="_blank">NQ</a><br>
+
+                <strong>【自助查询】</strong>
+                <br><a href="http://ak.mooncell.wiki/" target="_blank">RPTS</a>｜<a href="https://penguin-stats.cn/"
+                    target="_blank">企鹅物流</a>｜<a href="https://www.bigfun.cn/tools/aktools/hr"
+                    target="_blank">公招查询</a><br><a href="https://aog.wiki" target="_blank">素材一图流</a>｜<a
+                    href="https://kokodayo.fun/" target="_blank">kkdy资料站</a>｜<a href="https://hatsunoyuki.fun/daxigua/"
+                    target="_blank">合成大豹豹</a><br>
+
+                <strong>【其他】</strong>
+                <br><a href="https://paimon.moe/" target="_blank">PM工具箱</a>｜<a href="https://geinideziyouguolehuo.cyou/"
+                    target="_blank">w站</a>&nbsp;<a href="https://ao3-cn.top/" target="_blank">凹3</a>｜<a
+                    href="https://w1.v2free.net/user" target="_blank">自用梯子</a><br><a
+                    href="https://shimo.im/docs/aBAYV90WmpCeje3j/" target="_blank">石墨存档</a>｜<a
+                    href="https://hatsunoyuki.fun" target="_blank">主站</a>｜<a href="https://www.sanlitunbbs.com/b/22"
+                    target="_blank">试验田</a><br><a href="https://dragcave.net/" target="_blank">龙洞</a>｜<a
+                    href="http://valleysherwood.com/" target="_blank">孵化室</a>｜<a
+                    href="https://www.sanlitunbbs.com/t/208521?page=1" target="_blank">图鉴楼</a>
+
+                <br><br>
+                <button class="btn btn-default btn-sm" id="btndjk">点就看</button>
+                <button class="btn btn-default btn-sm" id="btnsc">删除</button>
+                <button class="btn btn-default btn-sm" id="btnzd">折叠</button>
+                <button class="btn btn-default btn-sm" id="btnwbk">文本框</button>
+
+                <script>
+
+                    var clipboard = new ClipboardJS('#btndjk', {
+                        text: function () {
+                            return '<a href="地址" target="_blank">点就看</a>';
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#btnzd', {
+                        text: function () {
+                            return '<details><summary>折叠</summary>内容</details>';
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#btnsc', {
+                        text: function () {
+                            return '<s></s>';
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#btnwbk', {
+                        text: function () {
+                            return '<textarea class="form-control"></textarea>';
+                        },
+                    });
+
+                    clipboard.on('success', function (e) {
+                        console.info('Action:', e.action);
+                        console.info('Text:', e.text);
+                        console.info('Trigger:', e.trigger);
+                    });
+
+                    clipboard.on('error', function (e) {
+                        console.info('Action:', e.action);
+                        console.info('Text:', e.text);
+                        console.info('Trigger:', e.trigger);
+                    });
+                </script>
+            </div>
+            <div class="tab-pane fade" id="study">
+                <strong>【代码】</strong><br>
+                菜鸟教程：<a href='https://www.runoob.com/' target='_blank'>www.runoob.com</a><br>
+                jQuery速查表：<a href='https://jquery.cuishifeng.cn/' target='_blank'>jquery.cuishifeng.cn</a><br>
+                过滤换行：<a href='http://www.txttool.com/t/?id=MzQy' target='_blank'>www.txttool.com</a><br>
+                Underscore(js实用库)：<a href='http://underscorejs.org/' target='_blank'>underscorejs.org</a><br>
+                Greasy Fork脚本：<a href='https://greasyfork.org/zh-CN' target='_blank'>greasyfork.org/zh-CN</a>
+                <br>
+
+                <strong>【3D】</strong><br>
+                免费3d资产：<a href='http://sweethome3d.com/importModels.jsp' target='_blank'>sweethome3d.com</a>
+                <br>
+                在线人物模型：<a href='https://webapp.magicposer.com/' target='_blank'>webapp.magicposer.com</a><br>
+                <strong>【综合】</strong><br>
+                dalle mini：<a href='https://www.craiyon.com/' target='_blank'>craiyon.com</a><br>
+                ai画图(需翻墙)：<a href='https://app.wombo.art/' target='_blank'>app.wombo.art</a><br>
+                阿文的神器仓库：<a href='https://shimo.im/docs/RPGcxw6VpCgxHYhP/read' target='_blank'>shimo.im</a><br>
+                专门收集游戏ui的网站：<a href='https://gameui.matme.info/blog/' target='_blank'>ameui.matme.info</a><br>
+                <strong>【生活类】</strong><br>
+                特殊符号大全：<a href='http://www.fhdq.net/' target='_blank'>www.fhdq.net</a><br>
+                流浪图床：<a href='https://p.sda1.dev/' target='_blank'>p.sda1.dev</a><br>
+                青柠起始页：<a href='https://limestart.cn/' target='_blank'>limestart.cn</a><br>
+                音乐解锁：<a href='http://easygame.org/' target='_blank'>easygame.org</a><br>
+                油小猴度盘会员：<a href='https://www.baiduyun.wiki/zh-cn/vip.html' target='_blank'>www.baiduyun.wiki</a>
+                <br>
+                VIP视频解析：<a href='https://imyshare.com/free-movie/' target='_blank'>imyshare.com/free-movie</a>
+            </div>
+            <div class="tab-pane fade" id="fun">
+                <strong>【ACG】</strong><br>
+                AO3镜像：<a href='https://nightalk.xyz/' target='_blank'>nightalk.xyz</a>｜<a href='https://ao3-cn.top/'
+                    target='_blank'>ao3-cn.top</a><br>
+                在线日漫：<a href='http://mangabz.com/' target='_blank'>mangabz.com</a><br>
+                极速漫画：<a href='http://m.krmanhua.com/' target='_blank'>m.krmanhua.com</a><br>
+                在线动画：<a href='https://www.agemys.com/' target='_blank'>www.agemys.com</a><br>
+                哔咔漫画：<a href='http://picacgp.com/' target='_blank'>picacgp.com</a>｜<a href='https://ios.bikaa.xyz/tag/'
+                    target='_blank'>ios在线网页</a><br>
+                海棠市：<a href='https://www.htlvbooks.com/' target='_blank'>htlvbooks.com</a><br>
+                御宅屋：<a href='https://yuyan.pw/' target='_blank'>yuyan.pw</a>｜<a href='http://www.taoqibao.org/'
+                    target='_blank'>www.taoqibao.org</a><br>
+                里番站：<a href='https://bidong00.com/vodshow/katongdonghua3.html' target='_blank'>bidong00.com</a>
+                <br>
+                耽美花園：<a href='https://jcomic.net/cat/%E8%80%BD%E7%BE%8E%E8%8A%B1%E5%9C%92'
+                    target='_blank'>jcomic.net/cat</a><br>
+                耽美同人(古早)：<a href='http://yaoi-sei.com/home.html' target='_blank'>yaoi-sei.com/home.html</a><br>
+                盾勇/枪直web小说：<a href='http://www.iot2ai.top/cgi-bin/intel/syosetu.html?nv=n3009bk/'
+                    target='_blank'>www.iot2ai.top</a><br>
+                WY云游戏:<a href="https://cg.163.com/#/mobile" target="_blank">cg.163.com</a><br>
+                <strong>【GNSN】</strong><br>
+                mys：<a href='https://bbs.mihoyo.com/ys/' target='_blank'>bbs</a><br>
+                词条计算器：<a href='http://spongem.com/' target='_blank'>spongem.com</a><br>
+                伤害计算器：<a href='https://w-jp.com/genshin/zh/' target='_blank'>w-jp.com</a><br>
+                数据库：<a href='https://www.projectcelestia.com/' target='_blank'>www.projectcelestia.com</a><br>
+                内鬼网：<a href='https://genshin.honeyhunterworld.com/' target='_blank'>honeyhunterworld.com</a>
+                <br>
+                日服cafe联动公式站：<a href='https://www.sweets-paradise.jp/collaboration/202202genshin'
+                    target='_blank'>www.sweets-paradise.jp</a><br>
+                <strong>【AK】</strong><br>
+                塞壬唱片：<a href='https://monster-siren.hypergryph.com/music'
+                    target='_blank'>monster-siren.hypergryph.com/music</a><br>
+                肉鸽官网：<a href='https://ak.hypergryph.com/is/crimsonsolitaire'
+                    target='_blank'>ak.hypergryph.com/is/crimsonsolitaire</a><br>
+                官方漫画：<a href='https://terra-historicus.hypergryph.com/'
+                    target='_blank'>terra-historicus.hypergryph.com</a><br>
+                抽卡记录：<a href='https://arkgacha.kwer.top/' target='_blank'>arkgacha.kwer.top</a><br>
+                PRTS(剧情资源)：<a href='https://prts.wiki/w/%E5%89%A7%E6%83%85%E8%B5%84%E6%BA%90%E6%A6%82%E8%A7%88/AVG'
+                    target='_blank'>prts.wiki</a><br>
+                干员猜猜乐：<a href='http://akg.saki.cc' target='_blank'>akg.saki.cc</a><br>
+                <strong>【nmq】</strong><br><a href='https://www.sanlitunbbs.com/b/4' target='_blank'>兔区</a>&nbsp;<a
+                    href='https://www.sanlitunbbs.com/b/914' target='_blank'>旧99</a>&nbsp;<a href='https://cpttmm.com/'
+                    target='_blank'>XHG</a>&nbsp;<a href='http://134.122.129.17/' target='_blank'>TWT</a>&nbsp;<a
+                    href='https://bbs.jjwxc.net/board.php?board=3&page=1' target='_blank'>XQ</a>&nbsp;<a
+                    href='https://zhenbuchuo.top/419?page=1' target='_blank'>NQ</a>&nbsp;<a
+                    href='http://216.224.123.141/' target='_blank'>2xb</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
