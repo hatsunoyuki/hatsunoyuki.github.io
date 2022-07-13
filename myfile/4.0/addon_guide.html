@@ -73,11 +73,16 @@
                     href="https://www.sanlitunbbs.com/t/208521?page=1" target="_blank">图鉴楼</a>
 
                 <br><br>
-                <button class="btn btn-default btn-sm" id="btndjk">点就看</button>
-                <button class="btn btn-default btn-sm" id="btnsc">删除</button>
-                <button class="btn btn-default btn-sm" id="btnzd">折叠</button>
-                <button class="btn btn-default btn-sm" id="btnwbk">文本框</button>
+                <p>
+                    <button class="btn btn-default btn-sm" id="btndjk">点就看</button>
+                    <button class="btn btn-default btn-sm" id="btnsc">删除</button>
+                    <button class="btn btn-default btn-sm" id="btnzd">折叠</button>
+                    <button class="btn btn-default btn-sm" id="btnwbk">文本框</button>
+                </p>
 
+                <p>
+                    <button class="btn btn-default btn-sm" id="btnyy">引用</button>
+                </p>
                 <script>
 
                     var clipboard = new ClipboardJS('#btndjk', {
@@ -98,6 +103,12 @@
                     var clipboard = new ClipboardJS('#btnwbk', {
                         text: function () {
                             return '<textarea class="form-control"></textarea>';
+                        },
+                    });
+
+                    var clipboard = new ClipboardJS('#btnyy', {
+                        text: function () {
+                            return '<small></small>';
                         },
                     });
 
