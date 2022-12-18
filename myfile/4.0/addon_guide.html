@@ -28,6 +28,11 @@
         width: 5px;
         height: auto;
     }
+
+    .emoji_img {
+        max-width: 50px;
+        max-height: 50px;
+    }
 </style>
 
 <body>
@@ -45,6 +50,11 @@
             <li>
                 <a href="#fun" data-toggle="tab">
                     <span class="glyphicon glyphicon-music"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#bqb" data-toggle="tab">
+                    <span class="glyphicon glyphicon-heart"></span>
                 </a>
             </li>
         </ul>
@@ -213,6 +223,94 @@
                     href='https://bbs.jjwxc.net/board.php?board=3&page=1' target='_blank'>XQ</a>&nbsp;<a
                     href='https://zhenbuchuo.top/419?page=1' target='_blank'>NQ</a>&nbsp;<a
                     href='http://216.224.123.141/' target='_blank'>2xb</a>
+            </div>
+            <div class="tab-pane" id="bqb">
+                <strong>【表情包】</strong>
+                <br>
+
+                <p>
+                    <button class="btn btn-default btn-sm" id="bqb01"><img
+                            src='https://s1.ax1x.com/2022/11/18/znutv8.png' class='emoji_img'></button>
+                    <button class="btn btn-default btn-sm" id="bqb02"><img
+                            src='https://s1.ax1x.com/2022/11/18/znuJ8P.png' class='emoji_img'></button>
+                    <button class="btn btn-default btn-sm" id="bqb03"><img
+                            src='https://s1.ax1x.com/2022/11/18/znKFsS.png' class='emoji_img'></button>
+                    <button class="btn btn-default btn-sm" id="bqb04"><img
+                            src='https://s1.ax1x.com/2022/11/18/znmlse.png' class='emoji_img'></button>
+                </p>
+
+                <p>
+                    <button class="btn btn-default btn-sm" id="bqb05"><img
+                            src='https://s1.ax1x.com/2022/11/18/znuUKS.png' class='emoji_img'></button>
+                    <button class="btn btn-default btn-sm" id="bqb06"><img
+                            src='https://s1.ax1x.com/2022/09/30/xuTKDU.png' class='emoji_img'></button>
+                    <button class="btn btn-default btn-sm" id="bqb07"><img
+                            src='https://img.mjj.today/2022/09/23/75d02917e5ef413e488c7cd6b6abdd22.jpg'
+                            class='emoji_img'></button>
+                    <button class="btn btn-default btn-sm" id="bqb08"><img
+                            src='https://img.mjj.today/2022/12/11/ac035fa00c5b8f9776e42df237a3420d.gif'
+                            class='emoji_img'></button>
+                </p>
+                <script>
+
+                    var clipboard = new ClipboardJS('#bqb01', {
+                        text: function () {
+                            return "<img src='https://s1.ax1x.com/2022/11/18/znutv8.png' class='emoji_img'>";
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#bqb02', {
+                        text: function () {
+                            return "<img src='https://s1.ax1x.com/2022/11/18/znuJ8P.png' class='emoji_img'>";
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#bqb03', {
+                        text: function () {
+                            return "<img src='https://s1.ax1x.com/2022/11/18/znKFsS.png' class='emoji_img'>";
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#bqb04', {
+                        text: function () {
+                            return "<img src='https://s1.ax1x.com/2022/11/18/znmlse.png' class='emoji_img'>";
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#bqb05', {
+                        text: function () {
+                            return "<img src='https://s1.ax1x.com/2022/11/18/znuUKS.png' class='emoji_img'>";
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#bqb06', {
+                        text: function () {
+                            return "<img src='https://s1.ax1x.com/2022/09/30/xuTKDU.png' class='emoji_img'>";
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#bqb07', {
+                        text: function () {
+                            return "<img src='https://img.mjj.today/2022/09/23/75d02917e5ef413e488c7cd6b6abdd22.jpg' class='emoji_img'>";
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#bqb08', {
+                        text: function () {
+                            return "<img src='https://img.mjj.today/2022/12/11/ac035fa00c5b8f9776e42df237a3420d.gif' class='emoji_img'>";
+                        },
+                    });
+                    var clipboard = new ClipboardJS('#bqb04', {
+                        text: function () {
+                            return "<img src='https://s1.ax1x.com/2022/11/18/znmlse.png' class='emoji_img'>";
+                        },
+                    });
+
+                    clipboard.on('success', function (e) {
+                        console.info('Action:', e.action);
+                        console.info('Text:', e.text);
+                        console.info('Trigger:', e.trigger);
+                    });
+
+                    clipboard.on('error', function (e) {
+                        console.info('Action:', e.action);
+                        console.info('Text:', e.text);
+                        console.info('Trigger:', e.trigger);
+                    });
+                </script>
             </div>
         </div>
     </div>
