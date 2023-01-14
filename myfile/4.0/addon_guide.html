@@ -71,7 +71,8 @@
                 <strong>【常用网址】</strong>
                 <br>
                 <a href="https://cpttmm.com/thread/36115/" target="_blank">6.5</a>｜<a href="https://cpttmm.com/"
-                    target="_blank">XHG</a>｜<a href="https://cpttmm.com/forum/1" target="_blank">讨论岛</a>&nbsp;<a
+                    target="_blank">XHG</a>｜<a href="https://cpttmm.com/forum/10" target="_blank">olo</a>&nbsp;<a
+                    href="https://cpttmm.com/forum/1" target="_blank">讨论岛</a>&nbsp;<a
                     href="https://cpttmm.com/forum/914" target="_blank">日清岛</a><br><a href="https://www.superbed.cn/"
                     target="_blank">聚合图床</a>｜<a href="http://www.wuqianling.top/software/notepad/compress.html"
                     target="_blank">过滤换行</a>｜<a href="https://bbs.jjwxc.net/board.php?board=3&page=1"
@@ -103,6 +104,7 @@
 
                 <p>
                     <button class="btn btn-default btn-sm" id="btnyy">引用</button>
+                    <button class="btn btn-default btn-sm" id="btnsl">删楼</button>
                 </p>
                 <script>
 
@@ -130,6 +132,12 @@
                     var clipboard = new ClipboardJS('#btnyy', {
                         text: function () {
                             return '<small></small>';
+                        },
+                    });
+
+                    var clipboard = new ClipboardJS('#btnsl', {
+                        text: function () {
+                            return '<style>#f_楼层{display:none;}</style>';
                         },
                     });
 
@@ -245,7 +253,7 @@
                     <button class="btn btn-default btn-sm" id="bqb06"><img
                             src='https://s1.ax1x.com/2022/09/30/xuTKDU.png' class='emoji_img'></button>
                     <button class="btn btn-default btn-sm" id="bqb07"><img
-                            src='https://img.mjj.today/2022/09/23/75d02917e5ef413e488c7cd6b6abdd22.jpg'
+                            src='https://img.mjj.today/2022/11/23/82a73759f3f487b322f6919fcd9e0218.gif'
                             class='emoji_img'></button>
                     <button class="btn btn-default btn-sm" id="bqb08"><img
                             src='https://img.mjj.today/2022/12/11/ac035fa00c5b8f9776e42df237a3420d.gif'
@@ -312,7 +320,7 @@
                     });
                     var clipboard = new ClipboardJS('#bqb07', {
                         text: function () {
-                            return "<img src='https://img.mjj.today/2022/09/23/75d02917e5ef413e488c7cd6b6abdd22.jpg' class='emoji_img'>";
+                            return "<img src='https://img.mjj.today/2022/11/23/82a73759f3f487b322f6919fcd9e0218.gif' class='emoji_img'>";
                         },
                     });
                     var clipboard = new ClipboardJS('#bqb08', {
