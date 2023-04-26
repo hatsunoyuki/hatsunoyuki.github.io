@@ -32,7 +32,7 @@ function init(){// 函数：初始化函数
 			y = getNum(1500); 
 			w = getNum(15)+10;
 		// 追加到div容器中。
-		$("<img/>",{"class":"randomstar","id":"img"+i,"src":"https://pic.imgdb.cn/item/623318cb5baa1a80ab34b97a.png"}).appendTo(".main").css({"top":y,"left":x,"position":"absolute","width":w,"height":w});
+		$("<img/>",{"class":"randomstar","id":"img"+i,"src":"myblog/imgfile/star.png"}).appendTo(".main").css({"top":y,"left":x,"position":"absolute","width":w,"height":w});
 	}
 };
 // 函数：主动创建符合要求的整数，并返回。

@@ -3,7 +3,7 @@ body{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url("https://s1.ax1x.com/2020/06/24/Nw3SsS.png") fixed center 0 no-repeat;
+	background: url("UI_HOME_FRONT_BKG.png") fixed center 0 no-repeat;
 	-webkit-background-size:  100% 100%;
     -o-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -16,7 +16,7 @@ body:before {/* 移动端适配 */
   right: 0;
   bottom: 0;
   left: 0;
-  background: url("https://s1.ax1x.com/2020/06/24/Nw3SsS.png") center 0 no-repeat;
+  background: url("UI_HOME_FRONT_BKG.png") center 0 no-repeat;
   background-size: cover;
 }
 
