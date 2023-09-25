@@ -106,6 +106,13 @@
                     <button class="btn btn-default btn-sm" id="btnyy">引用</button>
                     <button class="btn btn-default btn-sm" id="btnsl">删楼</button>
                 </p>
+
+                <p>
+                    <button class="btn btn-default btn-sm" id="btnjc">加粗</button>
+                    <button class="btn btn-default btn-sm" id="btnshs">深红</button>
+                    <button class="btn btn-default btn-sm" id="btnsls">深蓝</button>
+                    <button class="btn btn-default btn-sm" id="btnhs">灰色</button>
+                </p>
                 <script>
 
                     var clipboard = new ClipboardJS('#btndjk', {
@@ -138,6 +145,30 @@
                     var clipboard = new ClipboardJS('#btnsl', {
                         text: function () {
                             return '<style>#f_楼层{display:none;}</style>';
+                        },
+                    });
+
+                    var clipboard = new ClipboardJS('#btnjc', {
+                        text: function () {
+                            return '<b></b>';
+                        },
+                    });
+
+                    var clipboard = new ClipboardJS('#btnshs', {
+                        text: function () {
+                            return '<font color=darkred></font>';
+                        },
+                    });
+
+                    var clipboard = new ClipboardJS('#btnsls', {
+                        text: function () {
+                            return '<font color=darkblue></font>';
+                        },
+                    });
+
+                    var clipboard = new ClipboardJS('#btnhs', {
+                        text: function () {
+                            return '<font color=grey></font>';
                         },
                     });
 
