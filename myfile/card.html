@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>✨ 小说人物人设卡生成器 | 角色档案工坊</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f1f4f9;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            padding: 2rem 1.5rem;
+            color: #1e293b;
+        }
+
+        /* 主容器：左右布局 */
+        .generator-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.8rem;
+            align-items: start;
+        }
+
+        /* 公共卡片样式 */
+        .card-panel {
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(0px);
+            border: 1px solid rgba(226, 232, 240, 0.6);
+        }
+
+        .panel-header {
+            background: #fefce8;
+            padding: 1.2rem 1.8rem;
+            border-bottom: 1px solid #e9eef3;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .panel-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, #3b3b5c, #5e3a6b);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge-icon {
+            font-size: 1.5rem;
+        }
+
+        .btn-save {
+            background: #2d3e50;
+            border: none;
+            padding: 0.6rem 1.4rem;
+            border-radius: 3rem;
+            font-weight: 600;
+            color: white;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-save:hover {
+            background: #1f2e3c;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+        }
+
+        /* 左侧表单区域 */
+        .form-scroll {
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 1.5rem 1.8rem;
+            scrollbar-width: thin;
+        }
+
+        /* 分组样式 */
+        .form-group {
+            margin-bottom: 2rem;
+            border-bottom: 1px dashed #e2e8f0;
+            padding-bottom: 1.5rem;
+        }
+        .form-group:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .group-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #0f172a;
+            border-left: 5px solid #c084fc;
+            padding-left: 0.75rem;
+        }
+
+        .fields-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 1rem 1.2rem;
+        }
+
+        .field-full {
+            grid-column: 1 / -1;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .input-field label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            color: #475569;
+        }
+
+        .input-field input, 
+        .input-field select, 
+        .input-field textarea {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 0.65rem 1rem;
+            font-size: 0.9rem;
+            font-family: inherit;
+            transition: 0.2s;
+            outline: none;
+            color: #0f172a;
+        }
+
+        .input-field input:focus, 
+        .input-field select:focus, 
+        .input-field textarea:focus {
+            border-color: #a78bfa;
+            box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.2);
+            background: white;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+
+        /* 右侧预览区 */
+        .preview-scroll {
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 1.2rem 1.5rem;
+            background: #ffffff;
+        }
+
+        .character-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        .card-section {
+            background: #fefdf8;
+            border-radius: 1.5rem;
+            padding: 1rem 1.2rem;
+            border: 1px solid #f1f0e8;
+            transition: all 0.1s;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px dotted #e2dcd0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3b2e4a;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 0.8rem 1rem;
+        }
+
+        .info-item {
+            font-size: 0.88rem;
+            line-height: 1.45;
+            break-inside: avoid;
+        }
+
+        .info-label {
+            font-weight: 700;
+            color: #7c6b5e;
+            background: #f3f0e9;
+            display: inline-block;
+            padding: 0.1rem 0.5rem;
+            border-radius: 2rem;
+            font-size: 0.7rem;
+            margin-right: 0.5rem;
+            letter-spacing: 0.3px;
+        }
+
+        .info-value {
+            color: #1e2a3e;
+            word-break: break-word;
+            white-space: pre-wrap;
+        }
+
+        .empty-preview {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #94a3b8;
+            font-style: italic;
+        }
+
+        /* 评分标记小圆点 */
+        .rating-badge {
+            background: #e6e9f0;
+            border-radius: 20px;
+            padding: 0.1rem 0.6rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        hr {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                padding: 1rem;
+            }
+            .generator-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .form-scroll, .preview-scroll {
+                max-height: 70vh;
+            }
+        }
+
+        /* 自定义滚动条 */
+        .form-scroll::-webkit-scrollbar, .preview-scroll::-webkit-scrollbar {
+            width: 5px;
+        }
+        .form-scroll::-webkit-scrollbar-track {
+            background: #eef2f6;
+            border-radius: 10px;
+        }
+        .form-scroll::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="generator-container">
+    <!-- 左侧编辑区 -->
+    <div class="card-panel">
+        <div class="panel-header">
+            <h2>
+                <span class="badge-icon">✍️</span> 角色构筑工坊
+            </h2>
+            <button class="btn-save" id="saveBtn">💾 保存 · 生成人设卡</button>
+        </div>
+        <div class="form-scroll" id="leftFormContainer">
+            <!-- 动态表单由js生成，所有字段均为空白 -->
+        </div>
+    </div>
+
+    <!-- 右侧预览区 -->
+    <div class="card-panel">
+        <div class="panel-header">
+            <h2>
+                <span class="badge-icon">📜</span> 人物档案 · 人设卡
+            </h2>
+            <span style="font-size: 0.7rem; color: #6c757d;">保存后自动更新</span>
+        </div>
+        <div class="preview-scroll" id="rightPreviewContainer">
+            <div class="empty-preview">✨ 填写左侧信息，点击「保存」<br> 精美角色卡即刻呈现</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // ---------- 字段定义 (完整覆盖人设卡所有内容，无预设值) ----------
+    const fieldsConfig = [
+        // ========= 一、基础信息 =========
+        { group: "基础信息", key: "name", label: "姓名", type: "text", placeholder: "例：沈鸢" },
+        { group: "基础信息", key: "gender", label: "性别", type: "text", placeholder: "女 / 男 / 非二元" },
+        { group: "基础信息", key: "age", label: "年龄", type: "text", placeholder: "19岁 / 外表27实际未知" },
+        // 外貌拆分
+        { group: "基础信息", key: "height", label: "身高", type: "text", placeholder: "168cm" },
+        { group: "基础信息", key: "body_type", label: "体型", type: "text", placeholder: "纤瘦 / 健壮 / 匀称" },
+        { group: "基础信息", key: "facial_features", label: "五官", type: "text", placeholder: "深邃眉眼，薄唇" },
+        { group: "基础信息", key: "hairstyle", label: "发型", type: "text", placeholder: "黑长直 / 狼尾" },
+        { group: "基础信息", key: "eyes", label: "眼神", type: "text", placeholder: "清冷锐利 / 温柔似水" },
+        { group: "基础信息", key: "skin_tone", label: "肤色", type: "text", placeholder: "冷白皮 / 小麦色" },
+        { group: "基础信息", key: "signature_feature", label: "标志性特征", type: "text", placeholder: "泪痣 / 断眉 / 伤疤" },
+        { group: "基础信息", key: "style_clothing", label: "穿搭风格", type: "text", placeholder: "暗黑机能 / 新中式" },
+        { group: "基础信息", key: "occupation", label: "身份/职业", type: "text", placeholder: "赏金猎人 / 首席医师" },
+        { group: "基础信息", key: "alignment", label: "阵营/立场", type: "select", options: ["正派", "反派", "中立", "亦正亦邪"] },
+        { group: "基础信息", key: "birthday_zodiac", label: "生日/星座", type: "text", placeholder: "11.07 天蝎座" },
+        { group: "基础信息", key: "nation_race_worldview", label: "国籍/种族/世界观", type: "text", placeholder: "华裔 / 精灵 / 九州大陆" },
+        
+        // ========= 二、性格内核 =========
+        { group: "性格内核", key: "surface_personality", label: "表面性格", type: "text", placeholder: "温和疏离" },
+        { group: "性格内核", key: "true_personality", label: "真实性格", type: "text", placeholder: "偏执孤独" },
+        { group: "性格内核", key: "core_trait", label: "核心特质", type: "text", placeholder: "隐忍、偏执、温柔、腹黑…" },
+        { group: "性格内核", key: "catchphrase_action", label: "口头禅/标志性动作", type: "text", placeholder: "「无趣。」/ 转刀花" },
+        { group: "性格内核", key: "habits_quirks", label: "小习惯/小怪癖", type: "text", placeholder: "咬指甲 / 反复擦拭眼镜" },
+        { group: "性格内核", key: "strengths", label: "优点", type: "textarea", placeholder: "果敢、忠诚、洞察力强" },
+        { group: "性格内核", key: "weaknesses", label: "缺点/致命弱点", type: "textarea", placeholder: "多疑、易怒、心软" },
+        { group: "性格内核", key: "value_tendency", label: "三观倾向", type: "select", options: ["重情", "重利", "重义", "唯我", "守护型"] },
+        
+        // ========= 三、过往与执念 =========
+        { group: "过往与执念", key: "background", label: "出身背景", type: "textarea", placeholder: "家族、童年、家境、关键经历" },
+        { group: "过往与执念", key: "turning_point", label: "人生转折点", type: "text", placeholder: "灭门之夜 / 获得传承" },
+        { group: "过往与执念", key: "hated_things", label: "最痛恨的事", type: "text", placeholder: "背叛 / 欺压弱小" },
+        { group: "过往与执念", key: "fear_things", label: "最恐惧的事", type: "text", placeholder: "重要之人离去" },
+        { group: "过往与执念", key: "treasured", label: "最珍视的人/物", type: "text", placeholder: "妹妹的遗物 / 旧怀表" },
+        { group: "过往与执念", key: "big_secret", label: "最大秘密", type: "textarea", placeholder: "曾经弑师 / 非人之躯" },
+        { group: "过往与执念", key: "inner_trauma", label: "内心创伤", type: "textarea", placeholder: "被至亲抛弃的阴影" },
+        
+        // ========= 四、能力与关系 =========
+        { group: "能力与关系", key: "skills_specialty", label: "技能/特长", type: "textarea", placeholder: "剑术、读心、毒药精通" },
+        { group: "能力与关系", key: "combat", label: "武力 (1-10)", type: "number", min: 1, max: 10, step: 1, placeholder: "8" },
+        { group: "能力与关系", key: "iq", label: "智商 (1-10)", type: "number", min: 1, max: 10, step: 1, placeholder: "9" },
+        { group: "能力与关系", key: "eq", label: "情商 (1-10)", type: "number", min: 1, max: 10, step: 1, placeholder: "6" },
+        { group: "能力与关系", key: "wealth_power", label: "财力/权力", type: "text", placeholder: "富可敌国 / 一方领主" },
+        { group: "能力与关系", key: "short_term_goal", label: "目标（短期）", type: "text", placeholder: "找到解药" },
+        { group: "能力与关系", key: "ultimate_goal", label: "目标（终极）", type: "text", placeholder: "改变世界秩序" },
+        // 重要关系拆分
+        { group: "能力与关系", key: "rel_family", label: "重要关系 · 家人", type: "text", placeholder: "妹妹：沈昭" },
+        { group: "能力与关系", key: "rel_lover", label: "重要关系 · 爱人", type: "text", placeholder: "白月光 / 恋人未满" },
+        { group: "能力与关系", key: "rel_friend", label: "重要关系 · 挚友", type: "text", placeholder: "萧烬，生死之交" },
+        { group: "能力与关系", key: "rel_rival", label: "重要关系 · 宿敌", type: "text", placeholder: "黑袍刺客·影" },
+        { group: "能力与关系", key: "rel_superior", label: "重要关系 · 上司", type: "text", placeholder: "组织首领·洛先生" },
+        { group: "能力与关系", key: "rel_subordinate", label: "重要关系 · 下属", type: "text", placeholder: "学徒·小七" },
+        { group: "能力与关系", key: "love_view", label: "感情观", type: "textarea", placeholder: "一生一世一双人 / 不敢轻易动心" },
+        { group: "能力与关系", key: "relation_with_protagonist", label: "与主角关系", type: "text", placeholder: "宿敌/战友/恋人/师徒" }
+    ];
+
+    const groupsOrder = ["基础信息", "性格内核", "过往与执念", "能力与关系"];
+    
+    // 存储所有生成的输入元素
+    let formElements = {};
+
+    // 生成左侧表单HTML (完全空白，无任何预设填充)
+    function buildForm() {
+        const container = document.getElementById('leftFormContainer');
+        container.innerHTML = '';
+        groupsOrder.forEach(groupName => {
+            const groupFields = fieldsConfig.filter(f => f.group === groupName);
+            if (groupFields.length === 0) return;
+            const groupDiv = document.createElement('div');
+            groupDiv.className = 'form-group';
+            const titleSpan = document.createElement('div');
+            titleSpan.className = 'group-title';
+            titleSpan.innerHTML = groupName === '基础信息' ? '📖 基础信息' : (groupName === '性格内核' ? '🎭 性格内核' : (groupName === '过往与执念' ? '🌙 过往与执念' : '⚔️ 能力与关系'));
+            groupDiv.appendChild(titleSpan);
+            
+            const grid = document.createElement('div');
+            grid.className = 'fields-grid';
+            groupFields.forEach(field => {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'input-field';
+                // 针对长文本类做全宽
+                if (field.type === 'textarea' || field.key === 'background' || field.key === 'big_secret' || field.key === 'inner_trauma' || field.key === 'skills_specialty' || field.key === 'love_view') {
+                    wrapper.classList.add('field-full');
+                }
+                const label = document.createElement('label');
+                label.textContent = field.label;
+                wrapper.appendChild(label);
+                let input;
+                if (field.type === 'select') {
+                    input = document.createElement('select');
+                    // 默认添加一个空选项？或者保留第一个选项但为空值？为了完全无预设，添加一个空disabled选项让用户必须选择，但体验不好。改为默认选中第一个选项，但这是控件自身行为，用户可修改，不算预设角色数据。但为了干净，可以让第一个选项为空提示，但是用户必须选，可能会困惑。我们保留第一个选项但用户可改，没有额外填充具体人物值。
+                    field.options.forEach(opt => {
+                        const option = document.createElement('option');
+                        option.value = opt;
+                        option.textContent = opt;
+                        input.appendChild(option);
+                    });
+                    // 确保没有预置选择，默认让select显示第一个选项，但那是占位，无实际预设含义（所有选项都是通用标签）
+                } else if (field.type === 'textarea') {
+                    input = document.createElement('textarea');
+                    input.rows = 2;
+                    if (field.placeholder) input.placeholder = field.placeholder;
+                } else {
+                    input = document.createElement('input');
+                    input.type = field.type;
+                    if (field.type === 'number') {
+                        input.min = field.min;
+                        input.max = field.max;
+                        input.step = field.step;
+                    }
+                    if (field.placeholder) input.placeholder = field.placeholder;
+                }
+                input.id = `field_${field.key}`;
+                wrapper.appendChild(input);
+                grid.appendChild(wrapper);
+                formElements[field.key] = input;
+            });
+            groupDiv.appendChild(grid);
+            container.appendChild(groupDiv);
+        });
+        
+        // 确保所有select默认不带有“预设角色数据”，但select会默认显示第一个选项（例如正派），这是控件默认行为，但用户可自由更改，不算我们主动填入的示例角色。
+        // 为了让完全空白效果更好，将select的第一个选项置为提示但保留选项值，但这样会破坏阵营数据完整性。决定不做额外处理，用户看到默认选项就是“正派”，但并不是特定角色的预设，而是通用选项之一。
+        // 但为了更符合“无预设”精神，可以将select默认设置为空字符串，但是select需要有效值。增加一个空选项？不推荐。保持原样，因为选项本身是通用值，不存在人物预设。
+        // 同时将文本/数字输入框的值全部清空，确保无内容。
+        for (let key in formElements) {
+            let el = formElements[key];
+            if (el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) {
+                if (el.type !== 'number' && el.type !== 'select-one') {
+                    el.value = '';
+                } else if (el.type === 'number') {
+                    el.value = '';
+                }
+            }
+            // 对于select，不主动设置value，保持第一个选项，但没有注入任何特定人物数据
+        }
+    }
+    
+    // 右侧预览生成 (根据当前表单数据动态渲染)
+    function renderPreview() {
+        const previewContainer = document.getElementById('rightPreviewContainer');
+        if (!previewContainer) return;
+        
+        // 获取所有字段当前值
+        const getValue = (key) => {
+            const el = formElements[key];
+            if (!el) return '—';
+            let val = el.value;
+            if (val === undefined || val === null || val === '') return '—';
+            return val;
+        };
+        
+        // 收集分组数据
+        const groupedData = {};
+        groupsOrder.forEach(g => groupedData[g] = []);
+        fieldsConfig.forEach(field => {
+            const group = field.group;
+            const label = field.label;
+            let value = getValue(field.key);
+            if (field.key === 'combat' || field.key === 'iq' || field.key === 'eq') {
+                if (value !== '—') value = `${value} / 10`;
+            }
+            groupedData[group].push({ label, value, key: field.key });
+        });
+        
+        // 检测是否有任何非空数据，如果完全空白则显示提示
+        let hasAnyData = false;
+        for (let key in formElements) {
+            let v = formElements[key]?.value;
+            if (v && v.toString().trim() !== '') {
+                hasAnyData = true;
+                break;
+            }
+        }
+        
+        if (!hasAnyData) {
+            previewContainer.innerHTML = `<div class="empty-preview">✨ 填写左侧信息，点击「保存」<br> 精美角色卡即刻呈现</div>`;
+            return;
+        }
+        
+        let html = `<div class="character-card">`;
+        for (let group of groupsOrder) {
+            let icon = '';
+            if (group === '基础信息') icon = '🧾';
+            else if (group === '性格内核') icon = '🌀';
+            else if (group === '过往与执念') icon = '📜';
+            else icon = '⚡';
+            html += `<div class="card-section">
+                        <div class="section-title"><span>${icon}</span> ${group}</div>
+                        <div class="info-grid">`;
+            const items = groupedData[group];
+            items.forEach(item => {
+                let displayValue = item.value;
+                if (displayValue === '—') displayValue = '<span style="color:#cbd5e1;">未填写</span>';
+                html += `<div class="info-item">
+                            <span class="info-label">${item.label}</span>
+                            <span class="info-value">${displayValue}</span>
+                         </div>`;
+            });
+            html += `</div></div>`;
+        }
+        
+        // 角色气质速写
+        const nameVal = getValue('name') !== '—' ? getValue('name') : '角色';
+        const coreTrait = getValue('core_trait') !== '—' ? getValue('core_trait') : '待定';
+        const catchphrase = getValue('catchphrase_action') !== '—' ? ' · 口头禅: ' + getValue('catchphrase_action') : '';
+        html += `<div style="margin-top:0.5rem; background:#faf7f0; border-radius:1.2rem; padding:0.7rem 1rem; border-left: 4px solid #d4af7a;">
+                    <div style="font-size:0.7rem; letter-spacing:1px; color:#8b7a5b;">✨ 角色气质速写</div>
+                    <div style="font-size:0.85rem; margin-top:6px;">「${nameVal} · ${coreTrait}」${catchphrase}</div>
+                 </div>`;
+        html += `</div>`;
+        previewContainer.innerHTML = html;
+    }
+    
+    // 保存按钮: 收集所有数据并刷新右侧
+    function handleSave() {
+        renderPreview();
+        // 可选保存至 localStorage (备份用户填写内容，但不影响初始空白状态)
+        const allData = {};
+        for (const [key, el] of Object.entries(formElements)) {
+            if (el) allData[key] = el.value;
+        }
+        localStorage.setItem('characterData_backup', JSON.stringify(allData));
+        // 轻反馈
+        const btn = document.getElementById('saveBtn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✅ 已保存！';
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+        }, 1200);
+    }
+    
+    // 初始化（无任何预设填充，不清除localStorage备份但也不会自动加载，保持用户主动保存后才会存储）
+    function init() {
+        buildForm();        // 生成空白表单
+        // 不加载任何本地预设，也不填充示例数据，确保首次完全空白
+        // 但是为了用户体验，如果有之前用户保存过的数据，可以询问是否加载？但根据要求“不要给出预设”，我们完全不做自动加载。
+        // 也不调用任何示例填充函数。
+        // 右侧预览显示空白提示
+        const previewContainer = document.getElementById('rightPreviewContainer');
+        if (previewContainer) {
+            previewContainer.innerHTML = `<div class="empty-preview">✨ 填写左侧信息，点击「保存」<br> 精美角色卡即刻呈现</div>`;
+        }
+        // 绑定保存事件
+        const saveBtn = document.getElementById('saveBtn');
+        if (saveBtn) saveBtn.addEventListener('click', handleSave);
+    }
+    
+    // 启动
+    init();
+</script>
+</body>
+</html>
