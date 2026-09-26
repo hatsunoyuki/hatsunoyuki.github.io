@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Portable Addons</title>
     <!-- 移动版，现已通过iframe嵌入xhg个人楼，实时更新(大概)。 -->
-    <!-- 26.8.22更新 -->
+    <!-- 26.9.26更新 -->
 
     <!-- 样式与依赖 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -55,12 +55,6 @@
         .main-tab-content {
             margin-top: 50px;
         }
-
-        /* 表情包图片大小 */
-        .emoji_img {
-            max-width: 35px;
-            max-height: 35px;
-        }
     </style>
 </head>
 
@@ -84,7 +78,7 @@
                 </a>
             </li>
             <li>
-                <a href="#bqb" data-toggle="tab">
+                <a href="#extension" data-toggle="tab">
                     <span class="glyphicon glyphicon-heart"></span>
                 </a>
             </li>
@@ -103,37 +97,45 @@
             <div class="tab-pane in active text-center" id="home">
                 <strong>【常用网址】</strong>
                 <br>
-                <a href="https://cpttmm.love/thread/36115/" target="_blank">6.5</a>&nbsp;<a href="https://cpttmm.love/thread/51809" target="_blank">7.0</a>&nbsp;<a href="https://cpttmm.love/thread/94376/10" target="_blank">8.0</a>&nbsp;<a href="https://cpttmm.love/thread/120489/2" target="_blank">fc</a>｜<a href="https://cpttmm.love/forum/10" target="_blank">olo</a>&nbsp;<a href="https://bubaobi.top/board/419" target="_blank">BBB</a>&nbsp;<a href="https://cpttmm.love/forum/914" target="_blank">日清岛</a><br>
-                <a href="https://www.superbed.cn/" target="_blank">聚合图床</a>｜<a href="http://www.wuqianling.top/software/notepad/compress.html" target="_blank">过滤换行</a>｜<a href="https://bbs.jjwxc.net/board.php?board=3&page=1" target="_blank">XQ</a>&nbsp;<a href="https://zhenbuchuo.club/419?page=1" target="_blank">NQ</a>&nbsp;<a href="https://nga.178.com/thread.php?fid=-34587507" target="_blank">泥潭</a><br>
-
-                <strong>【自助查询】</strong>
+                <a href="https://cpttmm.love/thread/199127" target="_blank">时间规划</a>
+                ｜<a href="https://cpttmm.love/thread/120489" target="_blank">8.11</a>
+                <a href="https://cpttmm.love/thread/135812" target="_blank">9.0</a>｜<a href="weread://">微信读书</a>
                 <br>
-                <a href="http://ak.mooncell.wiki/" target="_blank">RPTS</a>｜<a href="https://prts.wiki/w/%E5%85%AC%E6%8B%9B%E8%AE%A1%E7%AE%97" target="_blank">公招计算</a>｜<a href="https://ark.yituliu.cn/" target="_blank">一图流</a><br>
-                <a href="https://rhodesworkers.ltd/story" target="_blank">Arkstory</a>｜<a href="https://arkgacha.kwer.top/" target="_blank">抽卡记录</a>｜<a href="https://hatsunoyuki.github.io/daxigua/" target="_blank">合成大豹豹</a><br>
-
+                <a href="https://www.superbed.cn/" target="_blank">聚合图床</a>｜<a
+                    href="http://www.wuqianling.top/software/notepad/compress.html" target="_blank">过滤换行</a><br>
+                <strong>【今日提醒】</strong>
+                <br>
+                <span onclick="popHeart(event)" style="user-select: none; cursor: pointer;">阅读·绘画·写作</span><br>
                 <strong>【其他】</strong>
                 <br>
-                <a href="https://archiveofourown.gay/" target="_blank">凹3</a>｜<a href="https://w1.v2free.net/user" target="_blank">自用梯子</a><br>
-                <a href="https://shimo.im/docs/aBAYV90WmpCeje3j/" target="_blank">石墨存档</a>｜<a href="https://hatsunoyuki.github.io" target="_blank">主站</a>｜<a href="https://dragcave.net/" target="_blank">龙洞</a>｜<a href="http://valleysherwood.com/" target="_blank">孵化室</a>
+                <a href="https://w1.v2free.net/user" target="_blank">自用梯子</a>｜<a href="https://hatsunoyuki.github.io"
+                    target="_blank">主站</a>
 
                 <br><br>
                 <p>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<a href="地址" target="_blank">点就看</a>'>点就看</button>
+                    <button class="btn btn-default btn-sm btn-copy"
+                        data-clipboard-text='<a href="地址" target="_blank">点就看</a>'>点就看</button>
                     <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<s></s>'>删除线</button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<details><summary>折叠</summary>内容</details>'>折叠</button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<textarea class="form-control"></textarea>'>文本框</button>
+                    <button class="btn btn-default btn-sm btn-copy"
+                        data-clipboard-text='<details><summary>折叠</summary>内容</details>'>折叠</button>
+                    <button class="btn btn-default btn-sm btn-copy"
+                        data-clipboard-text='<textarea class="form-control"></textarea>'>文本框</button>
                 </p>
 
                 <p>
                     <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<small></small>'>引用</button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<style>#f_楼层{display:none;}</style>'>删楼</button>
+                    <button class="btn btn-default btn-sm btn-copy"
+                        data-clipboard-text='<style>#f_楼层{display:none;}</style>'>删楼</button>
                 </p>
 
                 <p>
                     <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<b></b>'>加粗</button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<font color=darkred></font>'>深红</button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<font color=darkblue></font>'>深蓝</button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text='<font color=grey></font>'>灰色</button>
+                    <button class="btn btn-default btn-sm btn-copy"
+                        data-clipboard-text='<font color=darkred></font>'>深红</button>
+                    <button class="btn btn-default btn-sm btn-copy"
+                        data-clipboard-text='<font color=darkblue></font>'>深蓝</button>
+                    <button class="btn btn-default btn-sm btn-copy"
+                        data-clipboard-text='<font color=grey></font>'>灰色</button>
                 </p>
             </div>
 
@@ -159,117 +161,56 @@
                 特殊符号大全：<a href='http://www.fhdq.net/' target='_blank'>www.fhdq.net</a><br>
                 流浪图床：<a href='https://p.sda1.dev/' target='_blank'>p.sda1.dev</a><br>
                 青柠起始页：<a href='https://limestart.cn/' target='_blank'>limestart.cn</a><br>
-                音乐解锁：<a href='http://easygame.org/' target='_blank'>easygame.org</a><br>
-                油小猴度盘会员：<a href='https://www.baiduyun.wiki/zh-cn/vip.html' target='_blank'>www.baiduyun.wiki</a><br>
-                VIP视频解析：<a href='https://imyshare.com/free-movie/' target='_blank'>imyshare.com/free-movie</a>
             </div>
 
             <!-- 娱乐 -->
             <div class="tab-pane" id="fun">
-                <strong>【ACG】</strong><br>
-                AO3镜像：<a href='https://nightalk.xyz/' target='_blank'>nightalk.xyz</a>｜<a href='https://ao3-cn.top/' target='_blank'>ao3-cn.top</a><br>
-                在线日漫：<a href='http://mangabz.com/' target='_blank'>mangabz.com</a><br>
-                极速漫画：<a href='http://m.krmanhua.com/' target='_blank'>m.krmanhua.com</a><br>
-                在线动画：<a href='https://www.agemys.com/' target='_blank'>www.agemys.com</a><br>
-                哔咔漫画：<a href='http://picacgp.com/' target='_blank'>picacgp.com</a>｜<a href='https://ios.bikaa.xyz/tag/' target='_blank'>ios在线网页</a><br>
-                海棠市：<a href='https://www.htlvbooks.com/' target='_blank'>htlvbooks.com</a><br>
-                御宅屋：<a href='https://yuyan.pw/' target='_blank'>yuyan.pw</a>｜<a href='http://www.taoqibao.org/' target='_blank'>www.taoqibao.org</a><br>
-                里番站：<a href='https://bidong00.com/vodshow/katongdonghua3.html' target='_blank'>bidong00.com</a><br>
-                耽美花園：<a href='https://jcomic.net/cat/%E8%80%BD%E7%BE%8E%E8%8A%B1%E5%9C%92' target='_blank'>jcomic.net/cat</a><br>
-                耽美同人(古早)：<a href='http://yaoi-sei.com/home.html' target='_blank'>yaoi-sei.com/home.html</a><br>
-                盾勇/枪直web小说：<a href='http://www.iot2ai.top/cgi-bin/intel/syosetu.html?nv=n3009bk/' target='_blank'>www.iot2ai.top</a><br>
-                WY云游戏:<a href="https://cg.163.com/#/mobile" target="_blank">cg.163.com</a><br>
 
-                <strong>【AK】</strong><br>
-                个人中心：<a href='https://ak.hypergryph.com/user/home' target='_blank'>https://ak.hypergryph.com/user/home</a><br>
-                塞壬唱片：<a href='https://monster-siren.hypergryph.com/music' target='_blank'>monster-siren.hypergryph.com/music</a><br>
-                猩红孤钻：<a href='https://ak.hypergryph.com/is/crimsonsolitaire' target='_blank'>ak.hypergryph.com/is/crimsonsolitaire</a><br>
-                官方漫画：<a href='https://terra-historicus.hypergryph.com/' target='_blank'>terra-historicus.hypergryph.com</a><br>
+                <strong>【自助查询】</strong>
+                <br>
+                <a href="http://ak.mooncell.wiki/" target="_blank">RPTS</a>｜<a
+                    href="https://prts.wiki/w/%E5%85%AC%E6%8B%9B%E8%AE%A1%E7%AE%97" target="_blank">公招计算</a>｜<a
+                    href="https://ark.yituliu.cn/" target="_blank">一图流</a><br>
+                <a href="https://rhodesworkers.ltd/story" target="_blank">Arkstory</a>｜<a
+                    href="https://arkgacha.kwer.top/" target="_blank">抽卡记录</a>｜<a
+                    href="https://hatsunoyuki.github.io/daxigua/" target="_blank">合成大豹豹</a><br><br>
+                个人中心：<a href='https://ak.hypergryph.com/user/home' target='_blank'>ak.hypergryph.com/user/home</a><br>
+                泥潭粥板：<a href="https://nga.178.com/thread.php?fid=-34587507" target="_blank">nga.178.com</a><br>
+                塞壬唱片：<a href='https://monster-siren.hypergryph.com/music'
+                    target='_blank'>monster-siren.hypergryph.com/music</a><br>
+                官方漫画：<a href='https://terra-historicus.hypergryph.com/'
+                    target='_blank'>terra-historicus.hypergryph.com</a><br>
                 抽卡记录：<a href='https://arkgacha.kwer.top/' target='_blank'>arkgacha.kwer.top</a><br>
                 Arkstory：<a href='https://rhodesworkers.ltd/story' target='_blank'>rhodesworkers.ltd/</a><br>
-                PRTS(剧情资源)：<a href='https://prts.wiki/w/%E5%89%A7%E6%83%85%E8%B5%84%E6%BA%90%E6%A6%82%E8%A7%88/AVG' target='_blank'>prts.wiki</a><br>
-                干员猜猜乐：<a href='http://akg.saki.cc' target='_blank'>akg.saki.cc</a><br>
+                PRTS(剧情资源)：<a href='https://prts.wiki/w/%E5%89%A7%E6%83%85%E8%B5%84%E6%BA%90%E6%A6%82%E8%A7%88/AVG'
+                    target='_blank'>prts.wiki</a><br>
+                干员猜猜乐：<a href='http://akg.saki.cc' target='_blank'>akg.saki.cc</a><br><br>
+                <strong>【ACG】</strong><br>
 
-                <strong>【nmq】</strong><br>
-                <a href='https://www.sanlitunbbs.com/b/4' target='_blank'>兔区</a>&nbsp;
-                <a href='https://www.sanlitunbbs.com/b/914' target='_blank'>旧99</a>&nbsp;
-                <a href='https://cpttmm.love/' target='_blank'>XHG</a>&nbsp;
-                <a href='http://134.122.129.17/' target='_blank'>TWT</a>&nbsp;
-                <a href='https://bbs.jjwxc.net/board.php?board=3&page=1' target='_blank'>XQ</a>&nbsp;
-                <a href='https://zhenbuchuo.top/419?page=1' target='_blank'>NQ</a>&nbsp;
-                <a href='http://216.224.123.141/' target='_blank'>2xb</a>
+                在线日漫：<a href='http://comicbz.com/' target='_blank'>comicbz.com</a><br>
+                AO3：<a href='https://archiveofourown.org/' target='_blank'>archiveofourown.org</a><br>
+                耽美花園：<a href='https://jcomic.net/cat/%E8%80%BD%E7%BE%8E%E8%8A%B1%E5%9C%92'
+                    target='_blank'>jcomic.net/cat</a><br>
+                耽美同人(古早)：<a href='http://yaoi-sei.com/home.html' target='_blank'>yaoi-sei.com/home.html</a><br>
+                盾勇/枪直web小说：<a href='http://www.iot2ai.top/cgi-bin/intel/syosetu.html?nv=n3009bk/'
+                    target='_blank'>www.iot2ai.top</a><br><br>
+                <a href='https://cpttmm.love/' target='_blank'>XHG</a>
+                <a href="https://bubaobi.top/board/419" target="_blank">BBB</a>
+                <a href='https://bbs.jjwxc.net/board.php?board=3&page=1' target='_blank'>XQ</a>
+                <a href='https://zhenbuchuo.top/419?page=1' target='_blank'>NQ</a>
             </div>
 
-            <!-- 表情包 -->
-            <div class="tab-pane" id="bqb">
-                <strong>【扩展根据地】</strong>
+            <!-- 扩展 -->
+            <div class="tab-pane" id="extension">
+                <strong>【往期存档】</strong>
                 <br>
-                <a href='https://cpttmm.love/thread/78024' target='_blank'>存档</a>&nbsp;
-                <a href='https://cpttmm.love/thread/87828/1' target='_blank'>练习册</a>&nbsp;
-                <a href='https://www.notion.so/iichigo' target='_blank'>notion</a>&nbsp;
-                <a href='https://cpttmm.love/thread/120489/2' target='_blank'>fc楼</a><br>
-                
-                <strong>【表情包】</strong>
-                <br>
-                <p>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/11/18/znutv8.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/11/18/znutv8.png' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/11/18/znuJ8P.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/11/18/znuJ8P.png' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/11/18/znKFsS.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/11/18/znKFsS.png' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/11/18/znmlse.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/11/18/znmlse.png' class='emoji_img'>
-                    </button>
-                </p>
+                <a href="https://cpttmm.love/thread/36115/" target="_blank">6.5</a>
+                <a href="https://cpttmm.love/thread/51809" target="_blank">7.0</a>
+                <a href="https://cpttmm.love/thread/94376/10" target="_blank">8.0</a><br>
+                <a href='https://cpttmm.love/thread/78024' target='_blank'>攻嬷存档</a>
+                <a href='https://cpttmm.love/thread/87828/1' target='_blank'>写作练习册</a>
+                <a href='https://www.notion.so/iichigo' target='_blank'>notion</a><br>
 
-                <p>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/11/18/znuUKS.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/11/18/znuUKS.png' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/09/30/xuTKDU.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/09/30/xuTKDU.png' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://img.mjj.today/2022/11/23/82a73759f3f487b322f6919fcd9e0218.gif' class='emoji_img'>">
-                        <img src='https://img.mjj.today/2022/11/23/82a73759f3f487b322f6919fcd9e0218.gif' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://img.mjj.today/2022/12/11/ac035fa00c5b8f9776e42df237a3420d.gif' class='emoji_img'>">
-                        <img src='https://img.mjj.today/2022/12/11/ac035fa00c5b8f9776e42df237a3420d.gif' class='emoji_img'>
-                    </button>
-                </p>
-
-                <p>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/10/24/x2yzWQ.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/10/24/x2yzWQ.png' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://img.mjj.today/2022/11/20/a1d0ca002d3c61e75b28b04cc0dbc3c2.gif' class='emoji_img'>">
-                        <img src='https://img.mjj.today/2022/11/20/a1d0ca002d3c61e75b28b04cc0dbc3c2.gif' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/10/05/x1pVYR.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/10/05/x1pVYR.png' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://s1.ax1x.com/2022/10/05/x1pZf1.png' class='emoji_img'>">
-                        <img src='https://s1.ax1x.com/2022/10/05/x1pZf1.png' class='emoji_img'>
-                    </button>
-                </p>
-
-                <p>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://img.mjj.today/2022/12/18/e33a8d5da78e09767ce2c99c242d7ee3.gif' class='emoji_img'>">
-                        <img src='https://img.mjj.today/2022/12/18/e33a8d5da78e09767ce2c99c242d7ee3.gif' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://img.mjj.today/2022/12/18/e4bad3d99011549da56b42ae9c3b75e0.png' class='emoji_img'>">
-                        <img src='https://img.mjj.today/2022/12/18/e4bad3d99011549da56b42ae9c3b75e0.png' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://img.mjj.today/2022/12/18/a17a24f1e1e6f8e66d55ebde2ff091bd.gif' class='emoji_img'>">
-                        <img src='https://img.mjj.today/2022/12/18/a17a24f1e1e6f8e66d55ebde2ff091bd.gif' class='emoji_img'>
-                    </button>
-                    <button class="btn btn-default btn-sm btn-copy" data-clipboard-text="<img src='https://img.mjj.today/2022/12/18/f67d5642f070c17f9e079fc87c3262b7.gif' class='emoji_img'>">
-                        <img src='https://img.mjj.today/2022/12/18/f67d5642f070c17f9e079fc87c3262b7.gif' class='emoji_img'>
-                    </button>
-                </p>
             </div>
         </div>
     </div>
@@ -289,6 +230,31 @@
             console.info('Text:', e.text);
             console.info('Trigger:', e.trigger);
         });
+
+        function popHeart(e) {
+            // 兼容手机端点击坐标
+            var x = e.pageX || (e.touches && e.touches[0].pageX);
+            var y = e.pageY || (e.touches && e.touches[0].pageY);
+
+            // 动态生成爱心元素
+            var heart = document.createElement("span");
+            heart.innerHTML = "❤";
+            heart.style.cssText = "position:absolute;z-index:9999;color:#ff5e7e;font-size:18px;pointer-events:none;transition:all 0.8s ease-out;";
+            heart.style.left = (x - 8) + "px";
+            heart.style.top = (y - 10) + "px";
+            document.body.appendChild(heart);
+
+            // 触发上升和淡出动画，结束后自动移除
+            setTimeout(function () {
+                heart.style.top = (y - 50) + "px";
+                heart.style.opacity = "0";
+                heart.style.transform = "scale(1.4)";
+            }, 15);
+
+            setTimeout(function () {
+                heart.remove();
+            }, 800);
+        }
     </script>
 </body>
 
